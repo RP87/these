@@ -1,0 +1,454 @@
+\chapter{Évaluation de la soutenabilité}
+\label{chap:Évaluation de la Soutenabilité, un État de l'art}
+Dans ce chapitre, nous présentons un ensemble d'éléments de la littérature jugés nécessaires au traitement de notre problématique de l'évaluation environnementale.
+Nous commencerons donc par traiter de soutenabilité.
+Nous ferons la définition d'un septième concept de la soutenabilité (\ref{subsec:La soutenabilité, un concept au pluriel}).
+%Puis nous ferons la revue des outils nécessaires à son évaluation dans cette thèse.
+Nous présenterons de façon générale les indicateurs et les méthodes.
+Nous marquerons avec insistance les similitudes entre les outils des économistes et l'\gls{ACV}.
+Plus particulièrement nous soulignerons la convergence des indicateurs des économistes, de l'\gls{ACV} et de l'\acrshort{ADMC}.
+Puis de façon plus spécifique nous traiterons de la pensée en cycle de vie.
+Pour celle-ci nous nous attacherons en particulier à comprendre la base méthodologique et le contexte qui l'a fait naître.
+Nous terminerons par l'état d'avancement actuel de l'\gls{ACV} et sa critique en littérature.
+\section{La Soutenabilité, état de l'art}
+\label{sec:La Soutenabilité}
+Ces travaux portent sur la pensée en Cycle de Vie.
+Cette méthodologie est développée pour assurer une évolution cohérente de l'évaluation \textit{holistique} (comme un tout) de la soutenabilité\footnote{
+\blockcquote[traduction]{jrc_jrc_2012}{
+L'ACV et le Manuel ILCD se concentrent sur les questions environnementales.
+Grâce à des extensions, elles facilitent également des évaluations de durabilité cohérentes qui saisissent pleinement les implications économiques et sociales via le Life Cycle Costing et l'ACV sociale.
+%LCA and the ILCD Handbook focus on environmental issues. Through extensions, they equally facilitate coherent sustainability assessments that fully capture the economic and social implications via Life Cycle Costing and social LCA.
+}
+\blockcquote[traduction]{jrc_jrc_2012}{
+l'ACV environnementale est structurellement ouverte à une extension progressive pour l'évaluation complète de la soutenabilité.
+%Environmental LCA is structurally open to a stepwise extension to a full sustainability assessment
+}
+}.
+Cette jonction des diverses méthodes est d'ailleurs poursuivie dans le cadre de l'évaluation en cycle de vie de la soutenabilité, \citetitle{kloepffer_life_2008}~\cite{kloepffer_life_2008}.
+Nous restons toutefois septique au commentaire de Helias A. \textsc{Udo de Haes}~:
+\blockcquote[traduction]{kloepffer_life_2008}{
+Dans son article, Walter \textsc{Klöpffer} plaide en faveur d'une approche triple-P pour l'évaluation du cycle de vie. Je souscris pleinement à son but, personnes-planète-\textbf{profit}
+%In his article, Walter Klöpffer argues in favour of a triple-P ap-
+%proach for life cycle assessment. I fully endorse his aim, people-
+%planet-profit
+}
+Ne partageant pas l'objectif d'inscrire durablement dans notre développement l'exploitation à but lucratif, il nous faut étaler le problème dans ces multiples dimensions.
+
+Nous commencerons donc par clarifier ce qui est entendu par la soutenabilité.
+Pour cela nous poserons sept définitions de la soutenabilité dans une combinaison des concepts de \citeauthor{perman_natural_2009} et \textsc{Costanza}.
+Ensuite nous verrons les indicateurs conçus pour répondre à ces concepts. 
+\subsection{La soutenabilité, un concept au pluriel}
+\label{subsec:La soutenabilité, un concept au pluriel}
+
+% définition des concepts et hypothèses attenantes
+La soutenabilité est un concept.
+Elle comprends de multiples définitions et des perspectives différentes.
+Nous allons reprendre des éléments de définitions multiples, à divers degré de vulgarisation pour tenter de dégager le concept que nous retiendrons pour la suite de ce mémoire.
+
+"Nous n’héritons pas de la Terre de nos ancêtres, nous l’empruntons à nos enfants."
+Cette maxime,
+\footnote{Nous ne nous préoccupons pas de l'attribution à Antoine de Saint-Exupéry, au Chef indien Seattle, au Dr.Smith ou à qui que ce soit d'autre.},
+discute d'une question de responsabilité transgénérationnelle avec un langage relatif aux notions de propriété sur notre environnement.
+
+Dans les années 1970, le rapport Meadows, \citetitle{meadows_limits_1972}, contient un message d'une teneur différente.
+Ce document, parfois désigné par rapport du club de Rome est la production du Massachussetts Institute of Technology (MIT).
+Il définit la chose suivante~:
+ %~\cite{meadows_limits_1972} %p9 % de Donella H. Meadows, Dennis L. Meadows, J•rgen Randers et William W. Behrens III. (?tous)
+\blockcquote[traduction]{meadows_limits_1972}{
+Il est possible de modifier ces tendances de croissance et d'établir une condition de stabilité écologique et économique qui soit soutenable dans un avenir lointain.
+L'état d'équilibre global pourrait être conçu tel que les besoins matériels basiques de chaque personne sur terre soient satisfaits et que chaque personne ait une égale opportunité à réaliser son potentiel humain personnel.}
+\footnote{Ci après l'extrait original pour éviter toute déformation.
+\blockcquote[Introduction page 24]{meadows_limits_1972}{2. It is possible to alter these growth trends and to establish a condition of ecological and economic stability that is sustainable far into the future. The state of global equilibrium could be designed so that the basic material needs of each person on earth are satisfied and each person has an equal opportunity to realize his individual human potential.}
+}
+%?? Meadows
+%Traduction + texte original ? et dvp à chaque pt
+%
+%\blockcquote{Meadows}
+%{1. If the present growth trends in world population, industrialization, pollution, food production, and resource depletion continue unchanged, the limits to growth on this planet will be reached sometime within the next one hundred years. The most probable result will be a rather sudden and uncontrollable decline in both population and industrial capacity.} Introduction Page 24
+%
+%\blockcquote{Meadows}{3. If the world's people decide to strive for this second outcome rather than the first, the sooner they begin working to attain it, the greater will be their chances of success..} Introduction Page 24
+Moins d'une génération plus tard, ce qui est fréquemment employé comme la définition du \emph{développement durable} provient du \citetitle{brundtland_rapport_1987} \citeyear{brundtland_rapport_1987}~:
+\blockcquote{brundtland_rapport_1987}
+{Le genre humain a parfaitement les moyens d’assumer un développement durable, de répondre aux besoins du présent sans compromettre la possibilité pour les générations à venir de satisfaire les leurs.}
+Permettre à chaque individu de se réaliser en tant qu'être humain à hauteur de son potentiel n'est plus mentionné.
+La croissance économique, elle, a voix au chapitre~:
+\blockcquote{brundtland_rapport_1987}
+{Mais nous sommes capables d’améliorer nos techniques et notre organisation sociale de manière à \emph{ouvrir la voie à une nouvelle ère de croissance économique}.}
+
+En synthèse il nous faut donc observer à la fois les considérations matérielles mais également culturelles.
+L'opinion politique dominante influe sur la détermination de la définition de la soutenabilité, comme en atteste le caractère sacré donné \emph{plus haut} à la croissance économique.
+Il ne s'agit pas uniquement de considérer la durabilité d'un phénomène (consommation inférieure ou égale à une production permettant qu'elle se poursuive).
+Sont en jeux, ce qui est considéré par le sujet comme une répartition \emph{juste} des ressources, des consommations, le \emph{caractère nécessaire} de celles-ci, comme le positionnement conservateur à adopter face aux éléments de l'environnement ainsi qu'à lui même.
+
+Les auteurs du Rapport Brundtland ne s'y trompent pas en terminant le point "3. Le développement durable"~\blockcquote{brundtland_rapport_1987}
+{est bien une affaire de volonté politique} et soulignent que la justice dans la répartition des ressources a pour condition à sa naissance la \emph{démocratie}.
+Il n'est pas question de brandir un mot drapeau pour attirer les pré-jugés positifs envers les partisans de l'étiquette démocratique.
+La question de la soutenabilité comporte une multitude de dimensions et de perspectives d'observation de celles-ci.
+Or, si le terme de durabilité nous questionne sur, 'quels seront les éléments stables dans le temps et pour quelle durée ?', la soutenabilité soulève par son complément d'objet et ses compléments circonstanciels les éléments précédent, mais de plus et surtout par son sujet interroge \emph{'qui soutient ?'}.
+Les différences de potentiels créant le mouvement (eau qui coule, électron circulant, populations en lutte), des écarts important introduisent une violence au mouvement (chute d'eau, arc électrique, insurrection) mettant en cause la 'stabilité' recherchée dans les concepts de soutenabilité et durabilité.
+Il apparaît donc comme logique que les orientations pour l'observation des dimensions soient déterminées par un grand nombre de personnes et considérées comme légitimes par ceux qui subiront les décisions consécutives (i.e. à notre époque) qu'elles soient démocratiques.
+
+Parmi ces perspectives sur la soutenabilité, une distinction majeure est la position concernant la substituabilité des dimensions.
+
+
+
+Nous souhaitons dépasser la simple approche, dite économique, de la distinction forte ou faible de la soutenabilité c.a.d la substituabilité entre capital naturel et capital anthropique
+\footnote{
+\blockcquote[traduction]{dietz_weak_2007}{
+En adoptant une approche économique du problème, le choix est de savoir si l'on croit que le capital naturel [\dots] devrait se voir accorder une protection spéciale, ou si il peut être remplacé par d'autres formes de capitaux, le capital produit en particulier.
+Ceci est le choix entre soutenabilité faible et forte soutenabilité.
+%In taking an economic approach to the problem, the key choice is whether one believes that natural capital [\dots] should be afforded special protection, or whether it can be substituted by other forms of capital, especially produced capital.
+%This is the choice between weak sustainability and strong sustainability.
+}
+}.
+La soutenabilité apparaît dans sa conceptualisation économique faible comme la non décroissance du stock total de capital~\cite{pearce_capital_1993}
+\footnote{
+\blockcquote[traduction]{pearce_capital_1993}{
+Pour ce faire, nous adoptons une position néoclassique et supposons que la possibilité de substitution entre le capital 'artificiel' 'naturel' et dans le sens décrit par Victor (voir Solow, 1986).
+Nous affirmons alors que l'économie est soutenable si elle économise plus de la dépréciation combinée sur les deux formes de capital.
+%To do this we adopt a neoclassical stance and assume the possibility of substitution between ‘natural’ and ‘man-made’ capital in the sense described by Victor (see Solow, 1986). We then assert that an economy is sustainable if it saves more than the combined depreciation on the two forms of capital.
+}
+\blockcquote[traduction]{cabeza_gutes_concept_1996}{
+En vertu de cette notion, la soutenabilité est équivalente à la non-diminution de stock de capital total.
+%Under this notion, sustainability is equivalent to non-decreasing total capital stock.
+} 
+}.
+L'acception forte de la soutenabilité relève d'après la littérature~\cite{markandya_dictionary_2001} d'une perspective de non substituabilité des capitaux.
+Toute décroissance d'un capital quel qu'il soit entraîne une 'non-soutenabilité'.
+Hors, si en sciences sociales il est possible de distinguer plusieurs type de capitaux produits par l'homme (monétaire, social, culturel) des sous-catégorisations sont également possibles pour les 'capitaux naturels'.
+Les milieux humains, comme géographiques et éco-systémiques étant chacun unique des divisions peuvent être poursuivies jusqu'à ce que la non-décroissance de ceux-ci en vienne à ne plus être possible \ldots voir à ne plus être soutenable.
+Il nous faut donc renforcer le socle théorique de ce concept.
+
+\citeauthor*{perman_natural_2009}
+détaille six concepts de ce qu'est la soutenabilité~:
+\label{6concepts_soutenabilité}
+\blockcquote[Traduction. Table 4.2 Six concepts of sustainability]{perman_natural_2009}{
+\begin{itemize}
+\item Un état soutenable est celui dans lequel l'utilité (ou la consommation) est non décroissante chronologiquement.
+\item Un état soutenable est celui dans lequel le capital naturel est non-décroissant dans le temps.
+\item Un état soutenable est celui dans lequel les ressources sont gérées de façon à maintenir des opportunités de production futures.
+\item Un état soutenable est celui dans lequel les ressources sont gérées de façon à maintenir un seuil de soutenabilité des services des ressources.
+\item Un état soutenable satisfait des conditions minimum pour la résilience des écosystème dans le temps.
+\item Le développement soutenable en tant que construction de consensus et développement institutionnel.
+\end{itemize}}
+
+La première acception est réfutée par les limites à la consommation dans un monde fini.
+La seconde est réfutée, comme indiqué précédemment à cette liste, par une division des variétés au sein du capital naturel rendant la non-décroissance hors substitution irréalisable.
+La troisième ne définie pas les opportunités qui ainsi ne peuvent être jugées insoutenables, mais par conséquent ne peuvent être jugées soutenables non-plus.
+La quatrième portent sur le seuil de survie, mais ne traite pas du cas ou survivre est insoutenable.
+La cinquième traite du maintien de la survie des écosystèmes et souffre du même manque que la précédente.
+Enfin la sixième pose les notions intéressantes de l'organisation et d'un mode décisionnel mais n'en précise pas les termes ni le but. 
+%Table 4.2 Six concepts of sustainability
+%A sustainable state is one in which utility (or consumption) is non-declining through time.
+%A sustainable state is one in which resources are managed so as to maintain production opportunities for the future.
+%A sustainable state is one in which the natural capital stock is non-declining through time.
+%A sustainable state is one in which resources are managed so as to maintain a sustainable yield of resource services.
+%A sustainable state is one which satisfies minimum conditions for ecosystem resilience through time.
+%Sustainable development as consensus-building and institutional development.
+
+%trouver une formulation pour le 4.4
+% The institutional conception
+%%
+%First, as development of a socio-environmental system with a high potential for continuity because it is kept within economic, social, cultural, ecological and physical constraints. and second, as development on which the people involved have reached consensus.
+
+Proposons donc une reformulation comprenant ce sixième concept avec la définition de Costanza de 1991\footnote{\blockcquote[citation original pour éviter tout biais de traduction]{perman_natural_2009}{
+Sustainability is a relationship between human economic systems and larger dynamic, but normally slower-changing, ecological systems in which 1)human life can continue indefinitely, 2) human individuals can flourish, and 3) human cultures can develop; but in which effects of human activities remain within bounds, so as not to destroy the diversity, complexity, and function of the ecological life support system. (Costanza et al., 1991, p. 8)
+}}.
+\keybox{
+Est soutenable une activité de transformation produisant consensus et institutionnalisation dans le cadre de l'évolution des individus et des cultures humaines, sans fin discernable et involontaire de leurs faits, par l'action ou l'inaction, pour lesdits sujets, ou pour l'écosystème, dans sa diversité, sa complexité et sa capacité à supporter la vie.
+}
+
+%
+%
+
+\subsection{Quel indicateur pour la mesurer, se mesure-t-elle ?}
+
+\colorbox{yellow}{complément à étudier Joumard R. and Gudmundsson H}
+
+Une mesure est une observation, une grandeur caractéristique d'un objet\footnote{Vers la définition de \href{http://www.cnrtl.fr/lexicographie/mesure}{mesure.}}, accompagnée d'un jugement normatif.
+\emph{Une} observation implique l'unicité dimensionnelle.
+Dès lors que la grandeur discutée relève d'une forme d'agrégation de plusieurs caractères hétérogènes de l'objet observé, il s'agit d'évaluation et non plus d'une observation.
+Notre capacité à produire une mesure ou une évaluation résulte de l'état des connaissances humaines.
+Comme le décrit \citeauthor{bouyssou_evaluation_2006} dans \citetitle[Numbers and Preference]{bouyssou_evaluation_2006}, certaines échelles de mesure doivent se contenter pour origine, de seuils arbitraires dans l'attente de la connaissance de leur frontière naturelle
+\footnote{L'ouvrage reprend la question des mesures de température avec les échelles en degrés Celsius et Kelvin.}
+\cite{bouyssou_evaluation_2006}.
+%\colorbox{yellow}{? traiter ici les questions d'échelles ou en mcdm ?}
+
+Consécutivement, même la première acception faible de la soutenabilité (énoncé par \citeauthor{perman_natural_2009} précédemment), limitée à la non-décroissance de la consommation, ne saurait être prise pour pure \emph{'observation'}.
+Le lecteur curieux est invité à faire la lecture de la construction des divers \gls{PIB} et leurs évolutions, afin d'observer le nombre de jugements qui s'y appliquent~\cite{piriou_comptabilite_2004}.
+
+Partant de la perspective économique, revoyons les indicateurs (évaluations) construits.
+Les travaux de revue de \citeauthor*{sala_systemic_2015,gadrey_les_2012,roman_comment_2016}
+nous offrent un large panel~\cite{sala_systemic_2015,gadrey_les_2012,roman_comment_2016}.
+Nous soulignons la similarité des démarches, de leur évolution, comme des structurations des données dans la construction des agrégats
+
+Nous partons de la construction du \gls{PIB} dans les années 30~\cite{kuznets_gross_1934}.
+Celui-ci est bien entendu centrale pour l'acception numéro une dans la liste de \citeauthor{perman_natural_2009}, pour l'observation de ses variations.
+La force de décision d'un indicateur unique monétaire, qui par son unité masque bien plus d'un jugement de valeurs, provient sans doute de son accessibilité cognitive.
+Lorsque les valeurs qui le sous-tendent sont en crise, outre le coût cognitif du traitement de l'information supplémentaire recherchée (sociale, écologique mais aussi économique\footnote{Nous avons tendance à réduire la question économique aux questions monétaires. Toutefois, il semble que la gestion et la répartition des ressources pour la satisfaction de besoin, nécessite plus qu'un agrégat monétaire.}), c'est celui de la séparation de l'indicateur initial qu'il faut vaincre.
+Dans la recherche d'\blockcquote{gadrey_croissance_2002}{outils intellectuels
+pour penser ce développement post-croissance}, nous parcourons quelques indicateurs.
+Sur ce parcours, nous ferons ressortir les similitudes à la logique des indicateurs en ACV.
+
+L'\gls{ISH} %1985~\cite[p.39]{gadrey_les_2012}
+est publié depuis 1987 par l'IISP, institut pour l'innovation en politique sociale (Institute for Innovation in Social Policy, \href{http://iisp.vassar.edu/ish.html}{IISP})~\cite{miringoff_americas_1995}.
+Pour la production de l'\gls{ISH}, seize indicateurs sont agrégés (
+La mortalité infantile, la maltraitance des enfants, la pauvreté infantile, le suicide des adolescents, l'abus de drogues chez les adolescentes, le décrochage scolaire dans le secondaire, le chômage, les salaires hebdomadaires, la couverture d'assurance maladie, la pauvreté chez les personnes âgées, les coûts 'hors-poche' de soins de santé pour les personnes âgées, les homicides, accidents de circulation lié à l'alcool, l'insécurité alimentaire, le logement abordable et les inégalités de revenus.
+%infant mortality, child abuse, child poverty, teenage suicide, teenage drug abuse, high school dropouts, unemployment, weekly wages, health insurance coverage, poverty among the elderly, out-of-pocket health-care costs among the elderly, homicides, alcohol-related traffic fatalities, food insecurity, affordable housing, and income inequality.
+).
+Ces éléments résultent eux-mêmes d’agrégations (catégorielles notamment).
+
+L'\gls{ENA} est l'agrégation de dépenses d’éducation, de 'rentes' de ressources et des 'dépenses de pollution'~\cite[Genuine Saving - A Formal Model]{hamilton_genuine_2000}.
+Ces ensembles sont eux-mêmes constructions d'éléments monétaires et monétarisés.
+Deux extraits sont proposés au lecteur pour que chacun puisse relever la nature des hypothèses falsifiées rendant le modèle conceptuellement incorrect.
+\exbox{
+\blockcquote{hamilton_genuine_2000}{
+tous \underline{exprimés en dollars courants des États-Unis}. [\ldots] Pour les minéraux les niveaux du total des rentes des ressources sont donc calculées comme suit: prix de rente = prix mondial - coût d'exploitation minière - coûts de broyage et enrichissement - coûts de fusion - le transport au port - \underline{retour} \underline{«normal»} \underline{au capital}.
+%all expressed in current US dollars. [\ldots] For minerals the levels of total resource rents are thus calculated as: Rent = World price - mining cost - milling and beneficiation costs - smelting costs - transport to port - 'normal' return to capital.
+}
+
+\blockcquote[traduction]{hamilton_genuine_2000}{
+En tant que "porte-place" pour les autres polluants, par conséquent, les dommages causés par les émissions de dioxyde de carbone sont inclus dans le calcul de l'économie réelle, en utilisant un chiffre de 20~\$ par tonne de carbone dérivé de Fankhauser (1995) et des données largement disponibles sur les émissions de $CO_2$ provenant de sources industrielles.
+\emph{Faire une déduction pour les émissions d'un polluant mondial est \textbf{conceptuellement correct si} certains droits de propriété sont supposés, notamment \textbf{le droit de ne pas être endommagés par les émissions polluantes de votre voisin}}.
+%As a "place-holder" for other pollutants, therefore, damages from carbon dioxide emissions are included in the genuine saving calculation, using a figure of \$20 per ton of carbon derived from Fankhauser (1995) and widely available data on $CO_2$ emissions from industrial sources. \emph{Making a deduction for emissions of a global pollutant is \textbf{conceptually correct if} certain property rights are assumed, in particular \textbf{the right not to be damaged by your neighbour's pollution emissions}}.
+}\footnote{Les réfugiés climatiques comme les papouasiens déplacés par exemple~\cite{cournil_les_2011}, peuvent attester empiriquement du défaut 'conceptuel'.}
+}
+ %~\cite{roman_comment_2016} 
+L'\gls{IWI}, indicateur ONUsien~\cite{gadrey_les_2012,roman_comment_2016}, reprend les codes du précédent et les critiques attenantes~\cite{thiry_lindice_2016}.
+
+L'\gls{IDH}, moyenne une espérance de vie, une durée de scolarisation et un revenu monétaire par personne.
+Il traduit dans sa formule la substituabilité considérée~\cite[eq.2]{pnud_human_2015}.
+\begin{equation}
+\text{IDH}=\sqrt[3]{I_{\mathit{Santé}} \times I_{\mathit{Éducation}} \times I_{\mathit{Revenu}}}
+\end{equation} 
+L’existence de variantes tel l'\gls{ISDH} et des variantes locales, n'en remet pas en cause ses fondements~\cite[p.26]{gadrey_les_2012}.
+
+\gls{SNI}, comme décrit par \citeauthor{roman_comment_2016}~\cite{roman_comment_2016}, les travaux de \textsc{Hueting} sur le « revenu national soutenable » avec des coûts monétaires de préservation sur une approche 'distance to target', ceux d'\textsc{Ekins} où des capitaux naturels sont non-substituables car \emph{jugés critiques}, ceux de \textsc{Vanoli} avec les \gls{CENP}, œuvrent à la limitation de la monétarisation qui \blockcquote{roman_comment_2016}{est alors beaucoup plus circonscrite que ce que les approches \emph{mainstream} préconisent}.
+La présentation de ces outils ne semble toutefois pas sortir de l'hégémonie monétaire, bien qu'ils cherchent à la réduire.
+Ces propositions restent encrés dans le champ des \emph{monétarismes}, économiques en système d'unité.
+\keybox{
+Il n'est pas ici question de rejeter la monnaie.
+Nous comprenons toute sa nécessité dans ce qu'elle contribue à \blockcquote{harribey_elements_2010}{la reconnaissance du travail effectué pour répondre à des besoins sociaux hors du champ de la marchandise [qui] participe à la maîtrise de la société sur ce que peut être le bien-être, la « vraie » richesse.}
+Nous faisons simplement la distinction entre~:
+\begin{description}
+\item d'une part \blockcquote{harribey_elements_2010}{l’utilisation de la monnaie comme bien public qui permet de payer les services non marchands}, services pouvant comprendre \blockcquote{harribey_elements_2010}{la préservation des biens communs de l’humanité}.
+\item et d'autre part l'attribution d'un quantum monétaire à ce qui ne serait être du travail humain, la monétarisation des services écosystémiques.
+\end{description} 
+En effet, \blockcquote{harribey_elements_2010}{le refus de la marchandisation ne signifie pas nécessairement celui de la monétarisation}.
+Mais si \emph{tout} le travail à fournir pour s'approcher de la soutenabilité mérite d'être payé en monnaie, la soutenabilité ne se mesure pas dans cette seule unité.
+\textbf{La soutenabilité et le coût de son obtention sont des choses différentes.}}
+
+
+\citeauthor*{gadrey_les_2012} détaillent d'autres indicateurs dont nous nous contenterons d'un rapide et partiel survol.
+L'\gls{ISP} concentre 4 dimensions alimentées par 15 variables, 2 dimensions sont traitées par monétarisation (dont la sécurité environnementale).
+Pour la dimension économique, l'\gls{IBEE} emploie pour exemple connu l'indice Gini\footnote{\citetitle{gini_measurement_1921} par \citeauthor{gini_measurement_1921} traite des inégalités de revenus~\cite{gini_measurement_1921}.}~\cite[p.47]{gadrey_les_2012}.
+%\gls{IPH} de 1997~\cite[p.26]{gadrey_les_2012}
+D'autres indicateurs du \gls{PNUD}
+%(\gls{PNUE} pour les francophone)
+sont décrits dans une note technique (\citetitle{pnud_human_2015} Human Development Index (HDI), Inequality-adjusted Human Development Index (IHDI), Gender Development Index (GDI), Gender Inequality Index (GII), Multidimensional Poverty Index (MPI)).
+Observons l'articulation très apparente des indicateurs et leurs agrégations dans cette note technique des indicateurs du \gls{PNUD}~: Dimension / Indicateurs / Dimension d'Indice / Indicateurs agrégés / Agrégation complète~\cite{pnud_human_2015}.
+Pour le \gls{BIP40}, observons les six dimensions~: emploi et travail, revenu, santé éducation, logement, justice. Emploi et travail comporte 24 composantes, dont le chômage traite de 8 indicateurs~\cite[p.45-46]{gadrey_les_2012}.
+
+Nous observerons également qu'ici encore les jugements normatifs culturels sont importants.
+Sous un indicateur de santé du GII, nous retrouverons des éléments d'acceptabilité sociale tels qu'avoir des enfants à un 'jeune âge',
+\blockcquote{pnud_human_2015}{fewer adolescent pregnancies},
+l'adolescence portant les bornes 15 et 19 ans.
+Les majeurs peuvent se rhabiller.
+De même comme le soulignent \citeauthor[p.36 ; p.92]{gadrey_les_2012}, s'agit-il de mieux vivre (questionnement des \blockcquote{gadrey_les_2012}{critères de déprivation [\dots] un ménage ne possède pas de véhicule motorisé à quatre roues} ; \blockcquote{gadrey_les_2012}{l'absence de toilette avec chasse d'eau}), \textbf{ou }d'une uniformisation vers une culture occidentale, bien que celle-ci ait démontré sa non-soutenabilité. %, uniformisation imposée à coup\ldots d'indicateurs normatifs.
+
+Après avoir insisté sur la structuration et le caractère orienté, nous souhaitons souligner l'intégration avec le millénaire suivant des perspectives personnelles et locales avec
+%\gls{ISS} se dérive en variante locale ISS local 17 variable ? quelle agrégation~\cite[p.55-56]{gadrey_les_2012}
+%"monétarisation" \gls{PIB} et rapport Sexué~\cite[p.61]{gadrey_les_2012} ???
+des \gls{IBED} personnalisés en 2001~\cite[p.70]{gadrey_les_2012}
+et le \gls{HPI}~\cite[p.86-87]{gadrey_les_2012}~\cite{centre_for_well-being_about_????}
+\begin{equation}\text{HPI} \approx \frac{\text{life expectancy} \times \text{experienced well-being}}{\text{Ecological Footprint}}
+\end{equation}
+Où "Experienced well-being", est ici la satisfaction exprimé des populations.
+Ceci souligne le 'qui soutient ?' ce mode de vie.
+
+
+Enfin, avec les indicateurs catégorisés "Biophysiques" (
+Empreinte environnementale~\cite{gadrey_les_2012} / global footprint~\cite{roman_comment_2016} en hectare global ou
+carbon footprint~\cite{roman_comment_2016}) les auteurs des revues s'orientent sur les articulations d'indicateurs en tableau de bord.
+Avec les « comptes de décroissance » (« degrowth accounts ») \citeauthor{roman_comment_2016} font transparaître l'alternance entre la \blockcquote{roman_comment_2016}{publication annuelle de listes d’indicateurs [\ldots] couvrant les multiples dimensions du développement
+durable} et le désire de \blockcquote{roman_comment_2016}{dépasser la juxtaposition d’indicateurs et articuler ceux-ci dans un cadre cohérent}.
+
+Cette articulation cohérente qui, sans accepter les agrégations établies rejette la simple juxtaposition, tend vers l'intégration croissante et explicite des applications de l'\acrlong{ADMC}~\cite{froger_les_2005,huang_multi-criteria_2011}.
+Nous rejoignons également la pensée en cycle de vie.
+
+%\colorbox{yellow}{reprendre la symétrie avec source ACV \ / source économie}
+À la conclusion de ce survol, l'ensemble des caractères constitutifs de ces indices et indicateurs se retrouvent en effet dans l'\gls{ACV}.
+Celle-ci n'est qu'une partie des outils développés pour la soutenabilité.
+Mais nous y retrouvons la structuration de l'information (cf. Section \ref{sec:La pensée en cycle de vie}, Fig.\ref{fig:ILCD_principe_3_niveaux_information.png}) ; les divers niveaux d'agrégations des données, les critiques de la réversibilité et la transparence des traitements des données ; comme l'exploitation de l'\gls{ADMC}.
+Pour cette dernière nous retrouvons le caractère décisionnel de l'information et son application\footnote{indicateurs cohérents performativement~\cite{thiry_au-a_2012}} ; l'intégration du jugement de valeurs des parties prenantes, pour des indicateurs et décisions résultantes légitime, avec la reconnaissance de leurs portés culturelle et politique.
+
+\keybox{
+Nous observons, à l'image des travaux de \citeauthor{sala_systemic_2015} une convergence vers un \blockcquote{sala_systemic_2015}{cadre systémique pour l'évaluation environnementale}.
+Ce cadre commun, tant dans le champ des économistes que des écologistes et acévistes, fait ressortir~:
+\begin{itemize}
+\item Une structuration de l'information à granulométrie croissante pour se saisir à diverses échelles de données intelligibles.
+\item Un appel croissant à l'exploitation des techniques de décision multicritères pour une réversibilité des traitements sur la donnée brute (transparence) et pour une consistance effective de leur application avec des modèles formels de construction des agrégations.
+\item L'intégration du jugement des parties prenantes, pour une légitimité des indicateurs résultant, car leurs caractères culturel et de gouvernance sont reconnus.
+\end{itemize}
+Pour autant, aucun outil à l'heure actuel ne répond au besoin de notre septième concept de la soutenabilité.
+}
+
+Du reste et pour clore cette sous-section, si l'ensemble des éléments précédents traitent des outils pour acquérir \textit{une} représentation de la soutenabilité et de la distance qui nous en sépare, un point n'a pas été questionné.
+Il est un thème que \citeauthor{harribey_richesse_2013} traite, dont le titre se suffit à lui-même \citetitle{harribey_richesse_2013}.
+\keybox{
+Il semble donc douteux que par le vaste domaine que la soutenabilité englobe, celle-ci supporte une unique \emph{mesure} (sans entendre 'par seule observation' mais bien en comprenant un seul indicateur) tout en s'appliquant à une population aussi diversifiée que planétaire et le tout relevant de l'\emph{incommensurable}.
+}
+
+\subsection{Quelle(s) méthode(s) pour l'évaluer ?}
+Un indicateur, ne peut donc relever ce défis.
+Voyons ce qu'il en est des méthodes.
+Le nombre de méthodes d'évaluation sur les dimensions environnementales, sociales et économiques est grand.
+Les méthodes procédurales et analytiques sont listés par \citeauthor{jeswani_options_2010}, et présentées dans le tableau~\ref{tab:jeswani_options_2010}~\cite{jeswani_options_2010}\footnote{Nous pouvons toutefois remarquer ici que les \gls{ADMC} sont des outils très vaste et donc non limité la question de la soutenabilité.
+Sous cette angle d'ouverture, nous pourrions ajouter les travaux de \textsc{Porter} (et son diamant) et l'analyse PESTEL des analyses stratégiques.}
+%\resizebox{\linewidth}{!}{
+\begin{table}
+\begin{center}
+\begin{tabular}{ p{4cm} p{4cm} p{4cm}}
+\hline
+Assessment methods & Focus/level & Sustainability dimensions \\
+\hline
+\emph{Procedural methods (assessment frameworks)} & &\\
+\cline{1-1}
+Environmental Impact Assessment (EIA) & Project (micro) & Environmental and social \\
+Strategic Environmental Assessment (SEA) & Policy (meso/macro) & Environmental and social \\
+Sustainability Assessment (SA) & Policy (macro) & Environmental, economic and social \\
+Multi-Criteria Decision Analysis (MCDA) & Policy/project \newline (micro/meso/macro)& Decision-support tool which can include environmental, economic and social dimensions \\
+\hline
+\emph{Analytical methods} &&\\
+\cline{1-1}
+Material Flow Analysis (MFA) & Policy, plan (macro) & Environment (natural resources) \\
+Substance Flow Analysis (SFA) & Specific substance (macro) & Environment (natural resources) \\
+Energy/Exergy Analysis (EA) & Process, Product/service (micro) & Environment (natural resources) \\
+Environmental Extended Input Output Analysis (EIOA) / Hybrid LCA & Policy, product / service (meso/macro) & Environment \\
+Risk analysis (RA/ERA/HERA) & Chemicals/Projects (micro) & Environmental and health impacts \\
+Life Cycle Costing (LCC) & Product/service (micro) & Economics \\
+Cost–Benefit Analysis (CBA) & Policy/project \newline (micro/meso/macro) & Economics (includes cost of environmental and social impacts) \\
+Eco-Efficiency (EE) Analysis & Product/service (micro) & Integration of environmental and economic \\
+Social Life Cycle Assessment (SLCA) & Product (micro) & Social\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Revue des méthodes d'évaluation traitant des dimensions ESE. Extrait de JESWANI\cite{jeswani_options_2010}.}
+\label{tab:jeswani_options_2010}
+\end{table}
+%}
+
+Comme l'indique le rapport du JRC (joint research center)
+\blockcquote[traduction]{jrc_jrc_2012}{L'ACV environnementale a plusieurs limitations, ainsi doit-elle être complétée par d'autres méthodes et instruments, suivant la problématique spécifique à résoudre et la pertinence des limitations pour le cas donné.}
+L'ACV ne prend par exemple pas en compte les situations accidentelles mais uniquement la marche normale des procédés\footnote{De façon ambiguë la marche anormale et considérée comme incluse mais ne signifie pas `accidentelle'.}.
+Les travaux de \citeauthor{plumblee_marlos_2014}, ont montré l'incidence de considérer le comportent d'un produit hors des conditions normales d'utilisation~\cite{plumblee_marlos_2014}.
+Dans cette article une différence significative apparaît suivant la prise en compte ou non de cette extension de périmètre, la variation des scénarios d'utilisation.
+\citeauthor{benetto_combining_2007} font le complément de l'ACV sur ce point par l'\gls{ERA}~\cite{benetto_combining_2007}.
+D'autres combinaisons existent.
+%Faisons un tour rapide des outils alternatifs et complémentaires à l'ACV.
+La diversité des outils fait écho à la diversité des objectifs pour lesquels ils sont employés.
+
+La prise de décision est une action humaine réalisée sur des ressources (financières et temporelles) finies, ou plus exactement \emph{réduites}.
+Une démarche d'évaluation complète mais lourde pour l'exécutant sera écartée car ne répondra pas aux impératifs de coût et délai du décisionnaire.
+Cependant la criticité des décisions tend à accroître la complexité des processus de construction de ces décisions.
+
+%...
+%\colorbox{yellow}{trouver formulation pour 'guguerre entre optimisation et heuristique.'}
+
+Nous pouvons relever dans cette perspective d'intégration au pratiques entrepreneuriales des méthodes basées sur une approche qualitative.
+Les travaux de \citeauthor{le_pochat_ecodesign_2005}~\cite{le_pochat_ecodesign_2005}, résultant en la norme NF~E01~005, propose une méthode~: l'Analyse Typologique Environnementale des Produits (ATEP) qui est décrite et conçue par ce dernier comme adaptée pour les PME.
+Elle rend compte en quelques questions d'un 'profil environnemental' sur le cycle de vie du produit~: sur les Matières Premières, la Fabrication, l'Utilisation, la Fin de Vie-Recyclabilité, les Substances dangereuses, le Transport et l'Emballage.
+Cette méthode n'a pas pour objectif de dresser un comparatifs entre des alternatives en vu d'un choix.
+Son rôle est plutôt d'orienter l'action sur 'une priorité' depuis une situation donnée dont le profil environnemental est évalué.
+
+Nous préciserons que celle-ci fut développée avec un comparatif à l'Environmental Design of Industrial Products (EDIP)
+\blockcquote{le_pochat_ecodesign_2005}{
+L’analyse et l’interprétation des résultats sont rendues nécessaires du fait que, dans l’absolu, les résultats obtenus respectivement avec EDIP et avec ATEP ne sont pas comparables.
+En effet, EDIP, en tant que méthode ACV, donne une évaluation quantitative « absolue » exprimée sous la forme de catégories d’impacts environnementaux.
+ATEP, au contraire, exprime les résultats d’une analyse semi-quantitative sous la forme d’une hiérarchisation de l’importance relative des phases du cycle de vie les unes par rapport aux autres.}
+%\keybox{
+L’existence d'une hiérarchie environnementale topologique (naturelle\footnote{La \href{http://www.cnrtl.fr/definition/topologie}{topologie} est une observation. Elle ne permet donc pas l'é\emph{valuation}, qui nécessite le jugement et donc la subjectivité.}) est, vous le comprendrez dans ce travail, réfutée.
+%}
+
+Un autre exemple de technique qualitative employée est le travail de \citeauthor{huang_multidimensional_2004} qui exploite la méthode d'analyse multicritère de ``processus de hiérarchie analytique''~\cite{huang_multidimensional_2004}.
+Cette méthode bien que qualitative fait appel à un panel d'experts large.
+Il ne faut donc pas associer la dimension qualitative de l'analyse avec une grande accessibilité.
+%chercher une reformulation pour placer l'ACV comme partie dominante et les autres analyse comme paragraphe dans l'ACV !
+
+Sur le plan environnemental, les travaux de \citeauthor{herva_review_2013}, font la revue des approches combinées des méthodes d'évaluation des risques et empreinte environnementale, complémentaires à l'ACV~\cite{herva_review_2013}.
+Il convient également de relever le développement des ACV Sociales (ACVs) et d'une lecture dite nouvelle des informations monétaires sous la forme du Coût du Cycle de Vie (Life Cycle Costing).
+Nous pouvons donc énumérer parmi les méthodes quantitatives~:
+\begin{itemize}
+\item l'évaluation du risque environnemental ERA
+\item l'empreinte environnementale (environmental footprint) : EF, avec ses diverses unités~\cite{brad_ewing_ecological_2010} et ses déclinaisons produit et organisation : PEF, OEF qui bien que de nomb similaire au précédent rejoignent l'ACV~\cite{commission_europeenne_product_2012},
+\item l'ACV exergétique \cite{amini_quantifying_2007, koroneos_exergetic_2014}
+\item l'ACV sociale ACV-S \cite{united_nations_environment_programme_guidelines_2009, jorgensen_methodologies_2008}
+\item l'analyse du coût du cycle de vie (ACCV, par mimétisme du life cycle costing LCC)~\cite{hunkeler_societal_2006, rebitzer_methodology_2003}
+\item l'analyse des flux de matières \gls{MFA} (dont la paternité semble attribuée à Schmidt-Bleek MIPS: Ein neues ökologisches Maß~\cite{schmidt-bleek_mips:_1994})
+\end{itemize}
+La difficulté tient dans l'articulation méthodologique permettant de les faire tenir ensemble.
+
+\blockcquote[traduction]{gasparatos_embedded_2010}{
+Dans la plupart des cas, le choix de l'outil d'évaluation est fait par le ou les analystes sans prendre en considération les valeurs des parties prenantes concernées.
+%In most cases, the choice of the evaluation tool is made by the analyst(s) without taking into consideration the values of the affected stakeholders.
+} %Embedded value systems in sustainability assessment tools and their implications. Gasparatos
+\subsection{Conclusion intermédiaire}
+Nous le voyons donc, les concepts de soutenabilité sont multiples, les dimensions explorées sont vastes et souvent hétérogènes en dimension, les outils sont nombreux, plus encore le sont les combinaisons possibles.
+Nous remarquons d'ailleurs que nombre de méthodes et indications sont complémentaires, même si leur articulation logique ne sera pas nécessairement aisée ou pour certaines méthodes tout simplement possible.
+
+Lors de notre revue des évaluations dites pour la soutenabilité, nous avons constater la grande similitude des constructions d'indicateurs et agrégation dans le champs de l'\gls{ACV} et dans la discipline économique.
+Dans cette dernière discipline, l'usage d'une unité monétaire pour d'autres finalités que la validation d'un échange de travail est aussi problématique que récurrent.
+Nous avons également pu constater que malgré leur grande variété les approches des économistes ne répondaient pas aux enjeux de la soutenabilité, notamment notre septième concept.
+
+Nous pouvons souligner l'évolution commune vers l'intégration des techniques d'\gls{ADMC} pour la définition des indicateurs et leurs traitements.
+Il s'agit d'une intégration à poursuivre autant en ACV qu'en économie.
+Deux domaines que nous ne croyons plus d'ailleurs qu'ils puissent être considéré comme disjoints.
+Il s'agit donc de ne pas réduire la question économique à la question monétaire.
+
+Nous allons donc structurer notre étude autour le la pensée en cycle de vie, \gls{LCT}.
+Nous verrons dans quelle mesure elle permet de répondre à notre interrogation d'évaluation de la soutenabilité telle que décrite dans cette section, à savoir~:
+\keybox{
+Juger de la production de consensus et d'institutionnalisation dans le cadre de l'évolution des individus et des cultures humaines, sans fin discernable et involontaire de leurs faits, par l'action ou l'inaction, pour lesdits sujets, ou pour l'écosystème, dans sa diversité, sa complexité et sa capacité à supporter la vie.
+}
+
+%jonction à 
+%AMD : aide à la décision multicritère
+%AMDP : aide multicritère à la décision participative
+%
+%Nous allons donc les traiter de suite dans la sections relatives aux outils
+%%
+%?????????????????????OU METTRE ÇA??????????????????????????????
+%
+%Quelque soit les différents stocks observés, qu'il s'agisse du pic oil ou du Pic d'Hubbert, ou considérant la diversité biologique (red list biodiversity),
+%lorsque la (re)création est lente (ex~: formation géologique), la consommation d'une réserve suit une courbe en cloche.
+%Croissance, passage par un maximum puis déclin.
+%
+%Si l'on considère les vitesses de changement, l'inertie des systèmes étudiés, il faut poser les conditions des irréversibilités pour statuer sur l'urgence des (r)évolutions.
+%
+%En effet, sur la question des amélioration techniques ou organisationnelle (sociale), les ordres de grandeurs sont quelque peu différents.
+
+%> trouver une formulation graphique de la page 258 (pdf 252)
+%"Using vehicles more intensively We can see that increasing average passenger loading from 1.6 to 4 (the orange line) makes little difference to the physical life of the car (because
+%the car weighs more than the passengers) but more than doubles service
+%output. Doubling the annual mileage (the pink line) halves the physical life
+%of the car but does not change the service output. This reduces the chance
+%that a car is discarded before the end of its physical life e.g. because it is
+%outdated. Finally reducing the average life of a vehicle from 14 years to 10
+%years with no change in utilization (e.g. due to an accident or as promoted,
+%for example, by the expired UK scrappage scheme) decreases total service
+%output by 30% (the green line).
+%Similarly, increased loading on trucks, trains, ships and washing machines
+%causes a disproportionately small loss in product life, though the ratio will
+%vary widely by product type. Offices are currently used less than a quarter
+%of the time and could be used more frequently with no effect on building
+%life."
+%p258
+
+%??????????????????????????????
+% 
+%Nous avons donc un grand nombre de dimensions en jeux.
+%Elles sont parfois liées, interdépendantes.
+%Mais au cœur de la problématique se trouve la décision.
+%L'action d'une personne ou d'un groupe et ses conséquences.
+%Nous allons développer cette problématique tout au long de ce mémoire.
+

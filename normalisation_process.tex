@@ -1,0 +1,119 @@
+D'autres éléments de jugement (d'interprétation) quasi-systématiquement présents dans les outils de modélisation et caractérisation servant l'interprétation finale, se situent dans la \emph{normalisation}.
+Une présence d'autant plus surprenante que cette pratique n'apporte pas d'éléments à l'interprétation sinon qu'\emph{un biais conservateur}
+%La problématique de la normalisation est renforcée avec le PEF.
+et \emph{une erreur dimensionnelle}.
+
+Toutes les références mentionnent la normalisation.
+\begin{description}
+\item \textbf{ILCD}~:
+\blockcquote[traduction, p 275. 8.1 Introduction and overview (Refers to aspects of ISO 14044:2006 chapter 4.4.1, 4.4.2, and 4.4.3)]{european_commission_ilcd_2010}{
+Dans une étape \textbf{facultative} ultérieure, les résultats de l'AICV peuvent être multipliées par des facteurs de normalisation qui représentent l'inventaire global d'une référence (par exemple tout un pays ou un citoyen moyen), ce qui produit des résultats d'AICV normalisés \textbf{sans dimension} (8.3).
+%In a subsequent, optional step, the LCIA results can be multiplied with normalisation factors that represent the overall inventory of a reference (e.g. a whole country or an average citizen), obtaining \textbf{dimensionless}, normalised LCIA results (8.3).
+}
+\item Dans le \textbf{Official Journal of the European Union}\footnote{L 124/1
+RECOMMENDATIONS COMMISSION RECOMMENDATION of 9 April 2013 on the use of common methods to measure and communicate the life cycle environmental performance of products and organisations (2013/179/EU)}, qui y fait appel également,
+nous soulignerons cependant quelques mots qui ont toute leur \emph{importance}.
+\blockcquote[traduction]{commission_europeenne_commission_2013}{
+Normalisation - Après l'étape de caractérisation, la normalisation est une étape \textbf{facultative} dans laquelle les résultats de l'évaluation de l'impact EF [environmental footprint] sont multipliés par les facteurs de normalisation qui représentent l'inventaire global d'une unité de référence (par exemple un pays entier ou un citoyen moyen).
+Les résultats normalisés de l'évaluation des impacts expriment les parts relatives des impacts du système analysé en termes de total des contributions à chaque catégorie d'impact par unité de référence.
+Lors de l'affichage des résultats d'évaluation de l'impact normalisés des différents sujets d'impact les uns à côté des, il devient évident de dire quelles sont les catégories d'impact les plus, et moins, touchées par le système analysé.
+Les résultats de l'évaluation de l'impact normalisés \underline{ne} \underline{reflètent} \underline{que} \underline{la} \underline{contribution} du système analysé au potentiel d'impact total, \underline{pas} \underline{la} \underline{gravité} / la \underline{pertinence} \underline{du} \underline{total} \underline{respectif} \underline{de} \underline{l'impact.}
+Les résultats normalisés sont \textbf{sans dimension}, mais pas d'additif.
+%Normalisation – After the characterisation step, normalisation is an optional step in which the EF impact assessment results are multiplied by normalisation factors that represent the overall inventory of a reference unit (e.g. a whole country or an average citizen).
+%Normalised EF impact assessment results express the relative shares of the impacts of the analysed system in terms of the total contributions to each impact category per reference unit.
+%When displaying the normalised EF impact assessment results of the different impact topics next to each other, it becomes evident which impact categories are affected most and least by the analysed system.
+%Normalised EF impact assessment results \underline{reflect only the contribution} of the analysed system to the total impact potential, \underline{not} \underline{the} \underline{severity}/relevance \underline{of the respective total} \underline{impact.}
+%Normalised results are \textbf{dimensionless}, but not additive.
+}
+\item \textbf{PEF}~:
+\blockcquote[traduction, 6.2.1 Normalisation of Environmental Footprint Impact
+Assessment Results (\underline{\textbf{recommended}})]{commission_europeenne_commission_2013}{
+Par conséquent, des résultats normalisés \textbf{sans dimension} sont obtenus.
+%As a result, \textbf{dimensionless} normalised OEF results are obtained.
+}.
+\end{description}
+
+
+PRIMO, il n'y a pas a-dimensionnement par la méthode décrite mais homogénéité dimensionnelle.
+Il semble que la communauté de notre discipline oublie la division qu'elle a placé au centre de la méthodologie.
+\blockcquote[traduction, 7.4.2.6 Reference amount of the reference flow (Refers to aspects of ISO 14044:2006 chapter 4.3.3]{european_commission_ilcd_2010}{
+Les données individuelles pour l'inventaire doivent chacun être quantitativement exprimés en flux \underline{\textbf{par unité fonctionnelle}}.
+%The individual data for the inventory must each be quantitatively expressed as flows per
+%functional unit.
+}
+Partant d'une base d'impact d'un service (\gls{UF}), la normalisation consiste en la division par une référence (sous deux formes, interne ou externe).
+Concernant les formes internes, il s'agit de déterminer le composant ou le procédé (élément local) qui contribue aux indicateurs dans la globalité du service observé (cycle de vie du système principal étudié).
+\begin{equation}
+%$
+\frac{\barre{\text{Unité~d'impact}} / \text{Sous-Unité~fonctionnelle~locale}}
+{\barre{\text{Unité~d'impact}} / \text{Unité~fonctionnelle~globale}}
+%$
+\end{equation}
+Les références externes sont généralement des populations prises sur une durée d'un an.
+\begin{equation}
+%$
+\frac{\barre{\text{Unité~d'impact}} / \text{Unité~fonctionnelle}}
+{\barre{\text{Unité~d'impact}} / \text{(pers/année)}}
+%$
+\end{equation}
+
+Les erreurs de dimension sont reprises dans les tables des facteurs de références.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/JRC/JRC_Normalisation_facteur_EU27_2010.pdf}
+\caption{Erreurs sur les facteurs de normalisation (JRC, EU27-2010).}
+\label{fig:facteurs de normalisation EU27-2010}
+\end{figure}
+\figbox{
+Nous soulignons en rouge dans la table 'commentée' du rapport du JRC, figure~\ref{fig:facteurs de normalisation EU27-2010}, les incohérences dimensionnelles.
+
+Il apparaît comme évident que les impacts de référence sont établis par an (2010), par personne (avec soit le total des 27 pays de l'union européenne ou un pseudo européen moyen).
+}
+
+Nous pourrions débattre plus longtemps de l'influence des bases normatives sur les résultats d'évaluation, dont 
+\citeauthor{kim_importance_2013} ont conclu à l'\emph{importance décisive}~\cite{kim_importance_2013}.
+
+La revue du traitement de la normalisation est faite par \citeauthor{finnveden_recent_2009}\cite{finnveden_recent_2009}.
+\blockcquote[traduction]{finnveden_recent_2009}{
+Pour la normalisation, les développements ont été réalisés en ce qui concerne la collecte de données plus exactes, à jour, et complètes pour différentes régions (Stranddorf et al., 2005; Bare et al., 2006; Lundie et al, 2007b;. Wegener Sleeswijk et al., 2008) ainsi que des choix liées à la méthode.
+Par exemple, dans une base de données de normalisation nationale, les émissions du pays devraient-elles être incluses en tant que telles, ou devraient-ils être corrigés pour l'importation et l'exportation, ou même pour le décalage temporel entre la production et l'émission, comme dans les équipements électriques qui seront mis au rebut seulement 20 ans après (Wegener Sleeswijk et al., 2008)?
+Un autre exemple de développement lié à la méthode est la reconnaissance du fait que les données manquantes peuvent introduire un biais plus compliqué pour un score normalisé que pour un score non normalisé (Heijungs et al., 2007).
+%For normalisation, developments have been made with respect to more accurate, up-to-date, and complete data collection for different regions (Stranddorf et al., 2005; Bare et al., 2006; Lundie et al., 2007b; Wegener Sleeswijk et al., 2008) as well as to some method-related choices.
+%For instance, should in a national normalisation database the emissions of the country be included as such, or should they be corrected for import and export, or even for time-lags between production and emission, as in electric equipment that will be discarded only 20 years afterwards (Wegener Sleeswijk et al., 2008)?
+%Another example of a method-related development is the recognition that data gaps can introduce a more complicated bias for a normalized score than for an unnormalized score (Heijungs et al., 2007).
+}
+
+Toutefois cette pratique dans sa conception actuelle est sans intérêt de soutenabilité.
+Chose qui étonnamment est passée sans commentaire antérieur spécifique à la chose.
+Nous y passons donc avec le point suivant.
+
+
+SECUNDO, \textit{Normal} ne signifie pas \textit{Soutenable}.
+Ceci est d'autant plus vrai que nous ne disserterions pas du sujet si notre \emph{normalité} n'était pas actuellement \emph{insoutenable}.
+S'il est employé dans les mécanismes évaluatifs pour la prise de décision, ce mécanisme n'a qu'un \emph{caractère conservateur} des tendances actuelles.
+\exbox{
+Partez d'un set d'impacts générés par une population X.
+Nous prendrons volontairement de faux indicateurs.
+Disons 'émission de A, agent mortel' émis en grande quantité (100.000 unités) et 'B une substance modérément irritante' émise dans des quantités modérées ou faibles (100 unités).
+Lorsque vous 'normaliserez', l'inventaire du produit ou service observé sera \emph{divisé} par votre référence (100.000A/(an~.~population X) ; 100B/(an~.~population X)).
+
+Si un service émet anormalement plus de B (disons 1B), mais toujours en émettant du A (10A), B face à A ressortira dans l'histogramme des ratios d'indicateur homogène en dimension en $\frac
+{\mathit{(pers.année)}}{\mathit{Unité~fonctionnelle}}$ (1/100 face à 1/10.000).
+Vous vous concentrerez alors sur un aspect modérément irritant au lieu d'un danger mortel, simplement parce qu'il est `anormal' selon votre référence.
+
+En vous concentrant sur l'action de réduire ce qui sort de la norme, vous maintenez la norme.
+\textbf{La normalisation est un principe conservateur.}
+}
+L'évolution d'une mention \emph{optionnelle}, \emph{facultative}, dans les documents antérieurs à une recommandation (dans la méthodologie du PEF), nous semble donc particulièrement inadéquate voir dangereuse.
+
+La seule utilité potentielle dans les références d'émissions consisterait à son emploi dans une pratique de \emph{distance à la cible} où, en plus d'une priorisation des indicateurs, les références serviraient à prioriser l'action face à un écart de la situation actuelle face à la situation souhaitée.
+
+Ces outils sont à surveiller avec attention.
+En effet, une orientation instrumentaliste peut tout à fait avoir un caractère conservateur opposé à ce qui serait considéré comme un progrès environnemental comme cela a déjà été décrit par \citeauthor{finnveden_limitations_2000}.
+\blockcquote[traduction]{finnveden_limitations_2000}{
+La simple utilisation de l'ACV ne conduira cependant pas à des impacts environnementaux réduits.
+Comme indiqué plus haut, l'ACV peut être utilisée comme un outil conservateur pour faire obstacle aux modifications qui seraient bénéfiques pour l'environnement.
+%The mere use of LCA will however not lead to reduced environmental impacts. As discussed above, LCA can be used as a conservative tool to obstruct changes that would be environmentally beneficial.
+}\footnote{Nous rejetons qu'il existe un `bénéfice pour l'environnement'.
+Cela suppose une personnification de l'environnement et d'une capacité pour lui d'émettre un jugement sur ce qu'il préfère et donc juger d'une satisfaction de sa préférence (un bénéfice).
+Toutefois et comme re-démontré, toute évaluation si elle s'applique des principes de normalisation avec une référence à l'antériorité est conservatrice.}

@@ -1,0 +1,1763 @@
+\chapter{Recherche Libre}
+\label{chap:Recherche Libre}
+%\section{Recherche Libre} % conséquence des contraintes exprimé à l'AF > modèle d'organisation de la production scientifique (soit après multidimensionalité soit après inventaire et description)
+\section{Remarque liminaire}
+La frustration générée par l'absence des données nécessaires au praticien pour l'exercice de ses fonctions est toute particulière.
+Elle fut d'autant plus grande pour moi dont la contribution sur le traitement de la multifonctionnalité n'offre un résultat satisfaisant qu'en disposant d'encore plus de données.
+C'est cette double motivation qui m'a poussé à ne pas renoncer, même dans l'indélicate posture pour un universitaire de faire la critique de son propre milieu.
+ 
+Ce travail, alors qu'initialement généré à titre militant pour la défense de la science, a été largement étendu à la demande d'un pair de la discipline dont je respecte l'ampleur des contributions, le professeur \textsc{Weidema}.
+
+\figbox{
+On 26 November 2015 at 16:45, Bo Weidema <bweidema@plan.aau.dk> wrote:
+~\\
+    Dear Rudy,
+
+    I am sympathetic to the idea, but I see no reason to limit dissemination to a specific scientific domain. I am sure others have worked on similar ideas, and you need to cite the state of that work, and in what ways your idea adds to this, and then finally you need to indicate clearly what are the next steps to be taken and by who.
+~\\
+    Sorry to kick the ball back to you.
+~\\
+    Bo
+}
+
+J'espère avoir contribué à la hauteur de la demande.
+Et puisque le plan a été exprimé, suivons le.
+Nous nous permettrons toutefois, avant de clore ce chapitre, d'exposer un plan de documentation pour les données en ACV à partir de la proposition faite au~\ref{sec:JSL}.
+
+\section{Un problème entre autre pour l'ACV}
+Nous avons vu dans les sections précédentes la nécessité d'un grand volume d'informations scientifiques et techniques.
+Or, les sources de ces connaissances se trouvent majoritairement derrière des portes closes, à c{\^o}té desquelles se trouvent assis et gras, censeurs et porteballes.
+
+
+\begin{center}\colorbox{yellow}{traçabilité de dataset ecoinvent à reprendre}\end{center}
+Pour nous en convaincre, prenons quelques dataset et identifions en les sources.
+figure des sources des sets de données et des papiers d'origine
+
+reprendre l'échange avec Andreas :
+%%\exbox{
+Dear Andreas, dear Franziska,
+
+This is quite the center of the issue. We (in LCA research) seem to generally agree to the needed connection and transparency in the collection and creation of data. However, our major "repositories" of these data and the description of how we obtained them (journals and databases) are club goods.
+And the primary source in science are the articles.
+
+So yes, I maintain thinking the research publication scheme is of prime importance. I did not say it is the root cause. It would entail the values considered to give importance to a phenomenon are commonly share and they are not. But as we met and you probably start to know me I can be franck without missinterpretation. To me, it is the root cause.
+
+“the process of production and distribution of scientific content is a root cause for our current issues” – this is quite strong.
+
+Yes, it is a strong claim and was written to be so.
+
+As I like documented arguments
+When producing data for and LCI database, we are asked references. But even when they are present, the road is long and uncertain.
+For instance :
+
+    "steel drilling, computer numerical controlled, alloc. default, U" in administrative information, publication Steiner, R. et al. 2007. No link toward the article. No title.
+    Searching litterature and documentation, we get to "Steiner, R., Frischknecht, R., 2007, Metals Processing and Compressed Air Supply, Ecoinvent report nr. 23, Swiss Centre for LCI, Dübendorf."
+    Then on Ecoinvent site we go to this report "All further reports are only accessible for free to guests and users of ecoinvent version 2 under "Reports", accessible via the login.
+    Login en V2 page reports 49 documents available to downloads,
+    With a few trials and educated guess document 23 MechanicalEngineering.pdf is pin down
+    Want to copy the data for exemple the figures from table 8.1 ; it's forbiden with DRM.
+    Reading it, where does the data comes from "(Barnes 1976) and (Degner \& Wolfram 1990), going down to bibliography :
+    Degner W. and Wolfram F. (1990) Energetisch rationelle Fertigung im Maschinenbau. In: Werkstattstechnik, 80(6), pp. 311-315. (can't put my hands on it) and Barnes R. S. (1976) The Energy Involved in Producing Materials. In: Proc Instn Mech Engrs, 190, pp. 153-161 ; search with duchduck go !gsc : Lucky us, \href{http://pme.sagepub.com/content/190/1/153}{here it is}.
+    Appart from the conversion from MJ/tonne and kWh/kg, with maybe some reading errors of the graph the values are similare. A variability within one material and machining technique is not covered in the paper (influence of tools and lubricant ?). Was it precised in the dataset that the energy consumption was based on a removal rate of 0.33cc/s, no. It was mentionned on the graph in the paper of 1976. But it's not mentioned anymore. This contextual data mut not have been judge important.
+    And surely data from 1976 can be claimed ok for 2014 without any additional souces that confirms it."
+%}
+
+\begin{center}\colorbox{yellow}{traçabilité de dataset ecoinvent à reprendre}\end{center}
+
+Comprenez qu'en acceptant les travaux de \citeauthor{leontief_quantitative_1936}~\cite{leontief_quantitative_1936} et de \textsc{Quesnay} sur l'inter-relations des activités humaines, c'est tout le canevas des faits économiques qu'il convient de traiter.
+La documentation en \gls{ACV} ne s’arrêtant pas au quantum monétaire, c'est donc l'information sur les échanges de substances de l'ensemble des activités humaines qui est concernée.
+Or, la documentation, la caractérisation et la quantification des faits dans des sources primaires, c'est la part objective de la recherche.
+C'est donc toute la question de l'édition scientifique et technique qu'il faut traiter pour résoudre la problématique de la données en évaluation environnementale.
+Et si cela dépasse largement la simple question de l'ACV, il faut en passer par là pour une évaluation de type ACV opérationnelle.
+
+Actuellement, que se passe-t-il ?
+\begin{enumerate}[label=\roman*]
+\item Le chercheur observe l'état de l'art.
+\item Il isole un axe d'étude, une question, cherche et produit un résultat de cette recherche.
+\item Il rédige un article et le soumets à un `journal'\footnote{`Journal' car en fait il s'agit de le \emph{soumettre} (à tous ses sens) aux personnes qui le composent et le dirigent.} qui après sélection, si la soumission est retenue, le transmet à des 'pairs' de l'auteur (2-3), avec parfois des mécanismes de revue à l'aveugle pour produire la critique de cet article.
+\item Selon le résultat de cette critique, le contenu est ou non validé par les pairs et étend l'état de l'art.
+\end{enumerate}
+
+Nous traitons dans ce qui suit de l'ouverture progressive de la publication scientifique.
+Puis nous essayerons d'identifier les groupes d'intérêts et mécanismes régissant ce fonctionnement.
+Pour nourrir notre vision alternative, nous observerons ensuite des caractéristiques des journaux dans le haut du classement de citation de la bibliométrie de la discipline de l'\gls{ACV}~\cite{chen_bibliometric_2014}, puis de titres moins connus pour en observer leurs singularités.
+Enfin nous développerons un modèle alternatif dont nous tenterons d'extraire systématiquement tout point de striction.
+
+
+\section{L'ouverture de la publication scientifique actuelle}
+{
+%https://doaj.org/
+%
+%Posons tout d'abord le processus de la production et de la diffusion d'une connaissance nouvelle.
+
+{
+%@misc{piled_higher_and_deeper_phd_comics_open_2012,
+%	title = {Open {Access} {Explained}!},
+%	url = {https://www.youtube.com/watch?v=L5rVH1KGBCY},
+%	abstract = {What is open access? Nick Shockey and Jonathan Eisen take us through the world of open access publishing and explain just what it's all about.  Make sure to watch it in HD and Fullscreen!
+%
+%Visit our website: http://phdcomics.com/tv
+%
+%Subscribe to our channel: http://youtube.com/subscription\_cente...
+%
+%More info about PHD Comics at: http://phdcomics.com
+%
+%CREDITS
+%Animation by Jorge Cham
+%Narration by Nick Shockey and Jonathan Eisen
+%Transcription by Noel Dilworth
+%Produced in partnership with the Right to Research Coalition, the Scholarly Publishing and Resources Coalition and the National Association of Graduate-Professional Students},
+%	urldate = {2016-05-26},
+%	author = {{Piled Higher and Deeper (PHD Comics)}},
+%	collaborator = {{Nick Shockey} and {Jonathan Eisen}},
+%	month = oct,
+%	year = {2012},
+%	keywords = {journals, open access, PHD, science}
+%}
+%
+%@book{crow_campus-based_2009,
+%	title = {Campus-based publishing partnerships: {A} guide to critical issues},
+%	shorttitle = {Campus-based publishing partnerships},
+%	url = {http://www.academia.edu/download/30306145/pub_partnerships_v1.pdf},
+%	urldate = {2016-01-27},
+%	publisher = {SPARC Washington, DC},
+%	author = {Crow, Raym},
+%	year = {2009},
+%	keywords = {open access, open access publishing},
+%	file = {pub_partnerships_v1.pdf:/home/rudy/.mozilla/firefox/cud3c8tr.default/zotero/storage/XTV3P3IS/pub_partnerships_v1.pdf:application/pdf}
+%}
+%
+%@article{chanier_archives_2004,
+%	title = {Archives ouvertes et publication scientifique. {Comment} mettre en place l'accès libre aux résultats de la recherche?},
+%	url = {http://archivesic.ccsd.cnrs.fr/sic_00001103/},
+%	urldate = {2016-01-25},
+%	author = {Chanier, Thierry},
+%	year = {2004},
+%	keywords = {JSL, open access, open access publishing, policy-making},
+%	file = {document.pdf:/home/rudy/.mozilla/firefox/cud3c8tr.default/zotero/storage/HTHIA4XU/document.pdf:application/pdf}
+%}
+
+}
+%xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+%non exploiter
+%\cite{contat_publier_2015,chanier_archives_2004}
+%
+%xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+}
+
+\citeauthor{moody_open_2016} dans son article \citetitle{moody_open_2016} dresse un tableau très complet du sujet.
+Les différentes facettes de l'open access y sont présentes, green, gold et même diamant~\cite{moody_open_2016}.
+Nous ajouterons tout de m{\^e}me un peu de diversité chromatique.
+Nous allons questionner successivement l'ouverture sur les thèmes de l'accès, de la critique et de la production.
+
+%?déja beaucoup de blog
+%\blockcquote{amsen_what_2014}{
+%    Green Open Access is archiving of accepted manuscripts in accessible repositories, for example in their institutional repository or in PubMed Central. While this allows researchers to publish in any journal they want and deposit later, the system has some limitations: Some journals only allow the archiving of a final accepted manuscript, not of the published and formatted paper. Some journals open up access to all their archived articles after a certain time period, but in other cases authors will have to remember to deposit their own paper, which can be a time consuming process.
+%
+%    Gold Open Access is publisher-mediated open access. The benefit of this is that the article is immediately made open access, and authors don’t have to take any extra steps, but there can be a cost associated with it. Usually the entire journal will be available as an open access journal, but some journals operate a hybrid model, where researchers can pay to publish an open access article in an otherwise non-open-access journal.
+%}
+
+\subsection{L'accès}
+\textbf{Green}, la voie de l'archive.
+Cette solution consiste en le dépôt des articles dans des bases publiquement accessibles.
+Il existe certaines contraintes sur les versions publiables et des délais d'embargo pour les articles déjà publiés par ailleurs.
+Ceci est documenté sur le site \href{http://www.sherpa.ac.uk/romeo/search.php}{SHERPA/RoMEO}, qui distingue par nuances des types de journaux suivant les libertés laissées aux auteurs.
+
+\textbf{Gold}, ou ``quand les éditeurs à but lucratif s'adaptent à l'open access''.
+Par la voie 'Gold' les auteurs choisissent que leur article sera en accès gratuit depuis les plate-formes des éditeurs.
+Ceci est généralement accompagné d'un coût pour les auteurs.
+Il faut préciser que si l'accès est gratuit, les articles ne sont généralement pas libre.
+La maison d'édition reste l'exploitante.
+Mais le \textit{coût} discuté porte généralement sur ce qui est désigné par 'Article Processing Charges' (APC).
+Ce prix n'est pas nécessairement payé par les chercheurs mais plutôt par les institutions qui les emploient.
+Ce modèle a ouvert la voie de la prédation éditorial (journaux récoltant les APC, sans offrir de revue par les pairs `valide')~\cite{shen_predatory_2015}.
+Le seuil de la prédation, entre APC et service rendu est bien entendu discutable\footnote{
+Il reste discutable en effet de cibler la prédation sur les manquements des revues critiques à ces \textit{seuls} journaux.}.
+
+%Le modèle de publication des données dans le médical avec OA des données et articles avec la contre-partie du bénéfice des titres de propriété intellectuelle... (autre forme de prédation de l'intérêt lucratif sur la recherche publique dont j'ai appris l’existence lors d'une rencontre Catalyst).
+
+\textbf{Black} access~? Ni vert, ni dorée, un des accès à des publications scientifiques est la \textit{piraterie}.
+Sci-Hub, Lib.genesis, ICanHazPDF, booksc.
+Les pirates à l’œuvre sont donc les corsaires sans lettre de marque d'une nation cosmopolite de chercheurs, chercheuses et citoyens, combattant l'enfermement la connaissance.
+Ces derniers ne thésaurisent pas, mais récoltent des procès.
+Sans nier leur apport, leur effet est à questionner.
+
+\citeauthor{ernesto_priego_signal_2016} souligne que~:
+\blockcquote[traduction]{ernesto_priego_signal_2016}{
+plus les chercheurs piratent du contenu payant, plus le système payant de la publication savante est consacré.
+%The more researchers pirate paywalled content, the more the paywalled system of scholarly publishing is canonised.
+}
+La question est~: Quels sont les autres \emph{systèmes}~?
+Ce qui nous amène aux alternatives.
+
+Un modèle \textbf{Diamant}.
+%\cite{dacos_engagement_2015}
+\blockcquote{dacos_engagement_2015}{
+Le comité [Comité des sciences sociales de Science Europe] propose un “engagement de diamant” (diamond engagement), qui consiste à construire un avenir dans lequel les productions scientifiques seront nativement numériques et nativement en accès ouvert, sans frais à payer pour l’auteur (APC – Article processing fees), sans barrière à l’accès et sans embargo.
+}
+
+Ce que la question de l'open access, accès ouvert, ne traite pas, c'est d'une part \emph{la production ouverte} (l'écriture et la critique) et d'autre part \emph{l'utilisation}, dimensions sur lesquelles nous poursuivons.
+%Toutes ces variantes portent sur l'accès.
+%Observons tout d'abord la révision, puis l'écriture pour terminer sur l'utilisation.
+\subsection{La critique}
+
+La revue critique relève d'une orientation très largement appliquée, tel qu'en témoigne le document \citetitle{voys_peer_2012}~:\\ \textbf{Le Gardiennage}.
+\blockcquote[traduction]{voys_peer_2012}{
+\textsc{Pourquoi faîtes vous des revues critiques}~?\\
+"[\ldots] pour agir en tant que \textbf {gardien} (gatekeeper) pour la qualité d'un domaine de la science que je connais et auquel je tiens."\\
+VoYS co-ordinator, DR STEPHEN KEEVIL\\
+Medical Physicist, King’s College London
+%WHY DO YOU REVIEW?\\
+%"[\ldots] to act as a \textbf{gatekeeper} for quality in an area of science that I know about and care about."
+}
+%PEER REVIEW
+%The nuts and bolts
+Mais nous allons voir qu'il peut en être autrement.
+La critique ne se limite pas à l'exclusion de ce qui est jugé comme de qualité insuffisante mais peut être la source de \emph{l'amélioration pour l'incorporation}.
+
+Les revues par les pairs existent avec un degré de \href{http://www.cnrtl.fr/lexicographie/cécité}{cécité} variable.
+Les auteurs, critiques et éditeurs, sont volontairement ou involontairement, consciemment ou inconsciemment biaisés.
+La critique à l'aveugle consiste donc en diverses protections contre ces biais.
+L'article \citetitle{wikipedia_contributors_scholarly_2016}, en relève de façon complète les diverses dimensions~\cite{wikipedia_contributors_scholarly_2016} %\footnote{J'invite les lecteurs curieux de connaître l'introduction historique des différentes pratiques à consulter \href{https://en.wikipedia.org/wiki/Scholarly_peer_review}{l'article wikipédia associé}.}.
+
+Le masquage des personnes~:
+\begin{itemize}
+\item Ouverte (open), toutes les personnes sont connues.
+\item Aveugle (simple blind), l'auteur est aveugle.
+\item Double aveugle (double blind), seul l'éditeur a connaissance des auteurs et critiques.
+\item Triple aveugle (triple blind), l'anonymisation est complète\footnote{
+Voir pour ce qui semble être un exemple d'application avec revue triple aveugle par défaut les liens \href{https://www.peerageofscience.org/how-it-works/process-flow/}{Peerage of Science, Process Flow},  \href{https://www.peerageofscience.org/profs-vs-postdocs-in-peer-reviewing/}{Better peer review, Peerage of Science}
+}.
+\end{itemize}
+ 
+
+%\begin{description}
+%\item Ouverte (open), toutes les personnes sont connues.
+%\item Aveugle (simple blind), l'auteur est aveugle.
+%\item Double aveugle (double blind), seul l'éditeur a connaissance des auteurs et critiques.
+%\item Triple aveugle (triple blind), l'anonymisation est complète. ( \textit{cf.}. \href{https://www.peerageofscience.org/profs-vs-postdocs-in-peer-reviewing/}{Better peer review | Peerage of Science} peerage of science)
+%\end{description}
+
+Le masquage des résultats~:\\
+Bien que selon la vision popperienne et acceptée de la science, celle-ci n'avance que par falsification (et non vérification), publier "Ceci ne fonctionne pas" semble plus difficile que "Ceci fonctionne".
+La tendance à promouvoir les résultats positifs a conduit à la production de dispositifs spécifiques pour les négatifs.
+Outre la naissance de journaux des négatifs (ex~: Journal of Negative Results in BioMedicine), il faut mentionner les critiques avec masquage des résultats et/ou masquage des conclusions.
+
+Enfin, pour anticiper le biais du résultat, il existe également des mécanismes de pré-acceptation.
+Il s'agit dans ce cas de l'acceptation d'un protocole élargi auquel sont joints après coup les données, les résultats et l'interprétation.
+% (ref : lancet ?)
+
+Cette dernière catégorie nous invite sur la question de la temporalité à observer et la distinction entre critique post-publication et pré-publication.
+Lorsque la publication est conditionnée par la critique, il s'agit de revue pré-publication.
+La validation par les pairs \emph{après} publication a généré sur la base des archives ouvertes les 'overlay journals'.
+En somme un 'overlay journal' est une surcouche aux archives.
+C'est la première réaction à la position de gardiennage, même si cette surcouche prend sa distance de façon variable et parfois avec une acceptation préalable du dépôt dans l'archive (\textit{cf.}. discrete analysis journal et episcience traités dans ce chapitre).
+
+%xxxxxxxxxxxxxxxxxxxxxxxxxxx
+%
+%exploiter : 
+%Scielo Portugal,  \href{http://oapen.org/content/organisation}{OAPEN}, Revues.org, OpenEdition Books, KU.
+%
+%xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+\subsection{L'écriture}
+Une autre piste ouverte par les journaux par pré-acceptation sur la base de protocoles d'essais élargis, c'est la production collective.
+Actuellement la plupart des travaux sont publiés lorsqu'ils sont \emph{achevés}.
+
+\blockcquote{belluz_7_2016}{
+``Nous nous sommes habitués à travailler loin en privé pour ensuite produire une sorte de document impeccable sous la forme d'un article de journal''. \textsc{Gowers}
+%"We’ve gotten used to working away in private and then producing a sort of polished document in the form of a journal article," Gowers
+}
+
+La conception que ce que délivre la science est un produit fini, 'une pièce nouvelle de connaissance, toute polie et brillante, finie', s'oppose à la conception de la Science comme la mise en œuvre d'un processus.
+Ce que le scientifique apporte dans la seconde conception, n'est plus une nouvelle connaissance.
+Il apporte des méthodes et une expérience disciplinaire de ces méthodes.
+Il réalise l'application de celles-ci à des questions qu'il élabore sur la base de l'état de l'art.
+
+L'article de \citeauthor{belluz_7_2016}, \citetitle{belluz_7_2016}, interroge la reproductibilité et le partage des informations pour reproduire les expériences.
+Lorsque l'on pousse le raisonnement jusqu'à la formulation des questions, le partage et le travail collectif commence dès la page blanche.
+
+Ceci introduit la production sous couvert d'anonymat de travaux issus de la société civile.
+Si la production est sous pseudonyme il n'y a pas d'exclusion (ou striction) par discrimination de statuts.
+
+\section{Équilibre de Nash et publication}
+%Dilemme du prisonnier, impasse mexicaine et question de volonté
+\textit{Définition~: L'équilibre de Nash est une situation définie dans la théorie des jeux comme l'état ou aucun joueur ne voit d’intérêt à changer d'attitude car considère une modification individuelle de leur part comme les défavorisant de leur situation actuel.}
+
+Soucieux de trouver une antériorité à ce que je voulais générer, et après n'en avoir trouvé aucune suffisamment proche, il restait à comprendre pourquoi.
+Où le système composé de millions de chercheurs rencontrait-il un obstacle à une recherche libre~?
+Il nous fallait donc observer cette communauté de la recherche et s’interroger sur elle.
+
+\citeauthor{moody_open_2016} souligne effectivement une interrogation pertinente.
+La communauté académique est-elle celle qui portera l'action de la libération de la connaissance ?
+
+\blockcquote{moody_open_2016}{
+Richard Poynder~:\\
+En fin de compte, la question clé est de savoir \textbf{si la communauté de la Recherche a l'engagement, l'endurance, le savoir-faire organisationnel et / ou les ressources nécessaires pour reconquérir la communication savante}\ldots
+Le fait est que, défenseurs de l'OA mis de côté, il ne semble pas y avoir beaucoup d'appétit dans le milieu de la recherche pour renoncer à la publication dans des revues prestigieuses, et abandonner le notoire \emph{facteur d'impact} [IF- censé être une mesure de la façon dont un journal est ``influent''].
+Plus important encore, les gestionnaires universitaires et financeurs ne veulent rien voir se produire d'aussi radical.
+%    In the end, the key question is \textbf{whether the research community has the commitment, the stamina, the organisational chops, and/or the resources to reclaim scholarly communication}. \ldots The fact is that, OA advocates aside, there does not appear to be much appetite in the research community for giving up publishing in prestigious journals, and abandoning the notorious Impact Factor [IF— supposedly a measure of how "influential" a journal is]. More importantly, university managers and funders do not want to see anything that radical occur.
+}
+
+Cette question est également lisible à la lecture de la thèse \citetitle{sayan_contribution_2011}.
+Sur un questionnaire demandant leur position à des membres de la communauté de l'\gls{ACV} une série de pourcentage décroissants donnait ceci~:
+~\blockcquote[traduction d'un extrait de Table 4-11 Survey Results – Attitudes about Information Sharing Q18. Select attitudes toward information sharing that apply to you (Select all that apply)]{sayan_contribution_2011}{
+\begin{itemize}
+\item Je voudrais un plus grand accès aux données d'ACV~: 78\%
+\item Je veux partager mes données d'ACV~: 52\%
+\item Je souhaite apprendre comment partager mes données d'ACV : 37\%
+\end{itemize}\footnote{Les répondants ne sont pas uniquement des universitaires. 60 \% des répondants déclarent publier leurs résultats dans des journaux, 36\% déclarent le faire dans des rapports d'entreprises. La taille de l'échantillon reste toutefois faible 30.}
+%I would like greater access to LCA data > 78 \%
+%I want to share my LCA data > 52\%
+%I would like to learn about how to share my LCA data > 37 \%
+}.
+
+De même confronter le nombre de signataires du boycott d'Elsevier au nombre de chercheurs dans le monde semble reporter les supports pour une science libre à la portion congrue.
+\href{https://www.quora.com/How-many-academic-scientists-are-there-in-the-world-Said-another-way-what-is-the-total-number-of-scientists-worldwide-who-publish-their-work}{Cette question} du dénombrement, d'autres se la sont posée.
+16168 chercheurs et chercheuses ont apposé leur nom à la liste de \href{http://thecostofknowledge.com/#list}{the Cost of Knowlegde} au 26 Août 2016.
+L'Institut de Statistique de l'UNESCO évalue le nombre de chercheur à 7 758 862 équivalent temps plein dans le monde,
+pour la France, 269 376.9 (2014).
+Pour cette dernière, 60.4 \% de ces emplois de recherche sont classé en secteur privé.
+Soit 106 652.5 emplois ETP (gouvernementaux, d'enseignement supérieur, à but non-lucratif\ldots)\footnote{J'ai préféré opéré par négatif du lucratif n'ayant pas connaissance des potentiel double comptages entre 'emplois gouvernementaux', 'd'enseignement supérieur' et 'à but non-lucratif'.}.
+Du reste l'équivalent temps plein signifie un nombre par tête plus grand.
+
+Pour ordre de comparaison, la wikipédia francophone (non réduite à française) compte, hors bot, 12 436 utilisateurs 'actifs' (avec une activité ses 30 derniers jours, relevé ce même 26 Août).
+Laissons nous rêver à ce que serait la transition à un modèle wikimédien de la production gouvernementale française dans l'enseignement et la recherche.
+
+Pour tenter de comprendre cette propension au partage dégradée, observons tout d'abord les différents acteurs, leurs motivations et les barrières qu'ils rencontrent.
+Partons de la triangulaire, universitaires titulaires ; non-titulaires ; éditeurs privés.
+
+\textbf{Les titulaires} disposent d'une reconnaissance minimum leur ayant obtenu un poste stable.
+Leur progression de carrière est associé à un grand nombre de publications dans des journaux à fort 'impact-factor'.
+\blockcquote{matzkin_levaluation_2009}{Le Plan stratégique du CNRS "Horizon 2020", adopté[\ldots] contient une ferme mise en garde : "Les dérives visant à donner à la bibliométrie un rôle prépondérant, voire exclusif, s’accompagneraient d’un certain formatage des carrières et d’effets pervers pour l’activité de recherche : minimisation de la prise de risque scientifique, minimisation de la mobilité thématique, frein aux échanges public-privé, stratégies de citations." \textbf{Encore faut-il que les pratiques dans les instances d’évaluation, ainsi que l’organisation de ces instances par les tutelles politiques et les directions des organismes permettent d’échapper à l’emprise des indices quantitatifs et à la manie des classements}.}
+Cause ou conséquence, les chercheurs en position d'autorité sont à cette place en ayant suivi ce modèle.
+Déconstruire ces relations de valeurs bibliométriques serait déconstruire leur propre autorité.
+\citeauthor{kim_faculty_2010} traitant des motivations à l'archivage dans \citetitle{kim_faculty_2010} conclu ainsi.
+\blockcquote[traduction]{kim_faculty_2010}{
+Les principales motivations à l'auto-archivage pour les professeurs portent sur les avantages perçus de l'\gls{OA} du point de vue des utilisateurs, la perception culturelle de l'auto-archivage dans leurs disciplines, et l'\textbf{absence d'effet nocif sur l'accès à et la promotion dans, leur emploi}.
+%The main motivations for faculty self-archiving primarily
+%relate to perceived benefits of OA from users’ perspectives,
+%perceived self-archiving culture in their disciplines, and at
+%least no harmful effect on tenure and promotion.
+}
+À classe de pouvoir (échelon) équivalent, c'est le premier dilemme du prisonnier.
+Sauf obligation institutionnelle pour la progression de carrière, le chercheur qui choisirait un canal hors des journaux en positions dominantes se déclasserait donc vis à vis de ses pairs.
+La répétition de la pratique sans modification du paradigme d'évaluation entraînerait par conséquent un \emph{renforcement opérant négatif}.
+
+Les obligations institutionnelles sont donc efficaces, avec pour exemple le modèle de Liège~\cite{rentier_liege_2011} ou les obligations pour l'INRIA, l'INRA, l'INSERM.
+La distinction peut être faite ici par exemple entre le CNRS, où une telle politique est conseillée (\href{http://roarmap.eprints.org/139/}{CNRS~: "Deposit of item: Requested"}) et les entités précédentes où cela est \href{http://roarmap.eprints.org/cgi/search/archive/advanced?screen=Search&dataset=archive&country=155&policymaker_type=funder&policymaker_type=research_org&policymaker_type=funder_and_research_org&policymaker_type=multiple_research_orgs&policymaker_type=research_org_subunit&policymaker_name_merge=ALL&policymaker_name=&policy_adoption=&policy_effecive=&deposit_of_item=required&mandate_content_types_merge=ANY&apc_fun_url_merge=ALL&apc_fun_url=&satisfyall=ALL&order=policymaker_name&_action_search=Search}{obligatoire}.
+Notons que jusqu'ici l'implication institutionnelle vise l'accès à des publications traditionnelles et n'est pas une remise en cause de celles-ci.
+
+De leur c{\^o}té \textbf{les journaux privés} profitent de leur position historique.
+L'oligopole en place s'assure des profits significatifs~\cite{acfas_loligopole_2015}.
+Leurs actions consistent donc dans le renforcement de la reconnaissance d'indicateurs bibliométriques les favorisants. 
+Cela va jusque dans l'ajustement \emph{ou la perturbation} de leur flot de travail.
+C'est notamment ce dont traitent \citeauthor{tort_rising_2012} dans \citetitle{tort_rising_2012}~\cite{tort_rising_2012}.
+%\footnote{
+\blockcquote[traduction]{tort_rising_2012}{
+Cependant, de nombreuses façons de ``jouer le système'' par les éditeurs de revues en vue d'accroître les facteurs d'impact ont été décrits dans le passé, tels que la sélectivité dans des formats de publication et la coercition des auteurs d'inclure des citations de la même revue. %[7,8]
+%However, many ways of ''playing the system'' by journal editors in order to increase impact factors have been described in the past, such as selectivity in publication formats and coercion of authors to include citations to the same journal [7,8].
+}
+%}
+L'action des journaux privés lucratifs comporte également la lutte contre un open-access trop poussé qui libérerait leur marché 'captif'.
+La bataille des délais d'embargo lors du débat sur la loi république numérique (en France) a donc consisté à placer le curseur sur la durée d'activité principale de citation (la vie active de l'article).
+S'ils sont plus restrictifs, des groupes s'échappent ou tentent de le faire~\cite{modicom_elsevier_????,hameau_lingua_2015,gowers_elsevier_2012,gowers_interesting_2015}.
+
+\textbf{Les non-titulaires} n'ont pas d'assise de notoriété, pas ou peu de publication(s), celles-ci peuvent également être récentes et non citées.
+Le même dilemme du prisonnier observé pour les titulaires entre-eux s'applique au sein de la classe des non-titulaires pour l'accès aux postes.
+L'open access leur donnerait d'après \citeauthor{gargouri_self-selected_2010} plus de citations, toutes disciplines confondues.
+\blockcquote[traduction]{gargouri_self-selected_2010}{
+Ceci est supporté par des preuves récentes, indépendamment confirmées par de nombreuses études, les articles dont les auteurs ont, en supplément de l'accès à la version éditeur par souscription, rendu gratuitement accessible le contenu par l'auto-archivage (OA), sont cités significativement plus, dans le même journal et la même année, que ceux hors OA.
+Cet \emph{'avantage d'impact de l'OA'} a été trouvé dans l'ensemble des domaines étudiés jusqu'ici - sciences physiques ; technologiques ; biologiques ; sciences humaines et social [3-12]
+%This is supported by recent evidence, independently confirmed by many studies, to the effect that articles whose authors have supplemented subscription-based access to the publisher’s version by self-archiving their own final draft to make it accessible free for all on the web (‘‘Open Access’’, OA) are cited significantly more than articles in the same journal and year that have not been made OA.
+%This ‘‘OA Impact Advantage’’ has been found in all fields analyzed so far – physical, technological, biological and social sciences, and humanities [3–12].
+}
+\citeauthor{davis_open_2011} nuance toutefois ce résultat
+\blockcquote[traduction]{davis_open_2011}{
+La publication en open access peut atteindre un lectorat plus grand que la publication sous des accès à souscription, toutefois un lectorat plus grand ne se traduira peut-être pas en plus de citation.
+%Open access publishing may reach more readers than subscription access publishing, although additional readership may not translate into more citations
+}
+Mais il s'agit toujours d'un \gls{OA} sous la modalité d'un archivage après le `circuit classique' et qui donc le pérennise.
+%
+%\blockcquote{davis_open_2011}{
+%Prior studies have argued that free (or open) access to the scientific literature leads to a large increase in article citations (7, 8), suggesting that the traditional subscription-access journal distribution model is inadequate for disseminating scientific articles.
+%Others claim that open access publishing accelerates the citation process (9, 10) or demonstrates beneficial effects for researchers in low-income countries (11).
+%These studies, however, are based on unobtrusive, observational analysis, many lacking statistical controls.
+%As a result, it has been difficult to determine whether the relationship between open access and citations is causal, the direction of causality, or whether the relationship is merely spurious (8, 12, 13).
+%}
+{%comparatif ref 1°)Gargouri 2°)Davis
+%7. Wagner, A. B. (2010) Open access citation advantage: an annotated bibliography. [Online] Issues Sci. Tech. Librarianship 60
+%8. Craig, I. D., Plume, A. M., McVeigh, M. E., Pringle, J., and Amin, M. (2007) Do open access articles have greater citation impact? A critical review of the literature. J. Informetr. 1, 239 –248
+%9. Eysenbach, G. (2006) Citation advantage of open access articles. PLoS Biol. 4, e157
+%10. ISI (2004) The impact of open access journals: a citation study from Thomson ISI. Retrieved January 19, 2011 from http://www.thomsonscientific.jp/event/oal/impact-oa-journals.pdf
+%11. Evans, J. A., and Reimer, J. (2009) Open access and global participation in science. Science 323, 1025
+%12. Davis, P. M. (2009) Author-choice open access publishing in the biological and medical literature: a citation analysis. J. Am. Soc. Inf. Sci. Technol. 60, 3– 8
+%13. McCabe, M. J., and Snyder, C. M. (2011) Did online access to journals change the economics literature? SSRN Working Paper from http://ssrn.com/abstractϭ1746243
+%
+%3. Evans JA (2008) Electronic Publication and the Narrowing of Science and Scholarship Science. 321(5887): 395–399.
+%4. Evans JA, Reimer J (2009) Open Access and Global Participation in Science. Science 323(5917): 1025.
+%5. Harnad S, Brody T (2004) Comparing the Impact of Open Access (OA) vs. Non-OA Articles in the Same Journals. D-Lib Magazine 10(6). Available: http://eprints.ecs.soton.ac.uk/10207/.
+%6. Eysenbach G (2006) Citation Advantage of Open Access Articles. PLoS Biology 4(5).
+%7. Giles CLK, Bollacker S, Lawrence S (1998) CiteSeer: An Automatic Citation Indexing System. 3rd ACM Conference on Digital Libraries 89–98. Available: http://clgiles.ist.psu.edu/papers/DL-1998-citeseer.pdf.
+%8. Hajjem C, Harnad S, Gingras Y (2005) Ten-Year Cross-Disciplinary Comparison of the Growth of Open Access and How it Increases Research Citation Impact. IEEE Data Engineering Bulletin 28(4): 39–47. Available: http://eprints.ecs.soton.ac.uk/11688/.
+%9. Kurtz M, Brody T (2006) The impact loss to authors and research. Jacobs, Neil, Eds Open Access: Key Strategic, Technical and Economic Aspects Chandos Publishing (Oxford) Limited.
+%10. Lawrence S (2001) Free online availability substantially increases a paper's impact. Nature 411: 521. Available: http://www.nature.com/nature/debates/e-access/Articles/lawrence.html.
+%11. Moed HF (2005) Statistical Relationships Between Downloads and Citations at the Level of Individual Documents Within a Single Journal. Journal of the American Society for Information Science and Technology 56(10): 1088–1097.
+%12. Norris M, Oppenheim C, Rowland F (2008) The citation advantage of open-access articles. Journal of the American Society for Information Science and Technology 59(12): 1963–1972. Available: http://hdl.handle.net/2134/4083.
+}
+
+La bataille argumentaire sur la question du taux de citation nous écarte toutefois d'un sujet plus central selon nous et nous y retournons de ce pas.
+\textbf{Dans le jeu de l'ouverture, la situation est-elle irrémédiablement figée~?}
+
+\section{Plus de joueurs, d'autres groupes d'intérêts}
+Cette première représentation en triptyque est effectivement bien incomplète.
+Tout d'abord, elle ne permet pas la représentation des inter-acteurs, intermédiaires entre les éditeurs et les scientifiques, le corps des documentalistes et leurs corps intermédiaires.
+
+Mentionnons ici le consortium Couperin et L'ABES ainsi que le cadre légal dans lequel ces acteurs s'inscrivent.
+
+\href{http://www.couperin.org/presentation}{Les statuts de Couperin} stipulent que~:
+\blockcquote{couperin_mission_????}
+{Le consortium Couperin est une association à but non lucratif financée par les cotisations de ses membres et subventionnée par le Ministère de l’Enseignement Supérieur et de la Recherche.
+
+Couperin s'est donné pour missions de :
+\begin{description}
+ \item Recueillir et analyser les besoins documentaires de ses membres.
+ \item Évaluer, négocier et organiser l'achat de ressources documentaires numériques au bénéfice de ses membres.
+ \item Développer un réseau national de compétences et d'échanges en matière de documentation électronique notamment concernant les politiques d'acquisitions, les plans de développement de collections, les systèmes d'information, les modèles de facturation des éditeurs, l'ergonomie d'accès, les statistiques d'usage[\ldots]
+ \item Contribuer à clarifier et à faire évoluer les relations contractuelles avec les éditeurs.
+ \item Contribuer au développement d'une offre de contenu francophone.
+ \item Œuvrer à l'amélioration de la communication scientifique et favoriser la mise en place de systèmes non-commerciaux de l'Information Scientifique et Technique (IST) par le développement d'outils adéquats.
+ \item Développer une expertise et une évaluation des systèmes d'information documentaire et de leurs outils ainsi que des méthodes d'intégration de ceux-ci au sein des systèmes d'information des établissements, en cohérence avec les autres institutions en charge du développement et de l'implantation de systèmes d'information dans le monde de l'Enseignement Supérieur et de la Recherche.
+ \item Favoriser la coopération nationale, européenne et internationale dans le domaine de la documentation et des publications électroniques.
+\end{description}
+}
+
+%L'ABES. 
+%Décret n\textdegree94-921 du 24 octobre 1994 portant création de l'Agence bibliographique de l'enseignement supérieur
+Le \citetitle{_decret_1994} est somme toute plus claire que le site officiel, qui présente les mêmes éléments~\cite{_abes_????}.
+\blockcquote{_decret_1994}
+{L'agence recense et localise les fonds documentaires des bibliothèques de l'enseignement supérieur dans le but de faciliter l'accès aux catalogues bibliographiques, aux bases de données ainsi qu'aux documents.
+
+Elle assure la coordination du traitement documentaire des collections et veille en particulier à la normalisation du catalogage et de l'indexation.
+
+Elle assure la gestion et le développement des systèmes et des applications informatiques nécessaires à l'accomplissement de ces missions.
+
+Elle édite sur tout type de support les produits dérivés des catalogues ou systèmes d'information dont elle assure la gestion.
+
+Elle apporte son concours, en tant que de besoin, aux établissements d'enseignement supérieur dans le domaine de l'information bibliographique.
+
+Elle coopère avec les organismes concourant aux mêmes fins, tant en France qu'à l'étranger.}
+
+\keybox{
+Nous allons insister sur le rôle de ces instances quant à \emph{l'amélioration de la communication scientifique et technique} et la mise en place de \emph{systèmes non-commerciaux}, \emph{le développement des systèmes et des applications informatiques} ainsi que la \emph{coopération internationale} pour \emph{l'accès aux catalogues bibliographiques, aux bases de données ainsi qu'aux documents}.
+}
+Insistons jusqu'à rappeler nos lois.
+\citetitle{_code_????-2}
+%Code de la recherche - Article L111-1
+\blockcquote{_code_????-2}
+{La politique nationale de la recherche et du développement technologique vise à :
+\ldots
+2 \textdegree Partager la culture scientifique, technique et industrielle ;}
+%123-5
+\citetitle{_code_????-1}
+\blockcquote{_code_????-1}
+{Le service public de l'enseignement supérieur s'attache à développer et à valoriser, dans toutes les disciplines et, notamment, les sciences humaines et sociales, la recherche fondamentale, la recherche appliquée et la technologie.
+Il soutient la valorisation des résultats de la recherche au service de la société.}
+%L123-7
+\citetitle{_code_????}
+\blockcquote{_code_????}
+{Il (le service public de l'enseignement supérieur) promeut, aux plans européen et international, un meilleur partage des savoirs et leur diffusion auprès des sociétés civiles.}
+
+\keybox{
+La surprise est donc légitime de ne voir dans le monde académique plus d'ouverture et de partage.
+Il y a une inconsistance forte entre d'une part le cadre légal, les statuts de l'ESR et de ses organes et d'autre part la minorité apparente et active pour une science ouverte et partagée.
+}
+
+Le jeu universitaire ne doit pas occulter les autres parties prenantes, car en effet~:
+\blockcquote[traduction]{davis_open_2011}{
+Les réels bénéficiaires de la publication en accès ouvert ne sont peut-être pas les chercheurs mais des communautés praticiennes qui consomment mais contribuent rarement au corpus littéraire.
+%The real beneficiaries of open access publishing may not be the research community but communities of practice that consume, but rarely contribute to, the corpus of literature.
+}
+En effet des groupes de TPE-PME, comme une partie de la société civile, ne verraient-ils pas \emph{plus} d'intérêts à pousser le curseur vers le libre~\barre{?}~!
+
+De même, la question du modèle pour trouver la taille critique nécessaire à une communauté de recherche libre va de paire avec la question démocratique.
+Créer une large communauté basée sur des mécanismes ouverts serait entrer en concurrence d'usage directe des oligarchies en place.
+Cette communauté doit pour émerger s'inscrire dans une dynamique de pouvoir et par conséquent, ne négliger aucun acteur extérieur qui pourrait sortir renforcer de sa cause.
+
+Nous observons en effet sur cette section que~:
+\begin{itemize}
+\item un dénominateur majeur des questionnements académiques sur l'open access est celui de l'influence carriériste.
+\item le système actuel est le résultat de la distribution actuelle des pouvoirs, favorisant donc les chercheurs en positions dominantes.
+\end{itemize}
+La réflexion sur l'ouverture de la littérature scientifique universitaire doit donc aussi être celle de la \emph{gouvernance universitaire}.
+
+Et pour donner un peu plus d'énergie à la société civile pour réclamer ce qui lui revient, abordons un sujet qui semble monopoliser l'attention de nombreuse personnes, si ce n'est de tous, l'argent.
+
+\section{Le coût d'un système}
+La position historique des éditeurs à l'âge de l'imprimerie est tout à fait compréhensible.
+Elle est remarquablement exposé dans la présentation de
+ \citeauthor{fyfe_keynote:_2015}, \citetitle{fyfe_keynote:_2015}, ou il est rappelé que les entreprises de publication n'ont pas toujours eu pour vocation de faire du profit et qu'à une période leur coût de production était supérieur au revenu de leurs ventes\footnote{ \href{https://www.youtube.com/watch?v=6X-AbNMWrmE&index=9&list=PLkW7KaGexWUDMPyF2RQAd2ieuxoTmCUZo&t=18m42s}{Hyperlien pour l'accès à la minute en question de cet exposé.} L'exposé ne pointe malheureusement pas la période de basculement vers l’intérêt lucratif.
+}.
+La conservation aujourd'hui, du profit des groupes d'édition dans le secteur scientifique et technique soulèvent de vigoureuses critiques, avec des éclats plus ou moins médiatisés, tel le boycott d'Elsevier
+\citetitle{_cost_????}~\cite{_cost_????}.
+
+Avant de parler du coût pour nos institutions de recherche, il est important d'aborder sommairement le coût potentiel pour un chercheur.
+La cession des droits des auteurs envers les maisons d'édition sans contre partie équitable est une clause léonine et donc nulle en droit français.
+Ce n'est toutefois pas le cas en droit américain.
+Or les français cèdent rarement leurs droits à des sociétés sur leur sol.
+Et la législation supra-nationale n'est pas à notre avantage. 
+\blockcquote{marie_farge_avis_2011}{
+Quand un article est accepté pour publication, les maisons d'édition obligent les auteurs à leur céder gratuitement leur droit d'auteur pour pouvoir l'exploiter commercialement.
+Le fait que cette cession est obligatoire et se fait sans rétribution est susceptible d'entraîner la nullité du contrat en droit français, mais pas en droit américain.
+Ceci fait courir des risques juridiques au chercheur qui pourraient aller jusqu'à sa condamnation si une maison d'édition le poursuivait auprès d'un tribunal américain pour avoir diffusé lui-même gratuitement un de ses articles publiés, \textbf{ou pour avoir réutilisé dans une autre publication une figure qu'il a produite}.
+}
+La portée de la cession exclusive est probablement le \emph{coût} le plus grave scientifiquement et l'obstacle le plus important à la dissémination de la connaissance scientifique.
+Mais revenons à la question monétaire, car elle sera peut-être plus mobilisatrice en cette période de discussion de resserrement de budgets pour l'ESR (en France comme ailleurs).
+
+%J'écrivais à un camarade en discutant du sujet~:
+%"Je suis toujours curieux de connaître le coût que représenterait une plateforme de type wikimédienne avec mon protocole de publication."
+La forte motivation à connaître le coût du système venait pour nous de la formulation suivante~:
+\blockcquote{moody_open_2016}{\textbf{Qu'est-ce que nous obtenons pour payer ces services d'environ 98 pour cent de trop ?}
+%What do we get for overpaying such services by about 98 percent?
+}
+Comme le ratio de 98\% était imposant, il invitait à la vérification.
+Et c'est ce que j'ai fait.
+
+\href{https://wikimediafoundation.org/wiki/Home}{Wikimedia}, c'est tout ça, figure~\ref{fig:Wikimedia}~:
+\begin{figure}[htbp]
+\begin{center}
+%\begin{figure}[r]
+\includegraphics[width=12cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/wikicommons/wikimedia.png}
+\caption{Tout Wikimedia ne se résume pas à Wikipedia.}
+%\end{figure}
+\label{fig:Wikimedia}
+\end{center}
+\end{figure}
+Et tout cela, c'est (à l'arrondi) un budget de 55.7 millions de dollars pour le plan 2014-2015~\cite{_wikimedia_????}.
+Soit 50 millions d'euros (à 1.12).
+La conversion était à 1.38 en 2014, ce qui aurait donné 40 millions.
+Repensez-y lorsque vous lirez le nombre de 37 millions quelques lignes ci-dessous.
+Mais c'est l'ordre de grandeur qui compte.
+50 millions d'euros donc.
+Un nombre important certes, mais qui reste largement abordable.
+C'est en effet un rapport de la \gls{DIST} qui nous rassurera.
+
+\blockcquote{direction_de_linformation_scientifique_et_technique_publication_????}{
+%\textbf{\underline{L’exposition de la recherche aux APC : une évaluation en cours.}}
+Le financement général par APC est difficilement envisageable pour le CNRS et pour la recherche en général.
+A titre d’exemple, la «~généralisation~» de l’Open Access Gold aurait pour le CNRS (et plus largement pour les organismes de recherche publics français) des coûts peu soutenables.
+Selon les décomptes actuels de l’INIST, les achats de ressources documentaires du CNRS sont aujourd’hui de l’ordre de 15~m\officialeuro par an.
+Par ailleurs, les chercheurs du CNRS publient annuellement en revues un nombre d’articles de l’ordre de 43 000 unités.
+Si l’on fait l’hypothèse extrême qu’à terme tous ces articles soient publiés en OA sur la base d’un montant d’APC de 2200 \officialeuro par article (moyenne constatée chez Springer) le coût du Gold Access généralisé supporté par le CNRS serait de 94,6 M\officialeuro, soit 6 fois plus que les budgets d’abonnements actuels.
+}
+Nous retenons donc que (i) le CNRS ne prévoit pas de faire une gabegie d'APC, (ii) le CNRS seul dépense 15 millions d'euros en abonnements.
+
+Parce que nous sommes curieux de n'avoir mis la main que sur peu de documents donnant le montant d'une dépense publique, nous nous sommes interrogé.
+C'est finalement la requête sur duckduckgo de la chaîne~: '"couperin" "coût" "abonnement" d'euros' qui introduira la question de la confidentialité avec les billets successifs relayés de \citeauthor{francois_renaville_daniel_2014}~\cite{francois_renaville_daniel_2014,savoirscom1_si_2014}.
+\textbf{Il semble en effet que les documentalistes soient tenus au secret.}
+
+Nous glanerons au passage le chiffre moyen de \emph{37.7 millions d'euros par an d'abonnements} sur contrat pluriannuel de cinq ans pour \textbf{UN} éditeur, dans le document \citetitle{couperin_negociation_2014}~\cite{couperin_negociation_2014}.
+Reed Elsevier, Wiley-Blackwell, Springer et Taylor \& Francis, combien pour ce lot, et combien pour le tout puisque les majors ne font pas le total~?
+%\footnote{
+\blockcquote{acfas_loligopole_2015}{
+Dans ce domaine, les revues de trois éditeurs comptent pour plus de 47~\% de tous les documents en 2013 : Reed Elsevier (24~\%), Springer (11,9~\%), et Wiley-Blackwell (11,3~\%).
+}
+%}~\textbf{?}
+
+Parce que Wikimedia est une entreprise \emph{internationale}, il nous faut comparer l'ordre de grandeur des 50 millions d'euros au chiffre d'affaires \emph{international} des maisons d'édition.
+Nous appliquons cette comparaison sur un principe similaire à celui employé en comptabilité nationale d'appliquer pour valeur ajoutée monétaire d'un service non-marchand, son coût~\cite{piriou_comptabilite_2004}.
+
+\blockcquote[traduction]{esposito_snapshot_2013}{
+Quelques chiffres: ``Le marché de l'édition scientifique et technique mondial a vu le total des ventes en 2012, en hausse de seulement 0,2 \% à \ 10,7 milliards \$. De 2010 à 2012, le marché a progressé à un taux composé de 2,3 \%.'' "Les revues sont le plus gros morceau de ce marché (\ 4,6 milliards \$), et Elsevier, sans surprise, est le plus grand éditeur scientifique de tous, avec une part de marché à peu près égale aux 3 sociétés suivantes combinées (Thomson Reuters, Springer, Wiley). %Imprimer des livres continuent de baisser fortement de nouveau, pas de surprise. Ebooks augmentent rapidement, mais pas assez vite (encore) pour compenser la baisse de l'impression.
+%Some numbers:  “The global scientific and technical publishing market saw flat total sales in 2012, up only 0.2\% to \$10.7 billion. From 2010 to 2012, the market grew at a compound rate of 2.3\%.”  Journals are the biggest piece of this market (\$4.6 billion), and Elsevier, no surprise, is the biggest scientific publisher of all, with a market share about equal to the next 3 companies combined (Thomson Reuters, Springer, Wiley).  Print books continue to decline sharply–again, no surprise.  Ebooks are rising rapidly, but not fast enough (yet) to offset the decline of print.
+}
+\blockcquote{chartron_scenarios_2013}{
+Cinq groupes dominent et se partagent majoritairement le secteur : Reed-Elsevier avec 1 057 millions d’euros de chiffre d’affaires (taux de marge opérationnelle : 32 \% du CA) ; Springer Science Business, 892 millions d’euros de CA (taux de marge : 38 \%), puis viennent Wolters Kluwer Health, Wiley et Thomson Reuters.
+}
+
+Reprenons donc le calcul~:
+$4600/55.7=0,987$. Les 98~\% sont donc vérifiés !
+
+Bien entendu, tous les acheteurs de ces compagnies ne sont pas uniquement des acteurs 'publics'.
+Mais pour des ordres de 4 milliards face à 56 millions, il y aura certainement (sous le dogme de l'emploi) des nations prêtes à réduire leur budget de documentation scientifique et technique pour le substituer à de l'\emph{emploi} scientifique et technique.
+
+Cet équilibre de Nash semble donc méta-stable.
+La pseudo captivité de ce marché est d'ailleurs fort peu résiliente et la mise en perspective historique pourrait nous laisser entrevoir qu'il s'agit d'un épiphénomène.
+Proposons l'exemple suivant pour constaté la pseudo-captivité.
+\exbox{
+Une nation décide de ne plus souscrire à aucun abonnement.
+Les articles n'en disparaissent pas pour autant.
+Les 'pre-prints' soumis sans altération restent la propriété de leurs auteurs.
+Un chercheur peut continuer à employer les moteurs de recherches actuels, lire les abstracts, mots clefs, noms et contacts des \textit{corresponding authors}.
+Ces \textit{corresponding authors} dont l'intérêt est d'être cités ont donc intérêt à diffuser au lectorat.
+Les chercheurs en sont donc réduit à contacter les auteurs des travaux qui les intéressent.
+Cela force donc la communication entre scientifiques d'intérêts de connaissance communs.
+Chacun jugera de lui-même s'il considère la conséquence comme négative ou positive.
+
+Reproduisez l'exemple en substituant successivement 'Une nation' par 'Un institut de recherche', 'Une université', 'Un laboratoire', 'Un chercheur ou Une chercheuse'.
+}
+Or, Le moteur académique est la \emph{réputation}\ldots je vous laisse imaginer les suites possibles à donner pour la société civile.
+
+\keybox{
+Si l'ordre du \emph{quart} de la documentation (le fond d'Elsevier)~\cite{acfas_loligopole_2015} \emph{vaut le paiement de 37 millions d'euros} (\textit{cf.} accords pluriannuels signés avec cette maison), accordons nous sur l'hypothèse que \textbf{la seule nation française peut supporter l'\emph{immédiate substitution} de son \textbf{coûteux} \textbf{appareil} de dissémination de l'information scientifique \emph{par une version ouverte de type 'wikimedienne'}}. Elle peut le faire sans cession exclusive des droits d'auteurs, avec toute liberté d'exploitation et à moins de \emph{50 millions d'euros}.
+Moins de 50 millions d'euros sauf à vouloir faire don d'un tel appareil à l'échelle mondiale à la communauté internationale, ce qui serait fort louable de sa part et à quoi je l'encourage personnellement.
+La recherche n'étant pas un jeu à joueur unique, il serait donc douteux qu'elle ait à supporter \emph{seule} le coût de cette entreprise.
+
+En somme, il ne tient qu'à un choix politique aux échelles, de l'individu, du laboratoire, de l'université, des instituts de recherche, de la nation et de la communauté internationale des chercheurs de conserver les acteurs qui sont devenus des parasites et à faire de la production de la force publique un bien commun\footnote{Réalisant ce constat, je m'engage solennellement à requérir auprès des auteurs des ouvrages dans ma bibliographie que soit à minima déposé dans des archives ouvertes les pre-print de leur travaux ainsi qu'à les informer des modes alternatifs de publication.}.
+}
+
+\section{Étude des modèles de publication} %Étude de cas d'exemples pour les modèles de publication
+%\subsubsection{Classique propriétaire}
+Si nous étudions le système de dissémination de l'information scientifique pour proposer une alternative, il faut effectivement commencer par faire l'état de la pratique actuelle.
+
+
+%\colorbox{yellow}{reformulation et formatage de la section.}
+Commençant par le sommet de la pile de journaux en évaluation environnementale, nous observerons ensuite une distribution plus hétéroclite afin d'identifier des caractéristiques particulières.
+%\subsubsection{International Journal of Life Cycle Assessment}
+
+%http://www.springer.com/environment/journal/11367
+
+Le journal '\textbf{International Journal of Life Cycle Assessment}' (ISSN: 0948-3349, ESSN: 1614-7502) de chez Springer est classé par \href{http://www.sherpa.ac.uk/romeo/issn/0948-3349/}{SHERPA/RoMEO} comme 'vert' (autorisation de dépôt pré et post-print)
+Ce site synthétise de façon claire (voir télégraphique) les conditions générales~:
+\blockcquote{_sherpa/romeo_????}{
+\begin{itemize}
+ \item Pré-impression de l'auteur sur les serveurs pré-imprimés tels que arXiv.org.
+ \item Post-impression de l'auteur sur le site personnel de l'auteur immédiatement.
+ \item Post-impression de l'auteur sur un référentiel d'accès ouvert 12 mois après la publication.
+ \item La version PDF de l'éditeur ne peut pas être utilisée.
+ \item La source publiée doit être reconnue.
+ \item Doit créer un lien vers la version de l'éditeur.
+ \item Définir une phrase pour accompagner le lien vers la version publiée (voir le réglement).
+ \item Les articles dans certaines revues peuvent être mis en Open Access avec le paiement des frais supplémentaires.
+% \item Author's pre-print on pre-print servers such as arXiv.org
+% \item Author's post-print on author's personal website immediately
+% \item Author's post-print on any open access repository after 12 months after publication
+% \item Publisher's version/PDF cannot be used
+% \item Published source must be acknowledged
+% \item Must link to publisher version
+% \item Set phrase to accompany link to published version (see policy)
+% \item Articles in some journals can be made Open Access on payment of additional charge
+\end{itemize}
+}
+{%interrogation pour wiki-based open - free scientific journal editorial board list
+%Editors-in-Chief:
+%
+%Mary Ann Curran
+%LCA & Sustainability Consultant, Rock Hill, SC, USA
+%
+%Walter Klöpffer
+%LCA Consult & Review, Frankfurt/M, Germany
+%
+% 
+%
+%Subject Editors:
+%
+%Hans-Jörg Althaus
+%Foundation for Global Sustainability (FFGS), Zurich, Switzerland
+%Modern individual mobility
+%
+%Adisa Azapagic
+%The University of Manchester, Manchester, UK
+%Mathematical aspects of methodology and application
+%
+%Martin Baitz
+%PE INTERNATIONAL AG, Leinfelden-Echterdingen, Germany             
+%Data availability, data quality
+%
+%Melissa Bilec
+%University of Pittsburgh, Pittsburgh, PA, USA
+%Healthcare
+%
+%Andreas Ciroth
+%GreenDelta GmbH, Berlin, Germany
+%Uncertainties in LCA
+%
+%Adriana Del Borghi
+%University of Genoa, Genoa, Italy
+%Communication and ISO labels
+%
+%Matthias Finkbeiner
+%Technical University Berlin, Germany
+%Carbon footprinting
+%
+%Rolf Frischknecht
+%Treeze Ltd., Uster, Switzerland
+%LCI methodology and databases
+%
+%Hans-Jürgen Garvens
+%LCA Consultancy and Review, Berlin, Germany
+%Packaging systems including recycling
+%
+%Shabbir H. Gheewala
+%King Mongkut's University of Technology Thonburi, Bangkok, Thailand
+%Energy and waste management systems
+%
+%Edeltraud Günther
+%
+%Technische Universitaet Dresden, Germany
+%
+%Environmental Life Cycle Costing and Cost Management
+%
+%Jeroen B. Guinée
+%Leiden University, Leiden, The Netherlands;
+%Normalization and weighting
+%
+%Michael Hauschild
+%Technical University of Denmark (DTU), Lyngby, Denmark
+%Impacts on human health and ecosystems
+%
+%Almudena Hospido
+%University of Santiago de Compostela, Santiago de Compostela, Spain
+%Wastewater treatment and management
+%
+%Mark Huijbregts
+%Radboud University Nijmegen, The Netherlands
+%Non-toxic impacts of emissions to air, water, soil
+%
+%Niels Jungbluth
+%ESU-services Ltd., Zurich, Switzerland
+%Food production and consumption
+%
+%Seungdo Kim
+%East Lansing, MI, USA
+%Biobased industrial products
+%
+%Zbigniew Stanislaw Klos
+%Poznan University of Technology, Poland
+%Machines and devices
+%
+%Thomas Koellner
+%University of Bayreuth, Bayreuth, Germany
+%Biodiversity and ecosystem services
+%
+%Christopher J. Koroneos
+%University of Thessaloniki, Thessaloniki, Greece
+%Exergy analysis
+%
+%Llorenç Milà i Canals
+%UNEP, Paris, France
+%Land use
+%
+%Ivan Muñoz
+%International Life Cycle Academy, Barcelona, Spain
+%Green chemistry
+%
+%Thomas Nemecek
+%Agroscope, Institute for Sustainability Sciences, Zurich, Switzerland
+%Agriculture (Europe and Asia)
+%
+%Alexander Passer
+%TU Graz, Austria
+%Construction materials and buildings
+%
+%Stephan Pfister
+%ETH Zurich, Switzerland
+%Water use
+%
+%Ralph K. Rosenbaum
+%Irstea, ELSA-PACT, Montpellier, France
+%Impacts of chemicals on human health
+%
+%Andrea Russell-Vaccari
+%International Copper Association , NY, USA
+%
+%Peter Saling
+%BASF, Ludwigshafen, Germany
+%Eco-efficiency of chemicals
+%
+%Wulf-Peter Schmidt
+%Ford, Vehicle Environmental Engineering-Europe, Cologne, Germany
+%Automotive transportation
+%
+%Jörg Schweinle
+%Johann Heinrich von Thünen Institute (vTI), Hamburg, Germany
+%Wood and other renewable resources
+%
+%Guido Sonnemann
+%Institut des Sciences Moléculaires, Bordeaux, France
+%LCM and chemistry
+%
+%Sangwon Suh
+%University of California, Santa Barbara, California, USA
+%
+%Omer Tatari
+%University of Central Florida, Orlando, FL, USA
+%Roadways and infrastructure
+%
+%Greg Thoma
+%Ralph E. Martin Department of Chemical Engineering, University of Arkansas, Fayetteville, AR, USA
+%Agriculture (North and South America)
+%
+%Marzia Traverso
+%Palermo, Italy
+%Social life cycle assessment
+%
+%Sonia Valdivia
+%World Resources Forum, St. Gallen, Switzerland
+%Regional economies
+%
+%Ian Vázquez-Rowe
+%Pontificia Católica Universidad del Perú, Lima, Peru
+%Ocean resources and marine conservation
+%
+%Holger Wallbaum
+%Chalmers University of Technology, Gothenburg, Sweden
+%Building components and buildings
+%
+%Yi Yang
+%
+%CSRA, Inc., Troy, New York, USA
+%
+%System boundaries and life cycle inventory
+%
+%Chris Yingchun Yuan
+%University of Wisconsin, Milwaukee, WI, USA
+%Manufacturing and nanotechnology
+%
+%Alessandra Zamagni
+%ENEA, LCA & Ecodesign Laboratory, Bologna, Italy
+%Life cycle sustainability assessment (LCSA)
+%
+% 
+%
+%Regional Editors:
+%
+%Masaharu Motoshita (Japan)
+%National Institute of Advanced Industrial Science and Technology, Tsukuba, Japan
+%
+%Barbara Nebel (Australia, New Zealand)
+%PE INTERNATIONAL, Wellington, New Zealand
+%
+%Zuoren Nie (China)
+%Beijing University of Technology, Beijing, China
+%
+%Serenella Sala (Europe)
+%European Commission, Ispra, Italy
+%
+%Nydia Suppen Reynaga (Latin America)
+%CADIS - Centro de Análisis de Ciclo de Vida y Diseño Sustentable, Mexico
+%
+% 
+%
+%Editorial Board:
+%
+%Robert Anex, Madison, WI, USA
+%Gian Luca Baldo, Torino, Italy
+%Jane Bare, Cincinnati, OH, USA
+%Arthur Braunschweig, Zurich, Switzerland
+%Roland Clift, Guildford, Surrey, UK
+%James Fava, West Chester, PA, USA
+%Göran Finnveden, Stockholm, Sweden
+%Pere Fullana i Palmer, Barcelona, Spain
+%Gérard Gaillard, Zurich, Switzerland
+%Mark Goedkoop, Amersfoort, The Netherlands
+%Birgit Grahl, Heidekamp, Germany
+%Konrad Hungerbühler, Zurich, Switzerland
+%Atsushi Inaba, Tokyo, Japan
+%Annette Koehler, Winterthur, Switzerland
+%Manfred Marsmann, Leverkusen, Germany
+%Sarah McLaren, Palmerston North, New Zealand
+%Gregory A. Norris, North Berwick, ME, USA
+%David W. Pennington, Ispra, Italy
+%
+%Hanna Pesonen,  Jyväskylä, Finland
+%
+%José Potting, Wageningen, The Netherlands
+%Gerald Rebitzer, Neuhausen am Rheinfall, Switzerland
+%Isa Renner, Rüsselsheim, Germany
+%Lieselotte Schebek, Darmstadt, Germany
+%Vinod K. Sharma, Mumbai, India
+%Thomas Swarr, Hartford, CT, USA
+%Helias A. Udo de Haes, Leiden, The Netherlands
+%Bruce W. Vigon, Pensacola, FL, USA
+%Keith Weitz, Research Triangle Park, NC, USA     
+}
+{
+%Copyright Information
+%
+%For Authors
+%
+%Submission of a manuscript implies: that the work described has not been published before (except in form of an abstract or as part of a published lecture, review or thesis); that it is not under consideration for publication elsewhere; that its publication has been approved by all co-authors, if any, as well as – tacitly or explicitly – by the responsible authorities at the institution where the work was carried out.
+%
+
+%Author warrants (i) that he/she is the sole owner or has been authorized by any additional copyright owner to assign the right, (ii) that the article does not infringe any third party rights and no license from or payments to a third party is required to publish the article and (iii) that the article has not been previously published or licensed. The author signs for and accepts responsibility for releasing this material on behalf of any and all co-authors. Transfer of copyright to Springer (respective to owner if other than Springer) becomes effective if and when a Copyright Transfer Statement is signed or transferred electronically by the corresponding author. After submission of the Copyright Transfer Statement signed by the corresponding author, changes of authorship or in the order of the authors listed will not be accepted by Springer.
+%
+%The copyright to this article, including any graphic elements therein (e.g. illustrations, charts, moving images), is assigned for good and valuable consideration to Springer effective if and when the article is accepted for publication and to the extent assignable if assignability is restricted for by applicable law or regulations (e.g. for U.S. government or crown employees).
+%
+%The copyright assignment includes without limitation the exclusive, assignable and sublicensable right, unlimited in time and territory, to reproduce, publish, distribute, transmit, make available and store the article, including abstracts thereof, in all forms of media of expression now known or developed in the future, including pre- and reprints, translations, photographic reproductions and microform. Springer may use the article in whole or in part in electronic form, such as use in databases or data networks for display, print or download to stationary or portable devices. This includes interactive and multimedia use and the right to alter the article to the extent necessary for such use.
+%
+%Authors may self-archive the Author's accepted manuscript of their articles on their own websites. Authors may also deposit this version of the article in any repository, provided it is only made publicly available 12 months after official publication or later. He/she may not use the publisher's version (the final article), which is posted on SpringerLink and other Springer websites, for the purpose of self-archiving or deposit. Furthermore, the Author may only post his/her version provided acknowledgement is given to the original source of publication and a link is inserted to the published article on Springer's website. The link must be accompanied by the following text: "The final publication is available at link.springer.com".
+%
+%Prior versions of the article published on non-commercial pre-print servers like arXiv.org can remain on these servers and/or can be updated with Author's accepted version. The final published version (in pdf or html/xml format) cannot be used for this purpose. Acknowledgement needs to be given to the final publication and a link must be inserted to the published article on Springer's website, accompanied by the text "The final publication is available at link.springer.com". Author retains the right to use his/her article for his/her further scientific career by including the final published journal article in other publications such as dissertations and postdoctoral qualifications provided acknowledgement is given to the original source of publication.
+%
+%Author is requested to use the appropriate DOI for the article. Articles disseminated via link.springer.com are indexed, abstracted and referenced by many abstracting and information services, bibliographic networks, subscription agencies, library networks, and consortia.
+%
+%For Readers
+%
+%While the advice and information in this journal is believed to be true and accurate at the date of its publication, neither the authors, the editors, nor the publisher can accept any legal responsibility for any errors or omissions that may have been made. The publisher makes no warranty, express or implied, with respect to the material contained herein.
+%
+%All articles published in this journal are protected by copyright, which covers the exclusive rights to reproduce and distribute the article (e.g., as offprints), as well as all translation rights. No material published in this journal may be reproduced photographically or stored on microfilm, in electronic data bases, video disks, etc., without first obtaining written permission from the publisher (respective the copyright owner if other than Springer). The use of general descriptive names, trade names, trademarks, etc., in this publication, even if not specifically identified, does not imply that these names are not protected by the relevant laws and regulations.
+%
+%Springer has partnered with Copyright Clearance Center's RightsLink service to offer a variety of options for reusing Springer content. For permission to reuse our content please locate the material that you wish to use on link.springer.com or on springerimages.com and click on the permissions link or go to copyright.com, then enter the title of the publication that you wish to use. For assistance in placing a permission request, Copyright Clearance Center can be contacted directly via phone: +1-855-239-3415, fax: +1-978-646-8600, or e-mail: info@copyright.com.
+}
+%\subsubsection{Journal Of Cleaner Production}
+
+\textbf{Journal Of Cleaner Production} est sensiblement de la même 'couleur' que le précédent (suivant \href{http://www.sherpa.ac.uk/romeo/search.php?issn=0959-6526}{SHERPA}).
+La durée d'embargo se voit étendue à un intervalle entre 12 et 48 mois.
+Le DOI doit accompagner le lien vers la version éditeur.
+La licence des diffusions en archives est contrainte sous CC-BY-NC-ND.
+%    Authors pre-print on any website, including arXiv and RePEC
+%    Author's post-print on author's personal website immediately
+%    Author's post-print on open access repository after an embargo period of between 12 months and 48 months
+%    Permitted deposit due to Funding Body, Institutional and Governmental policy or mandate, may be required to comply with embargo periods of 12 months to 48 months
+%    Author's post-print may be used to update arXiv and RepEC
+%    Publisher's version/PDF cannot be used
+%    Must link to publisher version with DOI
+%    Author's post-print must be released with a Creative Commons Attribution Non-Commercial No Derivatives License
+
+L'observation de ce journal nous a apporté une mention particulière.
+Les consignes comportent un paragraphe particulier \textit{parce que les auteurs ne sont pas nécessairement \ldots les auteurs}.
+Il s'agit en fait d'une consigne très rependue.
+De nombreux journaux ressortent de l'interrogation de moteur de recherche avec la chaîne suivante~:
+"Any \underline{addition}, \underline{deletion} or rearrangement of author names in the authorship list should be made only before the manuscript has been accepted and only if approved by the journal Editor." (\textit{cf.} \href{https://duckduckgo.com/?q=\%22Any+addition\%2C+deletion+or+rearrangement+of+author+names+in+the+authorship+list+should+be+made+only+before+the+manuscript+has+been+accepted+and+only+if+approved+by+the+journal+Editor.\%22&t=ffab&ia=web}{hyperlien} de la requête).
+Il s'agit d'une marque intéressante de l'institutionnalisation de cette pratique d'avoir en noms d'auteurs des personnes qui ne le sont pas.
+
+Le Journal of Cleaner Production emploie une revue en simple aveugle.
+%renvoi à https://www.elsevier.com/about/company-information/policies/copyright
+\blockcquote[traduction]{elsevier__-_journal_of_cleaner_production_guide_????}
+{
+Le Journal of Cleaner Production utilise un examen 'Single-blind', où les noms des examinateurs sont cachés de l'auteur, mais l'examinateur sait qui sont les auteurs.
+%The Journal of Cleaner Production used 'Single-blind' reviewing, where the names of the reviewers are hidden from the Author, but the reviewer knows who the authors are.
+}
+C'est donc le principe du filtre en amont qui est appliqué.
+%https://www.elsevier.com/journals/journal-of-cleaner-production/0959-6526/guide-for-authors
+%Guide for authors - Journal of Cleaner Production - ISSN 0959-6526
+%
+%\subsubsection{Environmental Science \& Technology} 1er numéro en janvier 1967 http://pubs.acs.org/toc/esthag/1/1
+%
+{%\subsubsection{Journal Of Industrial Ecology} 1er numéro 1997 http://onlinelibrary.wiley.com/doi/10.1111/jiec.1997.1.issue-1/issuetoc
+%Journal: 	Journal of Industrial Ecology (ISSN: 1088-1980, ESSN: 1530-9290)
+%RoMEO: 	This is a RoMEO yellow journal
+%Author's Pre-print: 	green tick  author can archive pre-print (ie pre-refereeing)
+%Author's Post-print: 	grey tick  subject to Restrictions below, author can archive post-print (ie final draft post-refereeing)
+%Restrictions: 	
+%
+%    12 months embargo for scientific, technical and medicine titles
+%    2 years embargo for humanities and social science titles
+%
+%Publisher's Version/PDF: 	cross  author cannot archive publisher's version/PDF
+%General Conditions: 	
+%
+%    Some journals have separate policies, please check with each journal directly
+%    On author's personal website, institutional repositories, arXiv, AgEcon, PhilPapers, PubMed Central, RePEc or Social Science Research Network
+%    Author's pre-print may not be updated with Publisher's Version/PDF
+%    Author's pre-print must acknowledge acceptance for publication
+%    On a non-profit server
+%    Publisher's version/PDF cannot be used
+%    Publisher source must be acknowledged with citation
+%    Must link to publisher version with set statement (see policy)
+%    As OnlineOpen is not available, BBSRC, EPSRC, MRC, NERC and STFC authors, may self-archive after 6 months
+%    As OnlineOpen is not available, AHRC and ESRC authors, may self-archive after 12 month
+%
+%Mandated OA: 	(Awaiting information)
+%Notes: 	
+%
+%    Reviewed 18/03/14
+%
+%Copyright: 	Self-archiving - Funder Policies
+%Updated: 	18-Mar-2014 - Suggest an update for this record
+%Link to this page: 	http://www.sherpa.ac.uk/romeo/issn/1088-1980/
+}
+{%\subsubsection{Resources Conservation and Recycling} 1er numéro 1988 Volume 1, Issue 1, Pages 1-80 (March 1988) http://www.sciencedirect.com/science/journal/09213449/1/1
+%Journal: 	Resources, Conservation and Recycling (ISSN: 0921-3449)
+%RoMEO: 	This is a RoMEO green journal
+%Paid OA: 	A paid open access option is available for this journal.
+%Author's Pre-print: 	green tick  author can archive pre-print (ie pre-refereeing)
+%Author's Post-print: 	green tick  author can archive post-print (ie final draft post-refereeing)
+%Publisher's Version/PDF: 	cross  author cannot archive publisher's version/PDF
+%General Conditions: 	
+%
+%    Authors pre-print on any website, including arXiv and RePEC
+%    Author's post-print on author's personal website immediately
+%    Author's post-print on open access repository after an embargo period of between 12 months and 48 months
+%    Permitted deposit due to Funding Body, Institutional and Governmental policy or mandate, may be required to comply with embargo periods of 12 months to 48 months
+%    Author's post-print may be used to update arXiv and RepEC
+%    Publisher's version/PDF cannot be used
+%    Must link to publisher version with DOI
+%    Author's post-print must be released with a Creative Commons Attribution Non-Commercial No Derivatives License
+%
+%Mandated OA: 	(Awaiting information)
+%Paid Open Access: 	Open Access
+%Notes: 	
+%
+%    Publisher last reviewed on 03/06/2015
+%
+%Copyright: 	Unleashing the power of academic sharing - Sharing Policy - Sharing and Hosting Policy FAQ - Green open access - Journal Embargo Period List (pdf) - Journal Embargo List for UK Authors - Attaching a User License (pdf) - Funding Body Agreements
+%Updated: 	01-May-2015 - Suggest an update for this record
+%Link to this page: 	http://www.sherpa.ac.uk/romeo/issn/0921-3449/
+}
+{%\subsubsection{Waste Management}
+%Waste Management
+%Volume 9, Issue 1, Pages 1-66 (1989)   
+%Formerly known as Nuclear and Chemical Waste Management;  Nuclear and Chemical Waste Management
+%Volume 1, Issues 3–4, Pages 161-309 (1980)
+%Hazardous Waste Sites in the United States 
+%Journal: 	Waste Management (ISSN: 0956-053X, ESSN: 1879-2456)
+%RoMEO: 	This is a RoMEO green journal
+%Paid OA: 	A paid open access option is available for this journal.
+%Author's Pre-print: 	green tick  author can archive pre-print (ie pre-refereeing)
+%Author's Post-print: 	green tick  author can archive post-print (ie final draft post-refereeing)
+%Publisher's Version/PDF: 	cross  author cannot archive publisher's version/PDF
+%General Conditions: 	
+%
+%    Authors pre-print on any website, including arXiv and RePEC
+%    Author's post-print on author's personal website immediately
+%    Author's post-print on open access repository after an embargo period of between 12 months and 48 months
+%    Permitted deposit due to Funding Body, Institutional and Governmental policy or mandate, may be required to comply with embargo periods of 12 months to 48 months
+%    Author's post-print may be used to update arXiv and RepEC
+%    Publisher's version/PDF cannot be used
+%    Must link to publisher version with DOI
+%    Author's post-print must be released with a Creative Commons Attribution Non-Commercial No Derivatives License
+%
+%Mandated OA: 	(Awaiting information)
+%Paid Open Access: 	Open Access
+%Notes: 	
+%
+%    Publisher last reviewed on 03/06/2015
+%
+%Copyright: 	Unleashing the power of academic sharing - Sharing Policy - Sharing and Hosting Policy FAQ - Green open access - Journal Embargo Period List (pdf) - Journal Embargo List for UK Authors - Attaching a User License (pdf) - Funding Body Agreements
+%Updated: 	01-May-2015 - Suggest an update for this record
+%Link to this page: 	http://www.sherpa.ac.uk/romeo/issn/0956-053X/
+}
+{%\subsubsection{Energy}
+%1er numero 1976
+%Energy
+%Volume 1, Issue 1, Pages 1-109 (March 1976)   http://www.sciencedirect.com/science/journal/03605442/1/1
+%Journal: 	Energy (ISSN: 0360-5442, ESSN: 1873-6785)
+%RoMEO: 	This is a RoMEO green journal
+%Paid OA: 	A paid open access option is available for this journal.
+%Author's Pre-print: 	green tick  author can archive pre-print (ie pre-refereeing)
+%Author's Post-print: 	green tick  author can archive post-print (ie final draft post-refereeing)
+%Publisher's Version/PDF: 	cross  author cannot archive publisher's version/PDF
+%General Conditions: 	
+%
+%    Authors pre-print on any website, including arXiv and RePEC
+%    Author's post-print on author's personal website immediately
+%    Author's post-print on open access repository after an embargo period of between 12 months and 48 months
+%    Permitted deposit due to Funding Body, Institutional and Governmental policy or mandate, may be required to comply with embargo periods of 12 months to 48 months
+%    Author's post-print may be used to update arXiv and RepEC
+%    Publisher's version/PDF cannot be used
+%    Must link to publisher version with DOI
+%    Author's post-print must be released with a Creative Commons Attribution Non-Commercial No Derivatives License
+%
+%Mandated OA: 	(Awaiting information)
+%Paid Open Access: 	Open Access
+%Notes: 	
+%
+%    Publisher last reviewed on 03/06/2015
+%
+%Copyright: 	Unleashing the power of academic sharing - Sharing Policy - Sharing and Hosting Policy FAQ - Green open access - Journal Embargo Period List (pdf) - Journal Embargo List for UK Authors - Attaching a User License (pdf) - Funding Body Agreements
+%Updated: 	01-May-2015 - Suggest an update for this record
+%Link to this page: 	http://www.sherpa.ac.uk/romeo/issn/0360-5442/
+}
+%\subsubsection{Energy Policy}
+%\subsubsection{Renewable \& Sustainable Energy Reviews}
+%\subsubsection{Biomass \& Bioenergy}
+%\subsubsection{Applied Energy}
+
+
+Mais ces journaux sont déjà connus de la discipline, je me pencherai donc sur d'autres cas qui m'ont été donnés d'observer.
+%\subsubsection{VertigO}
+
+\textbf{\href{http://www.openedition.org/2033}{VertigO}} est un journal en accès ouvert, sans frais de soumission et publication.
+Les \href{http://vertigo.revues.org/5401#tocto1n6}{directives aux auteurs} stipulent toutefois certaines restrictions (licence exclusive de première publication, mention de la revue, demande d'autorisation pour certaine reproduction partielle ou complète\ldots).
+{%\blockcquote{vertigo}{
+%%des contradictions ?
+%%Droit d'auteur
+%
+%La propriété intellectuelle et les droits d'auteurs sur le contenu original de tous les articles demeure à leurs auteurs.
+%
+%Ceux-ci cèdent, en contrepartie de la publication dans la revue VertigO, une licence exclusive de première publication donnant droit à la revue de produire et diffuser, en toutes langues, pour tous pays, regroupé à d'autres articles ou individuellement et sur tous médias connus ou à venir (dont, mais sans s'y limiter, l'impression ou la photocopie sur support physique avec ou sans reliure, reproduction analogique ou numérique sur bande magnétique, microfiche, disque optique, hébergement sur unités de stockage d'ordinateurs liés ou non à un réseau dont Internet, référence et indexation dans des banques de données, dans des moteurs de recherche, catalogues électroniques et sites Web).
+%
+%Les auteurs gardent les droits d'utilisation dans leurs travaux ultérieurs, de production et diffusion à l'intérieur de leurs équipes de travail, dans les bibliothèques, centres de documentation et sites Web de leur institution ou organisation ; ainsi que pour des conférences incluant la distribution de notes, d'extraits ou de versions complètes. La référence de première publication doit être donnée et préciser le titre de l'article, le nom de tous les auteurs, mention de la revue VertigO, la date et le lieu de publication.
+%Toute autre reproduction complète ou partielle doit être préalablement autorisée par la revue, autorisation qui ne sera pas indûment refusée. Référence doit être donnée quant au titre de l'article, le ou les auteurs, la revue, la date et le lieu de publication. La revue se réserve le droit d'imposer des droits de reproduction.
+%}
+}
+De même sur l'évaluation par les pairs, cette parution s'inscrit dans le paradigme du 'gardien'.
+\blockcquote{_directives_2009}{
+Tous les articles, à l'exception des contenus dits éditoriaux, sont soumis à une évaluation par des pairs (2 évaluateurs externes et un évaluateur interne).
+Les rapports d'évaluation sont reçus par le rédacteur en chef.
+Sa décision de publier est sans appel.}
+
+Nous relevons de cette revue un trait piquant notre intérêt.
+Ceux-ci publient leur \href{http://vertigo.revues.org/5427?file=1}{grille de revue}.
+Le processus de revue lui-même n'est malheureusement pas publié.
+
+{%\subsubsection{S.A.P.I.EN.S}
+%Editorial board http://sapiens.revues.org/280
+%
+%Institut veolia
+%
+%File submission
+%
+%Manuscripts must be submitted electronically, as a single Microsoft Word document containing the complete text as well as all tables and figures.
+%
+%Authors who are unable to submit their manuscript in Microsoft Word format are invited to contact the managing editor.
+%
+%Note that S.A.P.I.EN.S does not charge APCs or submission charges.
+}
+%\subsubsection{Tic\&Société}
+Pour prendre un autre exemple de revue.org, regardons \textbf{\href{http://ticetsociete.revues.org}{Tic\&Société}}.
+Le \href{http://ticetsociete.revues.org/564#tocto1n1}{projet éditorial} stipule~:
+\blockcquote{_a_2014}{
+Instrument de diffusion scientifique en langue française, la revue accepte les textes \textbf{inédits} dans cette langue tout en publiant aussi des résumés en anglais et en espagnol qui doivent être fournis par l’auteur-e avec son manuscrit.}
+Les \href{http://ticetsociete.revues.org/90}{consignes aux auteurs} détaillent~:
+\blockcquote{_consignes_2008}{
+\emph{L’auteur garantit que cet article est inédit}, exception faite des extraits empruntés à d’autres œuvres ou illustrations pour lesquels les autorisations de reproduction ont été obtenues}.
+En conséquence, pas de collaboration / coopération / travail collectif ouvert-e sur le web.
+Ceci casserait le caractère inédit.
+Si le texte est disponible dans un wiki ou une archive, alors il n'est plus publiable dans cette revue.
+C'est un des obstacles à l'ouverture listé dans les motivations du modèle alternatif présenté ultérieurement.
+La licence CC-BY-NC-ND par son caractère restrictif (NC-ND), s'oppose également à la liberté recherchée.
+Toujours dans les \href{http://ticetsociete.revues.org/90}{consignes aux auteurs}, il est précisé que~:
+\blockcquote{_consignes_2008}{
+Les articles publiés, sur le site de la revue tic\&société, sont sous la licence Creative Commons.
+Plus précisément les auteurs gardent la paternité de leur œuvre.
+Ils n’en autorisent ni la commercialisation ni la modification.
+}
+Le paradigme de publication est donc celui d'un article final en révision pré-publication.
+
+\textbf{Sustainability} est en Open Access avec APC de 1200 CHF (franc suisse)
+%For Sustainability (ISSN 2071-1050), authors are asked to pay a fee of 1200 CHF (Swiss Francs) per processed paper, but only if the article is accepted for publication in this journal after peer-review and possible revision of the manuscript.
+Les articles sont diffusés sous licence CC BY.
+Nous observons pour cette parution \href{http://www.mdpi.com/journal/sustainability/instructions#referees}{dans les instructions aux auteurs}, l'encouragement fait à ceux-ci de fournir des \textit{referees} (caractère non unique).
+L'action de l'éditeur semble donc encore réduite de cette tâche à nouveau remise à la charge du chercheur.
+\textbf{BMC Medicine} (OA), emploie la même licence (CC BY).
+Mais il demande des Article Processing Charges (APCs) de 1780~GBP.
+
+
+Nous avions mentionné plus haut les `overlay journals', les revues superposée aux archives.
+Les \href{http://discreteanalysisjournal.com/for-authors}{directives aux auteurs} de discreteanalysisjournal indiquent ceci~:
+\blockcquote[traduction]{_discrete_????}{
+\textbf{Discrete Analysis Journal} est une revue en superposition d'arXiv. Cela signifie que si nous avons un processus de comité de rédaction et de l'arbitrage conventionnel, nous n'accueillons pas les articles que nous acceptons, ni n'offrons un service de mise en forme et la copie d'édition.
+Au lieu de cela, nous faisons simplement le lien vers les prépublications qui sont affichés sur arXiv, action que nous croyons répondre amplement aux besoins de nos lecteurs.
+Par conséquent, le coût de fonctionnement du journal, tandis que pas tout à fait nul, est extrêmement faible.
+Par conséquent, il n'y a aucun frais pour les auteurs (et évidemment aucun pour les lecteurs, car les communications acceptées sont sur arXiv).}
+%Discrete Analysis is an arXiv overlay journal. This means that while we have a conventional editorial board and refereeing process, we do not host the articles we accept or offer a formatting and copy-editing service. Instead, we simply link to preprints that are posted on the arXiv, which we believe amply meets the needs of our readers. As a result, the cost of running the journal, while not quite zero, is extremely low. Therefore, there are no charges for authors (and obviously none for readers, since the accepted papers are on the arXiv). 
+\textbf{\href{http://episciences.org/page/journals}{Les journaux d'Épisciences}} sont de même des 'overlay journals'.
+Les comités restent toutefois fermés.
+
+{
+%    ARIMA Journal
+%
+%    DMTCS Discrete Mathematics & Theoretical Computer Science
+%
+%    Hardy-Ramanujan Journal
+%
+%    JIPS Journal d'Interaction Homme Machine
+%
+%    JDMDH Journal of Data Mining and Digital Humanities
+%
+%    Journal of Interdisciplinary Methodologies and Issues in Science
+%
+%    Epiga : Epijournal de Géométrie Algébrique
+
+
+%http://epiga.episciences.org/page/a-propos#peer
+%
+%http://jimis.episciences.org/
+%
+%http://jdmdh.episciences.org/page/editorial-policies#peer
+%
+%http://jips.episciences.org/page/processusderelecture
+%
+%http://dmtcs.episciences.org/page/policies
+}
+%\subsubsection{elife}
+\textbf{elife} (\href{https://elifesciences.org/about#process}{vers le site}) procède avec une revue de pré-publication.
+La soumission est sans APC.
+Les articles sont sous licence CC BY.
+Une particularité (non unique de elife) de leur revue par les pairs tient dans la présence avec l'article de la lettre de l'éditeur et de la réponse de l'auteur.
+%https://doaj.org/toc/2050-084X?source=%7B%22query%22%3A%7B%22filtered%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22term%22%3A%7B%22index.issn.exact%22%3A%222050-084X%22%7D%7D%2C%7B%22term%22%3A%7B%22_type%22%3A%22article%22%7D%7D%5D%7D%7D%2C%22query%22%3A%7B%22match_all%22%3A%7B%7D%7D%7D%7D%2C%22from%22%3A0%2C%22size%22%3A100%7D
+%\subsubsection{BMC Medicine}
+
+%\subsubsection{Atmospheric Chemistry and Physics (ACP)}
+
+Pour l'ouverture temporaire du processus de revue, nous mentionnons également \textbf{Atmospheric Chemistry and Physics} (ACP).
+Après un premier filtrage, les articles sont discutés pendant 8 semaines de façon ouverte.
+Les commentaires sont publiés avec l'article (\textit{cf.} \href{http://www.atmospheric-chemistry-and-physics.net/peer_review/interactive_review_process.html}{leur processus de relecture}).
+L'open access s'accompagne d'APC de 1000\texteuro.
+Les articles sont sous licence CC BY.
+{%
+%Publisher: Copernicus Publications
+%
+%Society/Institution: European Geosciences Union (EGU)
+%
+%Country of publisher: Germany
+%
+%Platform/Host/Aggregator: Copernicus Publications
+%
+%LCC Subject Category: Science: Physics | Science: Chemistry
+%
+%Publisher's keywords: gases, aerosols, clouds and precipitation, isotopes, radiation, dynamics
+%
+%Language of fulltext: English
+%
+%Full-text formats available: PDF, XML
+% 
+%
+%PUBLICATION CHARGES
+%
+%Article Processing Charges (APCs): Yes. 1000EUR
+%
+%Submission Charges: No.
+%
+%Waiver policy for charges? Yes.
+%
+%
+%Time From Submission to Publication: 16 weeks
+
+%https://doaj.org/toc/1680-7324?source=%7B%22query%22%3A%7B%22filtered%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22term%22%3A%7B%22index.issn.exact%22%3A%221680-7324%22%7D%7D%2C%7B%22term%22%3A%7B%22_type%22%3A%22article%22%7D%7D%5D%7D%7D%2C%22query%22%3A%7B%22match_all%22%3A%7B%7D%7D%7D%7D%2C%22from%22%3A0%2C%22size%22%3A100%7D
+%Les fermetures restantes sont :
+%étape 6 : Final response
+}
+%\subsubsection{plus proches, ou pas}
+
+En sortant de l'approche classique des journaux nous observons d'autres entités.
+The \textbf{Winnower} est une plateforme de publication en ligne en accès ouvert employant une revue post-publication ouverte et réclamant des APC aux auteurs.
+Une offre originale par sa structure, ce sont les DOI qui sont payants\footnote{les détails sont donnés sur le site, \href{https://thewinnower.com/memberships}{lien ici}.
+}.
+Elle se décline de la façon suivante~: 25 USD / DOI, ou 25 USD / mois pour un tarif réduit par DOI à 12.5 USD sous la limite de deux publication par mois.
+Parce que l'offre s'adresse à des cerveaux exceptionnels, il est précisé que cela équivaut à la moitié du prix par DOI de la premier offre.
+Enfin vous pouvez être 'super membre' pour 200 USD / an.
+Les \href{https://thewinnower.com/sign_up#terms_and_conditions}{conditions générales} précisent entre autres que~:
+Les auteurs doivent avoir au moins 13 ans (petits génie s'abstenir donc).
+Le contenu des utilisateurs est publiés sous licence CC-BY-4.0.
+The Winnover peut refuser d'accepter ou de transmettre n'importe quel contenu d'utilisateur et peut pour n'importe quelle raison retirer du contenu d'utilisateur du site.
+\textbf{Science Open}(\href{http://about.scienceopen.com/how-does-it-work/#more-9
+}{vers le site}) est une plateforme payante (400 à 800 USD selon les modalités de publication \href{http://about.scienceopen.com/what-does-it-cost/}{\textit{cf.} le site}), avec revue post-publication.
+Ouverte d'accès elle requière l'enregistrement sous ORCID (un réseau "connectant les chercheurs à la recherche"), ORCID où nous retrouverons 'au conseil' Elsevier, Thomson Reuters, John Wiley \& Sons\ldots
+%\subsubsection{f1000research}
+%http://f1000research.com/about
+\textbf{f1000research} publie des travaux originaux (non publié dans un autre journal, mais les preprints sur des archives ouvertes sont acceptés).
+Les \href{http://f1000research.com/for-authors/publish-your-research}{instructions aux auteurs} spécifient qu'au moins un des auteurs est un chercheur ou clinicien qualifié et travaillant activement dans les sciences du vivant (périmètre disciplinaire) \emph{et} que celui-ci ait fait une contribution clef à l'article.
+Les auteurs sollicitent la revue et proposent des noms pour les référées.
+Le manuscrit final et ses données sont publiés sans que la révision ait déjà eu lieu.
+Les critiques experts sont sélectionnés et invités, leurs rapports et noms sont publiés aux côtés de l'article avec les commentaires et échanges avec les auteurs.
+F1000Research publie sous licence CC-BY et requière des \href{http://f1000research.com/for-authors/article-processing-charges}{APC} de 1000 USD HT pour des articles entre 2500 et 8000 mots.
+1000 USD de plus sont exigés au delà de cette limite et il faut les contacter au delà de 15000 mots.
+{%
+% Before you submit an article, please ensure that:
+%
+%    The work is original.
+%    The manuscript (or substantial parts of it) must not have been published previously, or be under consideration or review by another journal.
+%    
+%    Manuscripts that were previously posted on a preprint server such as ArXiv, BioRxiv or PeerJ PrePrints are welcome.
+%    
+%    At least one author is a qualified researcher or clinician actively working in the life sciences and has made a key contribution to the article (see our authorship criteria).
+%    
+%    The reported study meets all applicable research and publication standards. We strongly recommend that you consult our editorial policies for more detail on reporting guidelines and ethical requirements.
+%    
+%    All methodological details and relevant data are made available to allow others to replicate the study, and that the manuscript adheres to appropriate reporting guidelines and community standards. For more detail, please see our policies and Data preparation guidelines.
+%    
+%    All authors have understood F1000Research’s policies for article publication and its unique author-led publishing model, which requires authors to actively suggest suitable peer reviewers for their article until at least 2 reports have been received.
+%    
+%    Your manuscript should include full author, affiliation and author contribution information, details of any funding for the research described in the article, and a conflict of interest statement.
+%    
+%    You agree to pay any processing charges applicable to this submission. Following submission, we will ask you for the name and email address of the payee, the name of their institution and the country in which they are based. If based in an EU member country, we will also require a VAT registration number.
+
+%http://f1000research.com/about
+%Submitting an article is easy with our single-page submission system. Our in-house editors carry out a basic check on each submission to ensure that our policies are adhered to. 
+%
+%Once we receive the final manuscript, the article (with its associated source data) is published within a week, enabling immediate viewing and citation.
+%
+%Expert referees are selected and invited, and their reports and names are published alongside the article, together with the authors' responses and comments from registered users.
+%
+%
+%Authors are encouraged to publish revised versions of their article. All versions of an article are linked and independently citable. Articles that pass peer review are indexed in external databases such as PubMed, Scopus and Google Scholar. 
+%
+%2046-1402 (Print)
+%CC BY
+%Tick icon: journal was accepted after March 2014​
+% 
+%
+%Homepage
+%
+%Publisher: F1000 Research Ltd
+%
+%Country of publisher: United Kingdom
+%
+%Platform/Host/Aggregator: F1000 Research Ltd
+%
+%Date added to DOAJ: 10 May 2013
+%
+%LCC Subject Category: Medicine | Science: Biology (General)
+%
+%Publisher's keywords: life sciences
+%
+%Language of fulltext: English
+%
+%Full-text formats available: PDF, HTML, XML
+% 
+%
+%PUBLICATION CHARGES
+
+%Article Processing Charges (APCs): Yes. 1000USD
+
+%Submission Charges: No.
+%
+%Waiver policy for charges? Yes.
+%
+%EDITORIAL INFORMATION
+%
+%Open peer review
+%
+%Editorial Board
+%
+%Aims and scope
+%
+%Instructions for authors
+%
+%Time From Submission to Publication: 1 weeks
+}
+\textbf{Les lecteurs classifieront eux-même ce type de modèles dans ou hors de la case prédation.}
+Ces plate-formes certes critiquables soulignerons un éléments important (d'où leur mention), elles nous rappellent que sans structure de socialisation et de séparation du marché, le domaine de la connaissance est rapidement et sous de multiple forme colonisé par les marchés.
+Mais plus important, elles soulignent \emph{la nécessité de connecter les chercheurs entre eux}.
+
+%\subsubsection{Sun Journals, journaux en kit}.
+Vous l'aurez compris, il existe de nombreuses combinaisons (voir une infinité en incluant des paramètres continus, notamment des prix).
+En conséquence, un aperçu des combinaisons est donnée avec les \href{http://wiki.lib.sun.ac.za/index.php/SUNJournals}{SUN Journals (lien)}.
+Le modèle présente de multiples paramètres ajustable pour la création d'un journal en open access.
+
+
+%\subsubsection{philica}
+%http://philica.com/about.php
+%
+%Une certaine idée de la capacité de critique :
+%
+%\href{http://philica.com/faq.php#students}{limite à la qualité de membre}
+%
+%{We know that many PhD students are highly knowledgeable and capable of writing Philica-quality articles, and if writing articles were all that membership allowed we would let graduate students join. However, membership of Philica also allows peer-reviewing of other people’s work. It is not normal practice for students to do this to the work of fully-qualified academics, and we do not consider it desirable to change that here.
+%
+%Therefore we will very soon be introducing a form of graduate student membership which will allow publication (as long as it is with your supervisor), but not the reviewing of other people’s work. Keep an eye on the site…}
+
+%\subsubsection{WIJOUMED, 1st Wikijournal}
+Nous terminerons ce tour d'exemples avec la Wikiversity et l'OSF.
+
+\textbf{Wikiversity Journal of Medicine} est le premier journal en accès ouvert, sans APC, sous wiki, par défaut ouvert à l'écriture, la révision et l'usage (CC-BY-SA).
+%An open access journal with no publication costs.
+%About
+%ISSN: 2001-8762
+%www.wijoumed.org
+%Frequency: Continuous
+%Since: March 2014
+Les articles sont créés en sous-pages (arborescence) ce qui induit une classification hiérarchique.
+\exbox{
+L'article ''\href{https://en.wikiversity.org/wiki/Wikiversity_Journal_of_Medicine/The_Year_of_the_Elephant}{The Year of the Elephant} est localisé par 'wiki/Wikiversity Journal of Medicine/The Year of the Elephant'.
+L'article est localisé en médecine car il traite d'une épidémie.
+Il comporte cependant du contenu se rapportant à l'histoire et potentiellement de la linguistique.
+D'où la note de l'éditeur~:
+\blockcquote[traduction]{marr_wikiversity_2015}{
+Note de l'éditeur~: La revue par les pairs de cet article est axée sur l'hypothèse selon laquelle une épidémie telle que la variole aurait pu expliquer une invasion ratée de La Mecque qui est décrite dans le Coran.
+Une revue complète de la précision des autres hypothèses historiques est au-delà de la portée du journal. - Mikael Häggström 25 Avril 2015
+%Editor's note: The peer reviews of this article are focused on the hypothesis that an epidemic such as by smallpox could have explained a failed invasion of Mecca that is described in the Qur’an. A full review of the accuracy of other historical hypotheses is beyond the scope of the journal. - Mikael Häggström, 25 April 2015
+}}
+Le contenu n'est cependant pas systématiquement sous la forme des articles tels que nous les côtoyons.
+Le processus de soumission conserve le \href{https://en.wikiversity.org/wiki/Wikiversity_Journal_of_Medicine/Publishing#Submission}{passage par un éditeur}.
+\blockcquote{wikiversity_contributors_wikiversity_2016}{
+For submissions or pre-submission enquiries, please email Mikael Häggström, editor-in-chief
+}
+
+%\subsubsection{\acrlong{OSF}}
+L'\textbf{\gls{OSF}}\footnote{Lien vers la plate-forme~: \href{https://osf.io/}{osf.io/}.} émane du \gls{COS} créé en 2013.
+Le créneau du \gls{COS} est l'ouverture, l'intégrité et la reproductibilité de la recherche scientifique.
+Plus que la publication d'article l'\gls{OSF} se concentre sur l'hébergement de l'activité de recherche qui \textit{de facto} inclue la publication.
+\emph{Le contenu hébergé n'est toutefois pas nécessairement libre.}
+Des liens peuvent renvoyer vers des éditeurs privés.
+
+\section{Journal Scientifique Libre}
+\label{sec:JSL}
+%JSL
+
+Suite à des recherches sur doaj.org\footnote{Recueil de publication en open access}, aucun journal n'a été identifié qui satisfasse à l'ensemble des critères suivant~: libre en écriture, libre en lecture, libre en utilisation et dont la constitution vise une exploitabilité accrue du contenu via les outils sémantiques.
+%\footnote{
+%Nous avons également regretté le manque d'interaction possible avec la base du doaj, pour compléter ce répertoire, remontés d'indications d'APC notamment.}.
+Or, nous connaissons l'ensemble des éléments constitutifs pour une telle création.
+Nous avons de surcroît aujourd'hui un recul accru avec plus de dix ans d’existence des outils numériques nécessaires.
+
+Nous n'avions identifié aucun objet qui suive ce mode dans le milieu académique jusqu'au deux derniers exemples présentés précédemment.
+%Nous portons toutefois à la connaissance du lecteur les initiatives tel le \href{https://cos.io/about_mission/}{Center fo Open Science} ainsi que des espaces de recherche sous \href{https://www.wikiversity.org/}{wikiversity.org} en français et en anglais, avec notamment pour la part anglophone le \href{wikiversityjournal.org}{wikiversityjournal.org}\footnote{Nous n'avons malheureusement pris connaissance de ce journal que tardivement en 2016.}.
+
+Le modèle du journal scientifique libre a été proposé en Octobre 2015~\cite{patard_proposal_2015}.
+Il a été proposé suite à de nombreuse publications plaidant pour plus de transparence et d'ouverture, avec notamment l'emploi de technologies du web sémantique~\cite{borkum_health_2014,zhang_lca-oriented_2015,davis_making_2012,mutel_ideas_2014,masanet_reflections_2014,lamela_footprinted._2011,sayan_contribution_2011,belleau_bio2rdf:_2008,perez_role_2014,ingwersen_new_2015,weidema_bonsai_2014,ciroth_ict_2007,funtowicz_science_1993,logan_ten_2010,bonanni_open_2010,madlberger_development_2013}.
+Les extraits de ces plaidoyers sont rapportés en annexes (\textit{cf.}~\ref{sec:Plaidoyers du libre dans l'ACV}).  
+
+Le projet a été proposé à diverses communautés suivant leur productions en faveur de plus d'ouverture et de transparence dans la recherche et particulièrement en ACV.
+
+\begin{figure}[htbp]
+\begin{center}
+%\begin{figure}[r]
+\includegraphics[width=\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures/JSL_graph/Journal_scientifique_libre_expl.pdf}
+\caption{Explication générale du journal.}
+%\end{figure}
+\label{fig:JSL_expl}
+\end{center}
+\end{figure}
+\figbox{
+Le principe général est exposé figure~\ref{fig:JSL_expl}\footnote{
+Il a été exposé sur le \href{https://fr.wikiversity.org/wiki/Projet:Journal_scientifique_libre}{projet wikiversitaire attenant (hyperlien)}.
+}.
+Sur l'ensemble des points d'étranglement du processus, nous cherchons à employer ce qui ouvrira le plus largement les interactions.
+\begin{enumerate}
+\item Pour qu'un état de l'art puisse être le plus complet possible, il faut que l'ensemble de la ressource soit nativement accessible sur le plus grand réseau de distribution libre existant et sans barrière à l'entrer, le \textsc{Web}.
+\item Pour que l'état de l'art puisse s'étendre le plus rapidement et le plus complètement possible il doit pouvoir intégrer des contributions de toute part.
+Il doit donc être interactif. L'outil le plus large et reconnu du domaine est mediawiki.
+\item Parce qu'il s'agit de \textbf{sources primaires}, il faut assurer la responsabilité et la paternité de chaque source \emph{sans que cette assurance devienne une charge réduisant à nouveau le flux de travail dédié à l'objet premier du système}.
+C'est ce qui motive la création et l'emploi du `bot authorship'.
+\item La relecture par les pairs est, comme le processus d'écriture, limitée dans des comités fermés.
+Nous les ouvrons tout simplement, (i) sur l'ensemble des contributeurs \emph{et} (ii) dans le temps (création du modèle pré-post-reconnaissance-ouverte).
+La revue est toujours post-publication mais elle peut également s'étendre au delà des premières marques de reconnaissance acquise.
+\item La masse d'articles produite rend à notre connaissance la lecture humaine-individuelle de l'ensemble d'un domaine impossible.
+Il est donc nécessaire d'introduire un mécanisme permettant l'interrogation complète de l'état de l'art par les chercheurs pratiquant un domaine.
+L'état de l'art doit être encodé sous des modèles type \gls{RDF} pour être interrogeable par des langages de type \gls{SPARQL}.
+\item Enfin, parce que l'accès à une information sans la capacité d'exploitation de celle-ci est fort peu \textit{exploitable} il faut accorder celle-ci sans restriction (autre que celle que nous reconnaissons comme nécessaire pour les sources primaires~: -BY).
+\end{enumerate}
+}
+
+\subsection{Principes de fonctionnement}
+Cette section reprend est développe la proposition initiale~\cite{patard_proposal_2015}.
+
+
+\begin{figure}[htbp]
+\begin{center}
+%\begin{figure}[r]
+\includegraphics[width=0.9\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures/JSL_graph/JSL_logigramme_aveugle.pdf}
+\caption{Explication par logigramme du fonctionnement du journal.}
+%\end{figure}
+\label{fig:JSL_logigramme}
+\end{center}
+\end{figure}
+
+\figbox{Pour observer avec une vue d'ensemble le processus du journal, le logigramme figure~\ref{fig:JSL_logigramme} a été réalisé.
+Le processus reprend des séquences d'actions après l'état de l'art et jusqu'à l'extension de celui-ci.}
+
+\subsubsection{Création d'un article, soumission :}
+À la création de l'article (première enregistrement à la création de la page), l'auteur spécifie par une balise, ou modèle (template) sémantique :
+
+Ceci est \{\{type de document | un article / livre / thèse\}\} \ldots en tant que source primaire,
+ayant pour \{\{objectif | le journal / la soutenance / la conférence\}\} et les auteurs sont : \{\{auteur(s) | le créateur et tout autre auteur qu'il ajoutera sous la forme de son compte utilisateur du wiki\}\}.
+
+Le modèle peut également intégrer tout élément additionnel pouvant être exploitable en terme de gestion bibliographique et de recherche (mots clefs, domaines \ldots).
+
+Les références bibliographiques seront indexées dans des modèles sémantiques également.
+Ceci afin de faire la traçabilité des citations et de permettre la continuité des évaluations actuelles (qu'elle soient jugée ou non, légitime, pertinente \ldots).
+Elles seront également exploitées pour le contrôle du plagiat.
+
+Il n'est pas nécessaire que les résultats soient présents à la création de l'article.
+Comme observé sur les différents modèles de journaux, il serait même intéressant d'avoir des validations sur les plans d'expérience et les protocoles élargies.
+La production des essais pourrait alors prendre place de façon distribuée et internationalisée.
+
+L'introduction dans la production des éléments de données sous des formats du web sémantique est capital dans ce qu'elle apporte de l'exploitabilité mise à l'échelle de la masse de recherche mise en œuvre de nos jours.
+
+Lorsque les auteurs considèrent leurs travaux suffisamment avancés pour une relecture de leur pairs, le champs sémantique 'soumission' est modifié.
+
+\subsubsection{Processus de revue :}
+Les wikis possèdent de façon générale une page article et une page de discussion.
+La proposition, sans plus de complication, est d'utiliser cette seconde page pour son objet.
+Cette page n'est pas soumise à restriction d'auteur.
+Tout utilisateur peut donc ajouter un sujet de discussion, voir une révision et contribuer ainsi à l'amélioration de la qualité de l'article.
+Le nombre de critiques n'est donc pas limité par la structure du journal ou d'un processus de revue.
+L'ensemble de la critique de l'article est également lisible et transparente.
+L'écriture détaillée de revue et de réplication peut prendre place sous la forme wiki/article-initial/relecture-intégrale respectivement wiki/article-initial/réplication.
+La validation de la revue est détaillée dans la section « Intégration au journal ».
+
+\subsubsection{Bot authorship « auteur-paternité »}
+Le premier contributeur est l'auteur principal.
+Le principe du bot « paternité » ("authorship") est d'annuler dans l'historique toutes les contributions d'une version 'n' n'étant pas du fait des auteurs listés dans le modèle principal de l'article à la version 'n-1'.
+Il ne s'agit pas d'une suppression totale car les modifications restent apparente dans l'historique.
+L'objectif est de maintenir la 'paternité' et la responsabilité attenante.
+L'article et sa protection sont créé simultanément.
+Si le premier auteur souhaite collaborer avec une autre personne, il lui suffit d'ajouter le nom de compte de la personne au modèle sémantique avec la balise des auteurs.
+L'auteur initial étant reconnu par le bot comme autorisé en écriture, celui-ci peut ajouter des auteurs.
+Un tel bot devra tourner sur l'observation des modifications récentes et contrôler celle visant des pages employant le modèle pour les sources primaires.
+
+\subsubsection{Intégration au journal}
+Lorsque nous exprimons 'intégration au journal' nous comprenons l'acceptation par une communauté d'auteurs et de lecteurs partageant une expertise commune.
+Le journal ici devient une catégorie appliquée à un article déjà publié et attestant du niveau de qualité attendu par le groupe appliquant la catégorie.
+
+De la même façon que les articles de wikipédia sont évalués sur leur qualité, la révision par des contributeurs (pairs) entraîne de-facto la révision par les \textit{pairs}.
+S'agissant toutefois de sources primaires, la révision nécessite un caractère plus spécifique des 'pairs'.
+Ce qui fait la qualité d'une revue n'est pas nécessairement la similitude disciplinaire des acteurs mais leurs expertises dans le traitement des points discutés.
+
+Les corrections réalisées sur la base des éléments de discussion pourrons être validées par les demandeurs des corrections.
+Un modèle (template) de correction sur le même principe que celui de l'article comportera donc un champ sémantique additionnel booléen \{\{revue effective | «~oui~»/«~non~»\}\}, initialisé à «~non~» et modifiable uniquement par le contributeur de la revue (contributeur ayant ajouter le modèle sémantique de revue dans la page discussion).
+Sous réserve du respect des exigences minimum ainsi que de la présence de X revues validées par une mention "effective", l'article intègre le journal (catégorie) visé par l'auteur.
+Comprenez que l'article ne se déplace aucunement.
+Il obtient simplement une marque de reconnaissance de la qualité du travail présenté.
+Sur la base des données renseignées sur les comptes utilisateurs des critiques (reviewers), la revue peut être qualifié de~: par les pairs, nationale, internationale \ldots et suivre la classification actuelle des journaux scientifiques.
+
+Formulons à titre d'exemple des exigences minimum de qualité pour la validation en tant qu'article du journal.
+\begin{itemize}
+\item Exploitation explicite des méthodes statistiques pour les affirmations quantifiées et présentation du plan d'expérience.
+\item Compatibilité dimensionnelle des équations et affirmations explicitée.
+\item Accessibilité de l'ensemble des données nécessaires à la reproduction, (et donc la vérification) des travaux.
+\item Tant que possible, les données utilisées doivent être accessible au sein de base(s) sémantique(s) publiquement accessible(s) avec un lien bidirectionnel de l'article vers les données et réciproquement.
+\item Emploi des unités SI (en supplément si l'auteur souhaite maintenir des unités alternatives).
+\item Absence de plagiat.
+\end{itemize}
+Ces exemples d'exigences sont purement informatifs.
+S'il est à prévoir qu'un usage normatif en découlera, il faut encourager la définition individuelle des grilles de lecture.
+
+\subsubsection{Plagiat}
+D'autres bots sont envisageables en vu de la protection contre le plagiat \href{https://www.mediawiki.org/wiki/Manual:Pywikibot/Compat/copyright.py}{copyright.py}.
+La proposition initiale suggérait qu'il ne devrait pas s’agir de suppression mais bien d'étiquettes en vu de correction.
+L'attention de juristes serait nécessaire ici car à la réflexion, cela ne serait peut-être pas possible de conserver la totalité de l'historique (la version dans l'historique incluant un fraction plagiée devant être supprimée).
+Il reste cependant un point contradictoire dans la protection contre le plagiat dans l'état actuel de propriété des ouvrages littéraires et artistiques.
+Il sera délicat d'employer un bot en vu de contrôler l'antériorité d’existence d'un éléments pour un contenu auquel ce bot n'aurait pas accès.
+La vigilance des critiques reste donc un point important dans l'attente d'une libération de ces sources.
+
+Si le plagiat avéré est identifié (création d'une revue avec demande de corrections des sources pour cause de contenu non original), il pourrait être employé en guise de sanction un bot qui supprime toute nouvelle contribution en tant qu'article de la part de l'utilisateur pour une durée de X année(s).
+Les communautés wikimédiennes pratiquent également le blocage complet de comptes.
+Le compte utilisateur reste actif et est identifié comme suspendu pour ladite sanction.
+
+\subsection{Des composants}
+Le protocole décrit plus haut peut semble-t-il tout à fait fonctionner sur des espaces 'git' tel github ou d'autres gitlab.
+Le choix du composant 'plate-forme' vers un espace wikimedia réside à la fois dans la large communauté de développeurs mais également de l'attention apporter aux mesures d'ergonomie et d'accessibilité dans MediaWiki.
+En somme, nous n'avons pas observé de raison (dans le cadre de cette proposition) de produire une duplication d'un outil aux fonctionnalités identiques à celle d'un outil libre et déjà appliqué mondialement avec succès.
+
+Nous relevons également que la connexion nécessaire des chercheurs peut être rempli par MediaWiki, ses options de suivi de pages, de notification mails, d'abonnement à des flux RSS et les modèles développés par la communauté tel \{\{notif|user-account\}\}.
+
+Un research-gate (ou académia) wikimédien ne serait autre que l'ensemble des pages utilisateurs avec certains attributs et leur page spécial de \href{https://fr.wikipedia.org/w/index.php?title=Spécial:Contributions/Amélie_Pataud&offset=&limit=500&target=Amélie+Pataud}{contributions} (publications)\footnote{Ce qui semble déjà prendre place sans sollicitation particulière~:
+\href{https://fr.wikipedia.org/wiki/Catégorie:Utilisateur_Doctorant}{Doctorants},
+\href{https://fr.wikipedia.org/wiki/Catégorie:Utilisateur_Docteur}{Docteurs},
+\href{https://fr.wikipedia.org/wiki/Catégorie:Utilisateur_Chercheur}{Chercheurs},
+\href{https://fr.wikipedia.org/wiki/Catégorie:Wikipédiens_par_école_ou_université}{Écoles et universités}.
+}.
+Afin que le processus décrit puisse fonctionner, d'autres composants sont nécessaires.
+Il s'agit de modèles et de scriptes informatiques.
+\figbox{
+La figure \ref{fig:composant_JSL} présente l'interaction de modèles ou champs sémantiques.
+Elle complète la description des principes de fonctionnement et le logigramme (figure~\ref{fig:JSL_logigramme}).
+Les modèles utilisateurs et contenus sont à gauche.
+Les actions de scriptes sont à droite}
+
+%\begin{landscape}
+\begin{figure}[htbp]
+\centering
+%\begin{center}
+%\begin{figure}[r]
+\includegraphics[width=12cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures/JSL_graph/Journal_libre.pdf}
+\caption{Interactions des composants modèles via scriptes.}
+%\end{figure}
+\label{fig:composant_JSL}
+%\end{center}
+\end{figure}
+%\end{landscape}
+
+Cette représentation mettant en avant les informations pour l'écriture et la revue ne doivent pas masquer leur rôles ultérieurs.
+La question du journal, c'est aussi, 'qu'est-ce que je lis pour être à jour sur ma discipline ?'
+La fermeture introduite par les comités était une restriction importante.
+Il fallait donc se demander s'ils étaient 'supprimables' (un ratio coût/fonction).
+Cette thèse traite des mécanismes d'évaluation.
+De fait un filtrage systématique par un groupe en nombre réduit, non lisible et sans roulement visible ne paraissait pas souhaitable, \emph{soutenable}.
+L'objectif était donc de reproduire des mécanismes présents dans l'open-source et l'économie du don (ce qui est (devrait-être) normalement le cas pour la production des chercheurs du public).
+Le modèle proposé repose donc sur la transparence des revues mais aussi sur le libre arbitrage des \emph{critères pour les lecteurs}.
+
+\exbox{
+Ex : je souhaite lire les articles qui comportent \{\{set keywords|mot-clef{\scriptsize i}\}\} et/ou le contenu dans le texte \{\{set word content | Ngrams{\scriptsize i}\}\}, avec X revues validées par au moins OU[Y nationalités différentes ; Z laboratoires différents] et OU[ ratio validé/non-validé > 3 ; validé + non-validé > 8] \ldots écrit par des auteurs ayant un ratio de [publication d'article / publication de critique] < 33\%.
+}
+Les propriétés sont mises à titre d'exemple pour signifier les possibilités.
+\textbf{Le lecteur notera la valorisation et la visibilité du travail de critique.}
+Notez que l’\textit{éditoriat} n'est pas supprimé.
+Il reste un contrôle sur l'application de la marque de reconnaissance.
+Celui-ci est simplement ouvert, mutualisable comme individualisable. 
+
+Bien entendu, les démarches de normalisation produiront certainement des 'grilles standard' qui serviront à la fois en entrée de lecture, mais aussi en évaluation.
+Ces grilles d'évaluations seront donc également des composants de ce nouveau mécanisme.
+C'est donc \emph{aussi} un enjeux de l'évaluation de la recherche.
+Celle-ci sous ces nouveaux moyens pourrait prendre en considération l'interaction à la société civile et les étudiants, l'interface vers la vulgarisation, l'observation de la fréquentation \emph{en plus} de la citation, l'observation du caractère collectif de la production.
+La complète liberté d'exploitation permettrait un traitement linguistique sémantique pour signifier le désaccord ou l'accord avec une citation.
+
+\subsection{Écart à l'état de l'art}
+
+Nous percevions l'\gls{OSF} plutôt comme un laboratoire (le cadre du travail) plutôt que le vecteur de son produit.
+Or il semble bien que ce soit l'un des objets portant le plus de correspondance avec l'idée produit dans le \gls{JSL}.
+Il s'agit d'un cadre de pratique et non un cadre thématique (ou disciplinaire).
+Une attention particulière est portée sur la capacité de reproduction d'utilisation et donc l'intégration des données.
+Il reste cependant des écarts observés qui sont les suivants~:
+\begin{itemize}
+\item Le contenu se rapproche de la structure classique des travaux de la littérature scientifique, mais celui-ci n'est pas nécessairement dans l'article mais rattaché à lui (hyperlien vers divers objets : fichiers joints (pptx, docx, xlsx, R), même des articles en journaux 'traditionnels'). Cette caractéristique si elle peut permettre plus de continuité au paradigme actuel, fait obstacle aux questions de libre exploitation de part les licences employées dans les contenus joints ou liés.
+\item La démarche de continuité est d'ailleurs observable par les "\href{https://cos.io/top/}{Transparency and Openness Promotion (TOP) Guidelines (hyperlien)}". Ce qui marque la distinction de notre approche 'disruptive' à ces acteurs historiques.
+\item L'\gls{OSF} englobe plus l'activité de recherche en elle-même (ex : "OSF for Meetings"\ldots "for academic meetings and conferences")
+\item Les contenus ne sont pas éditable directement par des tiers. Les 'auteurs' peuvent déterminer les droits de contribution \href{http://help.osf.io/m/sharing/l/526695-contributor-permissions}{\textit{cf.} contributor-permissions}.
+\end{itemize}
+
+Les points discriminants du \gls{JSL} au Wikijournal actuel (probablement l'entité la plus proche sous forme de journal que nous ayons observé) sont~:
+\begin{itemize}
+\item L'exploitation sémantique (mais qui devrait être au moins partiellement couverte avec wikidata).
+\item La conservation d'un encadrement thématique pré-déterminé, vision disciplinaire découpée par avance de la science.
+\item L'absence d'introduction d'automatisation de tâche de `secrétariat éditorial' et de protection.
+\item \textit{Un processus impliquant le passage par l'éditeur}, point le plus en distance de notre proposition.
+\end{itemize}
+%Outre sa structure, le contenu ne semble pas systématiquement être celui des journaux au sens où nous y sommes accoutumés dans la discipline.
+%Soit il s'agit d'écart disciplinaire, soit les objets dans leur contenu sont effectivement différents.
+
+
+\subsection{Discussion des risques et critiques}
+\subsubsection{Programme VS Communauté}
+
+Une critique ayant été opposé au modèle est celle de l'emploi d'un script pour la restriction à l'écriture (pérenne) sur l'article.
+Nous proposons ce protocole avec une approche d'accroissement de la productivité dans l'\gls{ESR}.
+Nous ne considérons pas qu'il soit productif de laisser à la charge des enseignants - chercheurs la tâche de surveillance de leurs articles.
+Cette protection par bot vise le maintien de la responsabilité et la décharge du chercheur des opérations de `police'.
+L'attribution des marques de reconnaissances par script permet également que les règles soient établies de façon distinctes.
+Les applications de marquage et catégorisation par scriptes permettent de décharger du contrôle des personnes pour ne contrôler que le programme lui-même, ses règles et son fonctionnement.
+
+\subsubsection{L'Hébergement, un point de concentration}
+Le point de concentration restant est celui de l'hébergement.
+Il n'a pas été traité car ceci est hors de nos qualifications.
+Il semble toutefois qu'après avoir cherché l'élimination des strictions à l'écriture, à la révision, à la diffusion et à l'utilisation, il faille se pencher sur la distinction entre bien commun et bien collectif ainsi qu'aux capacités particulières des administrateurs d'un wiki.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c} %{p{3.5cm} | p{3.5cm} | p{3.5cm}}
+& Excluabilité & Non-Excluabilité \\
+\hline
+Rivalité & Bien privatif & Bien commun\\
+\hline
+Non-Rivalité & Bien de club & Bien collectifs \\
+\end{tabular}
+\caption{\cite[Annexe 1.]{beitone_biens_2010}}
+\label{tab:biens_beitone}
+\end{table}
+
+\figbox{
+Comme présenté table~\ref{tab:biens_beitone}, la distinction entre un bien commun et un bien collectif porte sur la rivalité, celle entre bien de club et bien collectif porte sur l'excluabilité.
+Or, la \gls{noosphere} n'a pas d'existence sans support physique\footnote{
+Tout comme le biote global, la \gls{biosphere} sous l'acception excluant l'abiotique, repose sur un espace de matière inanimée~: \blockcquote{_biosphere_2016}{la  lithosphère (les roches), l'hydrosphère (l'eau), et l'atmosphère (air)} (abiotique), la \gls{geosphere}).
+}.
+L'information est susceptible d'être privée de la capacité d'accès ou de l'autorisation d'exploitation (amont et aval de l'information) suivant des \emph{actions sur son support}.
+Les droits et capacités particulières des différents statuts d'utilisateurs (masquage, suppression, blocages, protections) ainsi que le stockage physique des données peuvent donc faire circuler l'objet étudié sur les trois positions~: collectif, commun, de club.
+Seule une distribution massive et redondante sur les différentes machines connectées au réseau pourrait potentiellement nous rapprocher de façon stable d'un bien collectif.
+}
+
+En somme c'est aussi ici une question de l'émergence du droit du web et de son socle physique qui est à questionner.
+La seule indication de solution produite sur cette question est l'hébergement multiple distribué associé à un point d'interrogation mutualisé de la base de connaissance.
+\subsubsection{Propriété des données et confidentialité}
+La question de la propriété des données employées en recherche publique est évidement à prendre sous l'angle de la politique.
+À l'image de la question récurrente de la députée Mme Attard sur l'achat de logiciels propriétaires par les ministères, il faut questionner l'emploi de bases privées par les pouvoirs publics dont les résultats ne pourraient être public \emph{et} vérifiable.
+En somme, il faut prendre position sur ce qu'il est possible d'utiliser en recherche publique pour une finalité publique.
+
+Relativement à la confidentialité des données (circonscription des personnes en ayant connaissance), il faut l'observer sous les deux angle, de la protection des personnes et de la validité des recherches.
+Le questionnaire, l'interview, ne dévoile pas le nom des répondants en vue de leur protection.
+Le chercheur limite le rapprochement des données et des résultats car ceux-ci pourraient porter préjudices aux répondants s'ils sont identifiés.
+Le chercheur interview des personnes (pensons à la sociologie et à l'anthropologie notamment) mais en dehors de l'\textit{interrogé} et de l'\textit{interrogeant}, aucune autre personne n'a observé l'échange ni n'est en position de le reproduire.
+La confidentialité de l'échange pose les problèmes de reproductibilité de ces disciplines.
+Ainsi les critères de qualité des productions ne peuvent être systématiquement généralisés et les discriminations disciplinaires pourraient être renforcées sans précautions particulières\footnote{Les critères d'évaluation de la recherche doivent émaner des disciplines elles-même.}.
+
+\subsubsection{Auteurs et \textit{auteurs}}
+
+Nous faisions remarqué les règles d'ajout et suppression des auteurs à un article dans un journal actuel de la littérature.
+Notre protocole n'est pas exempt de détournement potentiel.
+\exbox{
+Nous avons souligner qu'il serait possible d'observer les réels auteurs des productions et que cela pourrait modifier des condition d'accès et d'évolution de carrière dans l'\gls{ESR}.
+Nous proposons donc comme exemple le détournement suivant.
+
+Coercition ou monnayage de l'emploi du compte d'un tiers pour l'écriture `au nom d'une personne'.
+Sous pression hiérarchique (subalterne écrivant pour un supérieur), ou monnayage (ex : \href{https://fr.wikipedia.org/wiki/Nègre_littéraire}{nègre littéraire} dans l'écriture en politique) un tiers peut écrire pour un autre.
+}
+
+Nous ne voyons face à ce type de détournement que le contrôle au moyen de bibliothèques informatiques employées en fouille et analyse de textes pour identifier des auteurs (proximité du vocabulaire employé, structure\ldots).
+Le modes de gouvernance et de sanction pour ces problèmes d'éthique ne sont pas l'objet de ce travail mais devront être considérés.
+
+\subsection{Application aux journaux observés}
+Reprenons l'exemple des journaux, ex: VertigO ou Tic\&Société.
+Leur comités éditoriaux et scientifiques comporteraient des membres Utilisateur:NOM.
+Ceux-ci porteraient des catégories telles~: [[Catégorie:comité éditorial Vertigo]] ; [[Catégorie:Expertise en sciences de l'environnement]] et des spécialisations 'science du sol', '\gls{SIG}'\ldots
+La page utilisateur est protégée par un script 'authorship' avec de règles relatives à l'emploi de la chaîne de caractère [[Catégorie:comité éditorial Vertigo]].
+Une catégorisation [[Catégorie:Article du Journal Vertigo]] peut donc prendre place sur un article dont la revue valide les critères de qualité actuels du journal.
+Le lectorat peut donc conserver des \emph{repères} traditionnels de sélection de ses lectures et de diffusion de ses productions.
+Mais il peut \emph{également} en changer et produire ceux qui lui conviennent.
+
+Écartons nous de la ligne "without competing with traditional publishers." d'\href{http://episciences.org}{episciences}.
+Demandez à Universalis ou Britanica, si elles ne sentent pas la compétition.
+Il n'y a pas de complexe à avoir, à dire que la démarche vise à siphonner les contributeurs et lecteurs de parasites économiques pour alimenter des organismes sains voir symbiotiques.
+Nombre de travailleurs dans les secrétariats d'éditions seraient probablement prompt à se saisir d'emplois où ils rempliraient leurs fonctions sans les biais des visées lucratives.
+Mais force est de reconnaître que les éditeurs privés recèlent un capital non uniquement monétaire pour les chercheurs.
+Ce capital de reconnaissance académique doit être prolongé au travers de mécanismes tels que proposé dans le cadre du \gls{JSL}.
+Les indicateurs de \href{https://tools.wmflabs.org/pageviews/?project=fr.wikipedia.org&platform=all-access&agent=user&range=latest-20&pages=Coefficient_de_Gini}{fréquentation}, les indications de  \href{https://fr.wikipedia.org/w/index.php?title=Spécial:Pages_liées/Philosophie&hideredirs=1&hidetrans=1}{pages liées} et des catégories d'\href{https://fr.wikipedia.org/wiki/Catégorie:Article_de_qualité}{appréciation qualitative} ne sont donc pas à proscrire, au contraire.
+
+\citeauthor{frantsvag_size_2010} souligne l'importance des effets d'échelle~\cite{frantsvag_size_2010}.
+Ainsi, dans le déploiement du modèle proposé, il semble que~:
+(i) de nombreux journaux OA, notamment ceux de même thématique, doivent se rejoindre ;
+(ii) les opérations de secrétariat, partie centrale de la plus-value éditorial~: "travail de secrétariat de rédaction" selon \citeauthor{contat_publier_2015} doivent être mutualisées~\cite{contat_publier_2015}.
+Nous remarquons que cette \href{https://fr.wikipedia.org/wiki/Catégorie:Icône_de_titre/Utilisateur/Statut}{spécialisation} de tâches telles les corrections \href{https://fr.wikipedia.org/wiki/Catégorie:Utilisateur_Orthographe}{orthographique}, les \href{https://fr.wikipedia.org/wiki/Catégorie:Utilisateur_Traduction}{traductions}, est déjà à l’œuvre dans les espaces wikipédiens.
+
+Ces éléments nous incite à privilégier le choix d'un acteur de la société civile associatif pour faire se rejoindre les acteurs académiques sans leur rattachement d'origine pour le nom de domaine.
+Les attributs d'affiliations, de catégorisation doivent toutefois se développer pour conserver des principes de reconnaissance du milieu académique.
+
+\subsection{\{\{Catégorie:Journal des mécanismes technico-sociaux et environnementaux\}\}}
+Notre incursion dans les sciences de l'information et de la communication avait pour but initial d'identifier un mécanisme pour la production de ces données qui manquent cruellement à la discipline de l'\gls{ACV}.
+Nous avons bien évidement largement dépassé ce simple cadre, mais il nous reste toutefois à indiquer comment cette proposition du JSL s'applique à l'ACV en particulier.
+
+Nous avons évoqué dans ce mémoire la modification de la structure des données en \gls{ACV}.
+
+Il y a tout d'abord le recueil des mécanismes environnementaux en substitut aux méthodes d'impacts actuelles.
+Dans ce cadre il nous faudra décrire tout processus de transformation ayant cours sur cette terre, chaque système avec ses entrées et ses sorties.
+Les quantifications des flux entrant et sortant mais également la localisation des phénomènes et leurs équilibres avec les processus voisins.
+
+Si la nature n'a pas de défenseur pour la conservation de ses secrets, certains mécanismes technico-sociaux eux possèdent ces défenses.
+Si nous n'envisageons pas de coercition des organismes privés pour la divulgation de leurs rouages, les diverses puissances publiques regorgent de systèmes nourris par leurs contribuables dont il n'est pas requis qu'ils soient tenus secrets.
+
+Tout particulièrement, le parc des équipements et terrains productifs\footnote{Parc industriel, horticole, sylvicole, agricole, hôtelier, hospitalier\ldots} des établissements d'enseignements scientifiques publiques pourrait tout à fait être un vivier pour les bases sémantiques que constituerait des \emph{catégories de journaux scientifiques libres}.
+Parce que la valeur économique ne réside pas dans la seule production compétitrice à moindre coût de quantum monétaire, il ne serait pas impossible qu'une fraction non-négligeable des TPE-PME est une carte à jouer dans cette dynamique d'économie en source ouverte (open-source economy).
+\section{Expérimentation}
+\begin{center}
+\colorbox{yellow}{avancé avec l'assemblée des communs}
+\exbox{Avancer avec l'assemblée des communs et les chapitres wikimedien sur le JSL et les template de libération des sources.}
+\end{center}
+
+\section{Conclusion :}
+Le processus de publication de l'activité scientifique est en train de connaître une (r)évolution découlant de l'intégration progressive du \emph{net}.
+Passant du paradigme de l'imprimerie à celui du réseau d'échange électronique, de nombreux \emph{codes} de la recherche sont et seront remis en question.
+La structure des coûts et la spécialisation des tâches seront redéfinies par la simple existence d'alternatives.
+La vitesse et l'ampleur de ces `redéfinitions' n'a pas été discuté ici.
+Sans pouvoir trancher sur la question de ce qui fait et fera valeur dans l'édition scientifique nous ne prendrons donc pas position entre évolution et révolution (la seconde impliquant le changement de base de valeur).
+
+Les économies monétaires à réaliser sont très significatives.
+Des choix symboliques pour le rapprochement de la société civile et du monde académique sont à portée de clavier.
+La sélection d'un organe privé, à but non-lucratif avec si possible une marge d'indépendance aux diverses structures étatiques semble souhaitable.
+
+Il n'y a pas limitation sur la proposition quant à un domaine scientifique particulier.
+Le protocole est applicable à l'ensemble des disciplines scientifiques.
+Plus particulièrement il permet l'interaction des disciplines sans les contraintes des structures hiérarchiques (classement unique et logique d'adresse), la catégorisation peuvent être multiples.
+
+Le protocole pourrait également être employé à l'extérieur de la sphère académique, mais ces développements ne sont pas traités ici.
+
+Les bénéfices d'exploitation et notamment l'interrogation sémantiques modifieront profondément les pratiques de recherche telle que les articles de revue par exemple dont la production pourrait être au moins partiellement automatisée.
+%Outre la création d'un journal international libre sur l'écologie industrielle, je serait ravi de voir chaque université ou groupe d'universités porter un journal sur les sciences quelles enseignent et développent en vue de la contribution à un ensemble collectivisé sous une même nom de domaine tel que cela a été réalisé pour les données en biologie avec Bio2RDF9.
+
+
+%Références bibliographiques :
+%1.	Borkum, M. Health and Safety on the Semantic Web Automated Completion of COSHH Risk Assessment Forms. (2014). at <http://www.rsc.org/images/Mark-Borkhum-Health-and-Safety-on-the-Semantic-Web_tcm18-243641.pdf>
+%2.	Zhang, Y., Luo, X., Buis, J. J. & Sutherland, J. W. LCA-oriented semantic representation for the product life cycle. J. Clean. Prod. 86, 146–162 (2015).
+%3.	Davis, C. B. & Weijnen, M. P. C. Making sense of open data: from raw data to actionable insight : Proefschrift. (Next Generation Infrastructures Foundation, 2012). at <http://enipedia.tudelft.nl/thesis/ChrisDavisPhD_MakingSenseOfOpenData.pdf>
+%4.	Mutel, C. Some ideas on an open source version of the ecoinvent software. Spatial Assessment weblog of Chris Mutel (2014). at <http://chris.mutel.org/open-source-ei3.html>
+%5.	Masanet, E., Chang, Y., Yao, Y., Briam, R. & Huang, R. Reflections on a massive open online life cycle assessment course. Int. J. Life Cycle Assess. (2014). doi:10.1007/s11367-014-0800-8
+%6.	Lamela, Z. et al. Footprinted. org : experiences from using linked open data for environmental impact information. in (Shaker Verlag, 2011). at <http://lnu.diva-portal.org/smash/record.jsf?pid=diva2%3A803212&dswid=-9447>
+%7.	Sayan, B. The Contribution of Open Frameworks to Life Cycle Assessment. (2011). at <https://uwspace.uwaterloo.ca/handle/10012/6336>
+%8.	Singhofen, A. et al. Life cycle inventory data: Development of a common format. Int. J. Life Cycle Assess. 1, 171–178 (1996).
+%9.	Belleau, F., Nolin, M.-A., Tourigny, N., Rigault, P. & Morissette, J. Bio2RDF: Towards a mashup to build bioinformatics knowledge systems. J. Biomed. Inform. 41, 706–716 (2008).
+%10.	Perez, A., Larrinaga, F. & Curry, E. in Software Engineering and Formal Methods (eds. Counsell, S. & Núñez, M.) 306–312 (Springer International Publishing, 2014). at <http://link.springer.com/chapter/10.1007/978-3-319-05032-4_22>
+%11.	Ingwersen, W. W. et al. A new data architecture for advancing life cycle assessment. Int. J. Life Cycle Assess. (2015). doi:10.1007/s11367-015-0850-6
+%12.	Herrmann, I. T., Hauschild, M. Z., Sohn, M. D. & McKone, T. E. Confronting Uncertainty in Life Cycle Assessment Used for Decision Support. J. Ind. Ecol. n/a–n/a (2014). doi:10.1111/jiec.12085
+%13.	Raasch, C., Lee, V., Spaeth, S. & Herstatt, C. The rise and fall of interdisciplinary research: The case of open source innovation. Res. Policy 42, 1138–1151 (2013).
+%14.	BONSAI – Big Open Network for Sustainability Assessment Information. (2014). at <https://bonsai.uno/files/BONSAI-presentation.pdf>
+%15.	Ciroth, A. ICT for environment in life cycle applications openLCA — A new open source software for life cycle assessment. Int. J. Life Cycle Assess. 12, 209–210 (2007).
+%16.	Funtowicz, S. O. & Ravetz, J. R. Science for the post-normal age. Futures 25, 739–755 (1993).
+%17.	Logan, D. W., Sandal, M., Gardner, P. P., Manske, M. & Bateman, A. Ten Simple Rules for Editing Wikipedia. PLoS Comput. Biol. 6, (2010).
+%18.	Bonanni, L. et al. The Open Sustainability Project : A Linked Data Approach to LCA. (2010). at <http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-63167>
+%19.	Madlberger, L. in On the Move to Meaningful Internet Systems: OTM 2013 Workshops (eds. Demey, Y. T. & Panetto, H.) 12–21 (Springer Berlin Heidelberg, 2013). at <http://link.springer.com/chapter/10.1007/978-3-642-41033-8_3>
+%20.	Status for Resource Description Framework (RDF) Model and Syntax Specification. (1999). at <http://www.w3.org/1999/.status/REC-rdf-syntax-19990222/status>
+%21.	MediaWiki. Wikipedia, the free encyclopedia (2015). at <https://en.wikipedia.org/w/index.php?title=MediaWiki&oldid=672060274>

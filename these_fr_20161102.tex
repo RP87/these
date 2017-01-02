@@ -1,0 +1,481 @@
+\documentclass[12pt,twoside,a4paper,english,french]{book} %fleqn % use larger type; default would be 10pt
+% Les langues (français et anglais) sont passées directement à babel et à tous les autres packages qui pourraient en avoir besoin.
+% C'est la même chose pour a4paper, geometry hérite cette option.
+% La dernière langue spécifiée sera la langue principale.
+
+%\documentclass[11pt,french]{book}
+%\documentclass[12pt,french]{report}
+%\documentclass[12pt]{thesul}
+%\documentclass[10pt]{article}
+%? twocolumn / gain de place
+
+%___Packages____________________________________
+\usepackage{amsmath}		% pour les symboles de maths
+\usepackage{graphicx}	% pour afficher des figures
+%\usepackage[load-configurations = abbreviations]{siunitx} %Système d'unité international
+
+\usepackage{amssymb}		% encore des maths
+\usepackage{eurosym}		%symbole euro
+
+\usepackage{lscape}							% passer des éléments en position paysage
+%\usepackage{pdflscape}							% passer des éléments en position paysage pdflatex
+\usepackage{longtable}						% Table sur plusieurs pages > utilisation de tabu à la place
+%\usepackage{tabu}							% Table sur plusieurs pages > longtabu
+\usepackage{multirow}							% Tables avec cellules fusionnées Columns spanning multiple rows https://en.wikibooks.org/wiki/LaTeX/Tables
+%\usepackage{array}
+\usepackage{enumitem}							% pour gérer les listes avec paramètres [noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+%\renewcommand{\labelitemi}{$\bullet$}
+%\renewcommand{\labelitemii}{$\cdot$}
+%\renewcommand{\labelitemiii}{$\diamond$}
+%\renewcommand{\labelitemiv}{$\ast$}
+%
+%Amongst the more commonly used ones are $\bullet$ (\bullet), $\cdot$ (\cdot), $\diamond$ (\diamond), $-$ (-), $\ast$ (\ast) and $\circ$ (\circ).
+
+\usepackage{color}							% pour la couleur
+%\usepackage[dvipsnames]{xcolor}			% alternative  pour la couleur, [usenames,,svgnames,table] autre option initiales
+\usepackage[skins, breakable]{tcolorbox}					%boite remarques, commentaires, exemples
+%\usepackage{soul} % la commande \hl surlignage déclenche des erreurs
+
+%\usepackage[square, numbers]{natbib}		%https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Natbib
+
+%\SetBlockThreshold{1}
+\usepackage{makeidx}					%pour faire un index
+
+% ordre des packages ! varioref ; hyperref ; cleverref http://tex.stackexchange.com/questions/139459/vref-and-input-command
+\usepackage{tikz}
+\usepackage[raccourcis]{fast-diagram} %
+%\usepackage{FAST}
+%
+%\usepackage[backend=biber,style=numeric-comp,sorting=none,firstinits=true]{biblatex}
+%\addbibresource{zotero_selec_all_biblatex.bib}
+
+%https://en.wikibooks.org/wiki/LaTeX/Glossary
+% à réfléchir entre index et glossaire
+
+
+\usepackage[utf8]{inputenc}	% pour poser proprement le type de code
+\usepackage[T1]{fontenc}		% nécessaire pour le package babel [T1]
+\usepackage{textcomp} 			%test symbols
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}	% pour pouvoir écrire directement avec les accents [frenchb]
+%\usepackage[top=3cm, bottom=3cm, inner=3cm, outer=3cm]{geometry} % marges, dimensions de la page...
+
+\usepackage{csquotes}
+%\SetBlockThreshold{52}			% défini le nombre de ligne avant passage en bloc
+%\usepackage[backend=biber, backref]{biblatex} 
+\usepackage[backend=biber, backref, sorting=none, style=numeric-comp, doi=false, url=false, isbn=false, maxcitenames=1]{biblatex}
+%\usepackage[backend=biber, backref, sorting=none, style=numeric-comp, doi=false, url=false, isbn=false, maxcitenames=2, eprint=false]{biblatex}
+%\usepackage{biblatex}
+	
+\addbibresource{zotero_selec_all_biblatex.bib}
+%\usepackage[french]{varioref}						% il faut appeler \vref et pas \ref
+%\usepackage{cleveref}						% faire le beau gosse avec ``ci-contre'',``page suivante''...localisation et type de contenu
+
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue, pdftex]{hyperref} % hyperlien pagebackref=true, 
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[all]{hypcap}					% pour les hyperlien vers les figures sur la figure et non sur la légende
+\usepackage{wrapfig} 						%figure entourée de texte
+\usepackage{listings} %mettre du code
+
+% % % % % % % % % % % % % % % % % %ù
+%commandes
+%\definecolor{bleuclair}{rgb}{0.7, 0.7, 1.0}
+%\definecolor{rosepale}{rgb}{1.0, 0.7, 1.0}
+%
+%\newcommand{\hlrose}[1]{\sethlcolor{rosepale}\hl{#1}}
+
+% Barrer du texte : \barre{texte barré}
+\newlength{\textlarg}
+\newcommand{\barre}[1]{%
+   \settowidth{\textlarg}{#1}
+   #1\hspace{-\textlarg}\rule[0.5ex]{\textlarg}{0.5pt}}
+
+% gestion de la profondeur de numérotation et d'affichage en TOC
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+
+%%pied de page personalisé
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%%\fancyhead{}% efface le contenu de l'en-tete
+%%\fancyfoot{}% efface le contenu du pied de page
+%\fancyfoot[C]{\textit{ lien vers \ref{TOC}}
+%%%\renewcommand{\headrulewidth}{0pt}% supprime le trait horizontal apres les en-tetes
+
+%___Glossaire___
+\usepackage[xindy,acronyms,toc,section=chapter]{glossaries}
+\makeglossaries
+\setglossarystyle{listhypergroup}
+\renewcommand*{\glstextformat}[1]{%
+\textcolor{magenta}{#1}}% <-- en vert
+
+\loadglsentries{glossaire}
+
+%_______________________Mes boites_____________________________
+
+%Lectures de figures
+\newcommand{\figbox}[1] {
+\begin{tcolorbox}[width=\linewidth, boxsep=2pt, left=2pt, right=2pt, top=2pt, breakable] #1 \end{tcolorbox}}
+%Exemples
+\newcommand{\exbox}[1] {
+\begin{tcolorbox}[colframe=green!50!white, colback=green!10!white, width=\linewidth, boxsep=2pt, left=2pt, right=2pt, top=2pt, arc=3mm, breakable] #1 \end{tcolorbox}}
+%Notions Clefs
+\newcommand{\keybox}[1]{\begin{tcolorbox}[colframe=red!50!white, width=\linewidth,boxsep=2pt, left=2pt, right=2pt, top=2pt, arc=-1mm, breakable] #1 \end{tcolorbox}}
+
+%listing above text
+%____________________________________________________
+%\title{Fondations de l'Évaluation Holistique Opérationnelle\\Re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie} % et l'artificialisme}
+\title{Contribution à la re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie, via l'intégration explicite du jugement, le traitement de la multi-dimensionnalité et l'approche alternative libre des données.}
+\author{Rudy Patard}
+\date{\today}
+
+\includeonly{recherche_libre}
+
+
+\begin{document}
+\frontmatter % Numerotation des pages en chiffres romains
+% A mettre au début du document, pour ne pas avoir 1, 2, i, ii, 1, 2, 3 ... (éviter la répétition)
+\begin{titlepage}
+
+%le nom de l'établissement ou des établissements qui délivrent le doctorat et le nom de l’école doctorale. Dans le cas d’une cotutelle internationale de thèse, mentionner le nom de chacun des établissements ;
+%− le type de doctorat ;
+%− le champ disciplinaire dans lequel est soutenue la thèse ;
+%− les noms et prénoms de l'auteur ;
+%− le titre de la thèse ou l’intitulé des principaux travaux ;
+%− les noms et prénoms du directeur de recherche. Dans le cas d’une thèse en cotutelle, les
+%noms et prénoms des directeurs de recherche ;
+%− la date de soutenance ;
+%− les noms et prénoms des membres du jury.
+
+
+  \thispagestyle{empty} %% To center the title page, and do not have a numbered page
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+  \center % Center everything on the page
+  % HEADING SECTIONS
+%  UNIVERSITE LILLE NORD-DE-FRANCE
+%  \begin{figure}
+%  \begin{subfigure}[b]{0.5\textwidth}
+%  \href{http://umet.univ-lille1.fr}{\includegraphics[width=0.5\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/01_RAPPORT/Memoire/img/umet.png}}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.5\textwidth}
+%  \begin{flushright}
+%  \href{http://www.univ-lille1.fr}{\includegraphics[width=0.5\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/Logos/UL1-WEB-2014.png/UL1-WEB-2014.png}}
+%  \end{flushright}
+%  \end{subfigure}
+%  \end{figure}
+%  \vspace{-2cm}
+%% 
+%  \begin{minipage}{0.42\textwidth}
+%  \begin{flushleft} \large
+%          \href{http://umet.univ-lille1.fr}{\includegraphics[width=0.5\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/01_RAPPORT/Memoire/img/umet.png}}
+%        \end{flushleft}
+%    \begin{flushright} \large
+%      \href{http://www.univ-lille1.fr}{\includegraphics[width=0.5\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/Logos/UL1-WEB-2014.png/UL1-WEB-2014.png}}
+%    \end{flushright}
+%  \end{minipage}\\ %[3cm]
+%  \begin{minipage}{0.42\textwidth}
+%      
+%    \end{minipage}\\ [1cm]
+%\begin{figure}
+%  \begin{subfigure}[b]{0.25\textwidth}
+%  \begin{center}
+%  \href{http://edsmre.univ-lille1.fr}{\includegraphics[width=0.5\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/Logos/EDSMRE-104_logo.pdf}}
+%  \end{center}
+%  \end{subfigure}
+%  \begin{subfigure}[b]{0.7\textwidth} \large
+%  École Doctorale - 104 \\Sciences de la Matière, du Rayonnement\\et de l'Environnement
+%  \end{subfigure}
+%\end{figure}
+%\vspace{-2cm}
+  % TITLE SECTION
+  %\href{http://umet.univ-lille1.fr}{\includegraphics[width=4cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/01_RAPPORT/Memoire/img/umet.png}}~~~~
+  %\href{http://edsmre.univ-lille1.fr}{\includegraphics[width=3cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/Logos/EDSMRE-104_logo.pdf}}~~~
+  %\href{http://www.univ-lille1.fr}{\includegraphics[width=4cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/Logos/UL1-WEB-2014.png/UL1-WEB-2014.png}}\\
+  École Doctorale - à déterminer\\%104 \\Sciences de la Matière, du Rayonnement
+%  \\  et de l'Environnement
+%  \HRule \\[0.3cm]
+  { \large \bfseries
+%  Fondations de l'Évaluation Holistique Opérationnelle\\Re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie et l'artificialisme %, l'intégration explicite du jugement de valeurs et la recherche libre
+Re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie\\
+ou\\
+Contribution à la re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie, via l'intégration explicite du jugement, le traitement de la multi-dimensionnalité et l'approche alternative libre des données.\\
+ou\\
+Fondations de l'Évaluation Holistique Opérationnelle\\Re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie
+%Contribution à la re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie, via l'intégration explicite du jugement, le traitement de la multi-dimensionnalité. % et l'approche alternative libre des données.
+%   Thèse de doctorat
+   }\\[0.1cm] % Title of your document
+  \HRule \\[0.3cm]
+  { %\large
+  \bfseries
+	Thèse pour l'obtention du grade de\\
+	Docteur de \\%l’université de Lille 1\\
+	\emph{Spécialités~:}\\
+%	Conception. Interdisciplinarité de l'évaluation de la soutenabilité.
+	}
+\emph{Défendue par~:} %\\
+\href{mailto:rudy.patard@gmail.com}{Rudy \textsc{Patard}}\\ % Your name
+%\address{
+%UMET, UMR CNRS 8207, 
+%Universit\'e Lille~1, \\
+%59655 Villeneuve D'Ascq, France \\[.5cm]
+%E-mail: rudy.patard@ed.univ-lille1.fr\\
+%}
+%~\\[.5cm]
+  \emph{Composition du Jury~:}\\[0.2cm]
+  {\small
+%  \begin{tabular}{p{4.5cm} p{3.8cm} p{3.5cm}}%p{4cm} p{4cm} p{4cm}
+%%  \hline
+%%    Angélique Léonard
+%%        Peggy Zwolinski
+%%Peggy ZWOLINSKI
+%%Grenoble Universities
+%%Peggy.zwolinski@g-scop.inpg.fr
+%%+33 4 7682 7028
+%%        Anne Perwuelz
+%%    Nicolas Perry
+%%    Stéphane Le Pochat
+%	\href{mailto:a.leonard@ulg.ac.be}{Pr. Angélique \textsc{Léonard}} & Université de Liège, LGC. génie chimique &  ------\\
+%	\href{mailto:peggy.zwolinski@g-scop.inpg.fr}{Pr. Peggy \textsc{Zwolinski}} & Université Grenoble Alpes, G-SCOP & ------ \\
+%	\href{mailto:anne.perwuelz@ensait.fr}{Pr. Anne \textsc{Perwuelz}} & ENSAIT, GEMTEX, Roubaix & ------ \\
+%	\href{mailto:s.lepochat@evea-conseil.com}{Stéphane \textsc{Le Pochat}} & EVEA-Conseil SAS. & ------ \\
+%	\href{mailto:n.perry@i2m.u-bordeaux1.fr}{Pr. Nicolas \textsc{Perry}} & Université de Bordeaux, Dép. IMC, I2M UMR~5295 & ------ \\
+%	\href{mailto:david.balloy@univ-lille1.fr}{Pr. David \textsc{Balloy}} & Université de Lille 1, UMET & Directeur de thèse \\ % Supervisor's Name
+%	\href{mailto:ion-cosmin.gruescu@univ-lille1.fr}{Ion-Cosmin \textsc{Gruescu}} & Université de Lille~1, LML FRE3723 & Encadrant \\
+%	\href{mailto:anne-lise.cristol@centralelille.fr}{Anne-Lise \textsc{Cristol}}  & École Centrale de Lille, LML FRE3723 & Encadrante \\
+	}
+%  \end{tabular}\\[.2cm]
+  % AUTHOR SECTION
+%  \begin{minipage}{0.42\textwidth}
+%    \begin{flushleft} \large
+%      \emph{Défendue par~:}\\
+%      \href{mailto:rudy.patard@gmail.com}{Rudy \textsc{Patard}} % Your name
+%    \end{flushleft}
+%%  \end{minipage}
+%  ~
+%  \begin{minipage}{0.42\textwidth}
+%    \begin{flushright} \large
+%      \emph{Supervisée par~:} \\
+%      \href{mailto:david.balloy@univ-lille1.fr}{Pr. David \textsc{Balloy}} \\ % Supervisor's Name
+%      \href{mailto:@univ-lille1.fr}{Dr. Ion-Cosmin \textsc{Gruescu}} \\
+%      \href{mailto:@univ-lille1.fr}{Dr. Anne-Lise \textsc{Cristol}}
+%    \end{flushright}
+%  \end{minipage}\\ %[3cm]
+%  \begin{minipage}{0.42\textwidth}
+%      \begin{flushleft} \large
+%        \emph{Jury complémentaire à la supervision~:} \\
+%        \href{mailto:@univ-lille1.fr}{Pr. Prénom \textsc{Nom}} \\
+%        \href{mailto:@univ-lille1.fr}{Pr. Prénom \textsc{Nom}} \\
+%        \href{mailto:@univ-lille1.fr}{Pr. Prénom \textsc{Nom}} \\
+%        \href{mailto:@univ-lille1.fr}{Pr. Prénom \textsc{Nom}} \\
+%        \href{mailto:@univ-lille1.fr}{Pr. Prénom \textsc{Nom}}
+%      \end{flushleft}
+%    \end{minipage}\\ [1cm]
+  % DATE SECTION
+%  \centering
+%  ~\\
+  \emph{Défendue le }%14 Décembre 2016}
+%  {\large Défendue le 14 Décembre 2016}\\[1cm]%\today}\\[1cm]
+  % LOGO SECTION
+%  \begin{minipage}{0.3\textwidth}
+%%  \href{http://www.agence-nationale-recherche.fr/projet-anr/?solr=run&tx_lwmsuivibilan_pi2[CODE]=ANR-13-RMNP-0002}{\includegraphics[width=\linewidth]{img/ANR}}
+%  \end{minipage}
+%  ~
+%  \begin{minipage}{0.05\textwidth}
+%  \end{minipage}
+%  ~
+%  \begin{minipage}{0.3\textwidth}
+%%    \href{http://www.univ-lille1.fr}{\includegraphics[width=\linewidth]{img/univ-lille}}
+%  \end{minipage}
+%  ~
+%  \begin{minipage}{0.05\textwidth}
+%  \end{minipage}
+%  ~
+%  \begin{minipage}{0.3\textwidth}
+%%    \href{http://www.materalia.fr/}{\includegraphics[width=\linewidth]{img/materalia}}
+%  \end{minipage}
+%\vfill % Fill the rest of the page with whitespace
+%\begin{flushright}
+%%ANR-13-RMNP-0002 MatetPro \emph{« MeMnAl Steels »}
+%\end{flushright}
+%\vfill
+\end{titlepage}
+%\pagenumbering{gobble}
+\thispagestyle{empty}
+
+\cleardoublepage
+
+%\begin{abstract}
+\include{resume}
+\include{abstract}
+
+%\end{abstract}
+% 
+% \newpage \thispagestyle{empty}
+% \null
+% \newpage
+% 
+% \renewcommand{\abstractname}{Acknowledgements}
+% \begin{abstract}
+% \end{abstract}
+% 
+% \newpage \thispagestyle{empty}
+% \null
+% \newpage
+
+%\thispagestyle{empty}
+{\Large
+~\\
+~\\
+~\\
+~\\
+~\\
+~\\
+%~\\
+%~\\
+%~\\
+~\\
+~\\
+~\\
+~\\
+~\\
+~\\
+~\\
+\begin{flushright}
+\textit{
+Abygaëlle, Aïdan, mes enfants, retenez,\\ mais surtout \emph{comprenez} bien.\\
+On ne dit pas ~:\\
+``C'est pas bon !'',\\
+on dit~:\\
+``Je n'aime pas.''\\
+\ldots \\
+%Nous parlerons plus tard\\ d'incommensurabilité.
+}
+\end{flushright}
+}
+\newpage
+\section*{Remerciements}
+%\input{Remerciements}
+
+\cleardoublepage
+
+%Que cette leçon soit autant dite aux travailleurs et contribuables 
+%\thispagestyle{empty}
+\tableofcontents
+\label{TOC}
+\section*{Lecture du document}
+
+Afin de guider et fluidifier la lecture, les principes suivants sont établis.
+\exbox{Le cadre des exemples illustrant les propos sont dans ce format.}
+\figbox{La lecture spécifiquement des figures, de certaines équations et tables est faîte dans cette type d'encadrement.}
+\keybox{Les éléments clefs sont encadrés de cette façon.}
+
+Le document comporte des outils pour une lecture numérique.
+Lors qu'il l'a été jugé adéquat, des liens vers le web sont présents (\href{https://duckduckgo.com}{avec ce format}).
+Les références (bleues entre crochets) vous conduisent à leurs localisations dans la bibliographie.
+Là un hyperlien rouge interne pointera par son numéro la page d'insertion (et donc votre origine pour y retourner aisément).
+L'ensemble du sommaire comme les termes du glossaire sont liés aux termes qu'ils mentionnent.
+Comme pour la bibliographie, les termes du glossaire dans le corps de texte sont liés au glossaire et les numéros de pages vous guident pour le retour.
+Les références faites aux chapitres, sections et notes sont également actives.
+
+\listoffigures
+\newpage
+\printglossaries
+
+\mainmatter
+%\pagenumbering{arabic}
+%%\thispagestyle{empty}
+%\chapter*{}
+%
+%\chapter{Introduction}
+%
+\input{Introduction}
+ % % CONTROLES % % %
+\include{soutenabilite} 						%chapitre
+\include{Pensee_cycle_de_vie} 				%section (dans soutenabilité)
+%\include{soutenabilite_et_materiaux}		%chapitre sur les études environnemental en métalurgie
+\include{methodesetoutils} 					%chapitre
+%%
+%% % % CONTROLES % % %
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\chapter{L'ACV appliquée à MOTION}
+%\include{motion}
+%%%%%%% % % % % % % % % % % % % % % %
+\include{AF-ACV} %chapitre
+%
+\include{Multifonctionnalite} %chapter
+\include{multidimension} %chapter ? fusion avec multifonctionnalité. Comment l'oppérer.
+%\section{Inventaire et descriptions}
+%\label{sec:Inventaire et descriptions}
+%Ailleurs, où ?
+%\subsection{les méthodes d'impacts}
+%étude critique des méthodes actuelles
+%couverture de substance
+%revues des comparaisons de méthodes
+%\input{methodesdimpacts}
+%
+%%\subsection{Vers de nouvelles bases descriptive pour l'ACV}
+%%  ontologie et logique descriptive pluraliste pour ACV 3.0
+%%  
+%%\subsection{Recherche Libre} % conséquence des contraintes exprimé à l'AF > modèle d'organisation de la production scientifique (soit après multidimensionalité soit après inventaire et description)
+%
+\include{recherche_libre} %chapitre
+%%\chapter{Interprétation et décision} % description + valeurs (usage AHP)+ choix parmi alternative (MCDA, promethee) 
+%
+\include{conclusiongenerale}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix % Début des annexes
+\chapter{Annexes}
+%\colorbox{yellow}{gros taf de nettoyage à faire}
+Pour chaque annexe, la localisation de leur appel dans le mémoire est indiqué avec un hyperlien.
+\include{annexe_ADMC}
+%\include{annexe_multifontionnalite} % ne pas exploiter (plus court)
+\include{annexe_AF-ACV}
+\include{annexe_methodes_d_impacts}
+\include{annexe_soft_base_acv}
+\include{annexe_recherche_libre}
+%%%\include{annexe_motion}
+
+%%%%https://en.wikibooks.org/wiki/LaTeX/Glossary
+%\printindex
+%
+%\chapter*{References}
+%
+%fiou, trouver qqc à fair sur l'article de Murray sur le Daly et les 128 contributeurs ! idem Salomon !
+%
+%Texte court sur l'accès aux sources, les disponibilités sous opendoar (sans reprendre la section associée.)
+%
+%Paragraphe sur 'les must-read', les articles clefs et les appréciations particulières. Reap-Rowley-Davis-Majeau-Finnveden-Weidema
+
+%https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Bibliography_styles
+%Here are some more often used styles:
+%Style Name 	Author Name Format	 	Reference Format 	Sorting
+%plain 			Homer Jay Simpson		#ID# 				by author
+%unsrt 			Homer Jay Simpson	 	#ID# 				as referenced
+%abbrv 			H. J. Simpson 			#ID# 				by author
+%alpha 			Homer Jay Simpson 		Sim95 				by author
+%abstract 		Homer Jay Simpson 		Simpson-1995a 	
+%acm 			Simpson, H. J. 			#ID# 	
+%authordate1 	Simpson, Homer Jay 		Simpson, 1995 	
+%apacite 		Simpson, H. J. (1995) 	Simpson1995 	
+%named 			Homer Jay Simpson 		Simpson 1995 	
+%
+%However, keep in mind that you will need to use the natbib package to use most of these.
+
+%\bibliographystyle{plainnat}
+%\bibliographystyle{unsrt} %Num entre crochet -> ne prend pas les \citeauthor
+%\bibliographystyle{unsrtnat} % Le style est mis entre crochets. avec natbib -> \citeauhtor
+%\bibliography{zotero_selec_all_bibtex}
+
+\backmatter % partie finale
+
+%\printbibliography
+\printbibliography[title={Thèses en références},type=thesis]
+\printbibliography[title={Livres en références},type=book]
+\printbibliography[title={Articles en références},type=article]
+\printbibliography[title={Autres références}, nottype=article, nottype=book, , nottype=thesis]
+\end{document}        

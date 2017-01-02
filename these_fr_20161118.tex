@@ -1,0 +1,149 @@
+\documentclass[12pt,twoside,a4paper,english,french]{book} %fleqn % use larger type; default would be 10pt
+% Les langues (français et anglais) sont passées directement à babel et à tous les autres packages qui pourraient en avoir besoin.
+% C'est la même chose pour a4paper, geometry hérite cette option.
+% La dernière langue spécifiée sera la langue principale.
+
+%__________________________Packages____________________________________
+\usepackage{amsmath}		% pour les symboles de maths
+\usepackage{graphicx}	% pour afficher des figures
+\usepackage{amssymb}		% encore des maths
+\usepackage{eurosym}		%symbole euro
+\usepackage{lscape}							% passer des éléments en position paysage
+\usepackage{longtable}						% Table sur plusieurs pages
+\usepackage{multirow}							% Tables avec cellules fusionnées Columns spanning multiple rows https://en.wikibooks.org/wiki/LaTeX/Tables
+\usepackage{enumitem}							% pour gérer les listes avec paramètres [noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\usepackage{color}							% pour la couleur
+%\usepackage[dvipsnames]{xcolor}			% alternative  pour la couleur, 
+\usepackage[skins, breakable]{tcolorbox}	%boite remarques, commentaires, exemples
+\usepackage{makeidx}					%pour faire un index
+\usepackage{tikz}
+\usepackage[raccourcis]{fast-diagram} %
+%\usepackage{include}
+
+% ordre des packages ! varioref ; hyperref ; cleverref http://tex.stackexchange.com/questions/139459/vref-and-input-command
+
+\usepackage[utf8]{inputenc}	% pour poser proprement le type de code
+\usepackage[T1]{fontenc}		% nécessaire pour le package babel [T1]
+\usepackage{textcomp} 			%test symbols
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}	% pour pouvoir écrire directement avec les accents [frenchb]
+%\usepackage[top=3cm, bottom=3cm, inner=3cm, outer=3cm]{geometry} % marges, dimensions de la page...
+
+\usepackage{csquotes}
+%\SetBlockThreshold{52}			% défini le nombre de ligne avant passage en bloc
+\usepackage[backend=biber, backref, sorting=none, style=numeric-comp, doi=false, url=false, isbn=false, maxcitenames=1]{biblatex}
+%\usepackage[backend=biber, backref, sorting=none, style=numeric-comp, doi=false, url=false, isbn=false, maxcitenames=2, eprint=false]{biblatex}
+	
+\addbibresource{zotero_selec_all_biblatex.bib}
+%\usepackage[french]{varioref}						% il faut appeler \vref et pas \ref
+%\usepackage{cleveref}						% faire le beau gosse avec ``ci-contre'',``page suivante''...localisation et type de contenu
+
+\usepackage[colorlinks=true, linkcolor=red, citecolor=blue, pdftex]{hyperref} % hyperlien pagebackref=true, 
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[all]{hypcap}					% pour les hyperlien vers les figures sur la figure et non sur la légende
+\usepackage{wrapfig} 						%figure entourée de texte
+\usepackage{listings} %mettre du code
+
+%____________________Commandes______________________________________
+%\definecolor{bleuclair}{rgb}{0.7, 0.7, 1.0}
+%\definecolor{rosepale}{rgb}{1.0, 0.7, 1.0}
+
+% Barrer du texte : \barre{texte barré}
+\newlength{\textlarg}
+\newcommand{\barre}[1]{%
+   \settowidth{\textlarg}{#1}
+   #1\hspace{-\textlarg}\rule[0.5ex]{\textlarg}{0.5pt}}
+
+% gestion de la profondeur de numérotation et d'affichage en TOC
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+
+%_____________________Glossaire____________________________________
+\usepackage[xindy,acronyms,toc,section=chapter]{glossaries}
+\makeglossaries
+\setglossarystyle{listhypergroup}
+\renewcommand*{\glstextformat}[1]{%
+\textcolor{magenta}{#1}}% <-- passer en vert ?
+
+\loadglsentries{glossaire}
+
+%_______________________Mes boites_____________________________
+
+%Lectures de figures_______
+\newcommand{\figbox}[1] {
+\begin{tcolorbox}[width=\linewidth, boxsep=2pt, left=2pt, right=2pt, top=2pt, breakable] #1 \end{tcolorbox}}
+%Exemples__________________
+\newcommand{\exbox}[1] {
+\begin{tcolorbox}[colframe=green!50!white, colback=green!10!white, width=\linewidth, boxsep=2pt, left=2pt, right=2pt, top=2pt, arc=3mm, breakable] #1 \end{tcolorbox}}
+%Notions Clefs_____________
+\newcommand{\keybox}[1]{\begin{tcolorbox}[colframe=red!50!white, width=\linewidth,boxsep=2pt, left=2pt, right=2pt, top=2pt, arc=-1mm, breakable] #1 \end{tcolorbox}}
+
+%listing above text
+
+% Metadonnées____________________________________________________
+%\title{Fondations de l'Évaluation Holistique Opérationnelle\\Re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie} % et l'artificialisme}
+\title{Contribution à la re-conception méthodologique de l'évaluation de la soutenabilité par la pensée en cycle de vie, via l'intégration explicite du jugement, le traitement de la multi-dimensionnalité et l'approche alternative libre des données.}
+\author{Rudy Patard}
+\date{\today}
+
+%____________________________________________
+%\includeonly{recherche_libre}
+%____________________________________________
+
+\begin{document}
+\frontmatter % Numerotation des pages en chiffres romains
+% A mettre au début du document, pour ne pas avoir 1, 2, i, ii, 1, 2, 3 ... (éviter la répétition)
+\input{page_de_garde}
+\thispagestyle{empty}
+\cleardoublepage
+\input{resume}
+\input{abstract}
+\input{dedicace}
+
+\newpage
+\section*{Remerciements}
+%\input{Remerciements}
+
+\cleardoublepage
+
+%Que cette leçon soit autant dite aux travailleurs et contribuables 
+\tableofcontents
+\label{TOC}
+\input{Lecture_document}
+
+
+\listoffigures
+\newpage
+\printglossaries
+
+\mainmatter
+\input{Introduction}
+\input{soutenabilite} 						%chapitre
+\input{Pensee_cycle_de_vie} 				%section (dans soutenabilité)
+\input{methodesetoutils} 					%chapitre
+\input{AF-ACV} %chapitre
+\input{Multifonctionnalite} %chapter
+\input{multidimension} %chapter
+%\input{methodesdimpacts}
+\input{recherche_libre} %chapitre
+\input{conclusiongenerale}
+
+\appendix % Début des annexes
+\chapter{Annexes}
+Pour chaque annexe, la localisation de leur appel dans le mémoire est indiqué avec un hyperlien.
+\input{annexe_ADMC}
+%\input{annexe_multifontionnalite} % ne pas exploiter (plus court)
+\input{annexe_AF-ACV}
+\input{annexe_methodes_d_impacts}
+\input{annexe_soft_base_acv}
+\input{annexe_recherche_libre}
+
+\backmatter % partie finale
+
+\printbibliography[title={Thèses en références},type=thesis]
+\printbibliography[title={Livres en références},type=book]
+\printbibliography[title={Articles en références},type=article]
+\printbibliography[title={Autres références}, nottype=article, nottype=book, , nottype=thesis]
+\end{document}        

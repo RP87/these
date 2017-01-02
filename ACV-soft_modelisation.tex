@@ -1,0 +1,395 @@
+\section{Outils de modélisation en ACV}
+\label{sec:Outils de modélisation en ACV}
+Pour produire les différents niveaux d'information comme vu dans la figure~\ref{fig:ILCD_principe_3_niveaux_information.png}, la communauté de la discipline a produit des logiciels.
+
+\begin{itemize}
+\item Voyons d'abord les programmes de modélisation, avec ou sans interface graphique, c'est à dire les outils pour~:
+\begin{itemize}[noitemsep]
+\item la construction du modèle de chaîne de valeur,
+\item la caractérisation des impacts,
+\item et l'interprétation.
+\end{itemize} 
+\item Puis nous observerons les bases de données.
+Il s'agit de recueils des émissions et consommations de procédés.
+Nous pouvons pour compléter le langage de la discipline dire que les \emph{flux élémentaires et de produits} sont regroupés dans des \emph{\textbf{bases d'inventaires} dits '\textbf{secondaires}'.}
+Ceux-ci supportent l'allègement de la charge d'\textbf{inventaire primaire} à réaliser lors de chaque cas d'étude.
+Mais les bases d'inventaires incluent également des modèles de mécanismes environnementaux et leurs facteurs d'impacts.
+Les modélisations des mécanismes environnementaux sont reprises de façon linéaire (facteurs d'impacts constants) au sein de méthodes d'impacts, associées ou indépendantes de bases secondaires.
+\end{itemize} 
+Nous nous pencherons tout d'abord sur l'aspect informatique puis informationnel en nous concentrant sur les méthodes d'impacts.
+\subsection{L'informatique de l'ACV}
+\label{subsec:L'informatique de l'ACV}
+\subsubsection{L'interface de modélisation}
+\label{subsec:L'interface de modélisation}
+La modélisation est généralement conduite via une interface graphique recevant les deux premiers éléments listés en introduction (inventaires secondaires et méthodes d'impacts) et fournissant des outils pré-définis pour le calcul et l'interprétation des caractérisations.
+
+Dans la vaste \href{http://eplca.jrc.ec.europa.eu/ResourceDirectory/faces/tools/toolList.xhtml}{liste des logiciels de la commission européenne} (61 éléments), si des classiques comme Simapro, GaBi ou Umberto ont voix au chapitre, des alternatives en codes ouverts tel \href{http://brightwaylca.org/}{BrightWayLCA}~\cite{mutel_brightway2_2012} et \href{http://www.openlca.org/}{OpenLCA}~\cite{ciroth_ict_2007} n'y figurent pas\footnote{Absence constaté lors de la consultation de ces pages et cela malgré l’existence de bientôt 10 ans d'OpenLCA.}.
+
+De façon générale, les interfaces graphiques présentent, un bandeau de navigation dans les bases secondaires et méthodes d'impact, une arborescence pour la construction du projet de modélisation (unités, flux, procédés, systèmes, projets, scénarios, caractérisation \ldots), une fenêtre d'observation ou/et modélisation du système à l'étude (schéma bloc des procédés et flux).
+Développées semble-t-il principalement pour l'activité de consulting, ces interfaces (logiciels) s'accompagnent souvent de programmes intégrés d'édition de rapports d'études.
+
+\href{http://brightwaylca.org/}{BrightWayLCA} est un outil python en ligne de commande et \href{http://www.openlca.org/}{OpenLCA} permet également une interaction par scripte et console.
+Des versions 'développeurs' sont également disponibles pour les codes fermés qui sans doute disposent de telles fonctionnalité, mais le prix de vente n'est évidement plus le même.
+Mais de façon plus problématique en recherche (pas en conseil si cela n'intéresse pas le client), c'est la fermeture du code et la non-reproductibilité vérifiable (rédhibitoire pour la production \emph{scientifique}).
+
+L'acquisition d'une licence de ces outils (globalement propriétaire) s'accompagne souvent de celle de la base de données attenante (Simapro - ecoinvent ; GaBi - GaBi).
+Le choix sur la modélisation entraîne donc une orientation sur les types de données employées (unitaires, ou agrégées).
+
+Les capacités d'interactions sur ces outils sont probablement le fruit direct des choix de format de données.
+Des bases non requêtables (queryable) ou au format non ouvert conditionnent la possibilité et la difficulté de développer ces fonctionnalités.
+En tout cas il y a une forte importance suivant les orientations principales actuelles du rôle de l'analyste avec une faible capacité à la reproduction et vérification des travaux.
+\subsubsection{Bases de données}
+\label{subsubsec:Bases de données}
+\citeauthor{sayan_contribution_2011} a réalisé une études des bases de données. % dans \citetitle{sayan_contribution_2011}.
+Elle y dénombre 40 bases avec des états et des contenus très variables.
+Ses annexes, que nous ne reproduisons pas par commodité et puisqu'elles sont librement accessible (\href{https://uwspace.uwaterloo.ca/handle/10012/6336}{ici})
+avec notamment les tableaux sur les bases analysées\footnote{
+Table 2-2 Databases Reviewed ;
+Table 2-3 Database Survey – Relationship Between Access and Facilitator Type ;
+APPENDIX A. LCA DATABASE REVIEW COLLECTED DATA ;
+Table A-1 The Databases Reviewed ;
+Table A-2 Access
+},
+nous éclairent de façon synthétique sur ce paysage informatique.
+
+\paragraph{L'accès et les droits d'usage} font partie des éléments audité par \citeauthor{sayan_contribution_2011}.
+
+\blockcquote[traduction, p.24-25]{sayan_contribution_2011}{
+Un autre problème de l'accessibilité est l'absence de l'établissement clair des droits, licences, attributions et conditions d'utilisation.
+La plupart des bases de données examiné (36 des 40) n'ont pas établi une déclaration donnant ostensiblement
+%(de façon visible et évidente)
+aux utilisateurs potentiels des instructions claires sur l'utilisation acceptée.
+Ceci est important parce que leur absence laisse aux utilisateurs de faire des hypothèses pour eux-mêmes.
+Le but même de l'existence et de la disponibilité de ces bases de données sont pour une utilisation par d'autres.
+%Cependant, les conditions d'utilisation ne sont pas rendues claires.
+%Les données peuvent être incorporées dans d'autres études universitaires ou peuvent-être modifiées et réémises.
+%-----original
+%Another accessibility issue is the lack of clear establishment of rights, license, attribution, and terms of use.
+%Most of the databases (36 of the 40) reviewed did not establish a statement conspicuously giving potential users clear instructions on accepted use.
+%This is important because their absence leaves users to make assumptions for themselves.
+%The very purpose for the existence and availability of these databases are for use by others.
+%However, the conditions of use have not been made clear.
+%The data may be incorporated into other academic studies or possibly be modified and reissued.
+}
+
+Relativement au droit d'auteur français, la règle (et non l'hypothèse, 'assumptions') à prendre pour les 36 bases sur les 40, sans précision quant à leur licence, est qu'\textbf{elles ne sont pas exploitables sans accord préalable}.
+
+Le nombre de bases de données recensées dans nos travaux en est à 47 (dont des déclinaisons de bases et extensions relative à des logiciels)\footnote{Il s'agit de la combinaison des recueils de \citeauthor{sayan_contribution_2011}, de la page associée du \href{http://eplca.jrc.ec.europa.eu/ResourceDirectory/faces/databases/databaseList.xhtml}{Joint Research Center} de la commission européenne et du portail \href{http://nexus.openlca.org/}{nexus} de GreenDelta.}.
+De même dans de nombreux cas les informations relatives à la licences sont absentes.
+Pour celles présentes, aucune ne mentionne de licence libre\footnote{Licence Libre : lecture (ou étude), écriture (ou modification), distribution (reproduction, diffusion) et enfin usage à fin commercial ou non.}.
+Elles restent donc très statiques.
+Certaines bases sont certes gratuites en accès.
+Mais elles ne sont pas nécessairement indépendantes, dans ce sens où elles font appellent à des bases privées.
+Par exemple Agribalyse, produite notamment par l'INRA appelle des procédés d'ecoinvent (qui donc y contribue également).
+La nature partielle (fractionnaire) des bases secondaires entre libre d'accès ou en biens de club payant fait donc obstacle à une exploitation (application) libre de l'\gls{ACV} dans sa globalité (sa production, son observation, sa vérification, sa reproductibilité).
+
+%\colorbox{yellow}{!!! placement manuel à la fin !!!}
+%\begin{figure}[htbp]
+\begin{wrapfigure}{i}{0.38\textwidth}
+\centering
+\includegraphics[width=0.38\textwidth]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/wikicommons/Creative_commons_license_spectrum.pdf}
+\caption{ \scriptsize Les licences CC. Par \href{https://commons.wikimedia.org/wiki/File:Creative_commons_license_spectrum.svg?uselang=fr}{Creative commons et Shaddim}}
+%\end{figure}
+\label{fig:CC_licences}
+\end{wrapfigure}
+%\end{figure}
+Sur la gamme de licences Creative Commons, figure~\ref{fig:CC_licences}, nous pourrions donc situer Agribalyse (à la lecture de la \href{https://nexus.openlca.org/ws/files/8209}{licence}) à proximité d'un équivalent CC-BY-NC-ND (avec pour la non-dérivation une autorisation pour la forme mais pas sur le contenu lui-même)~\cite{ademe_general_2013}.
+Comme pour toutes les publications scientifiques émanant de la recherche publique, ces acteurs (chercheurs) sont à la fois clients et fournisseurs pour ces bases de données.
+Il est donc curieux que les chercheurs n'intègrent pas à minima un niveau de `remix', modification, pour étendre leur œuvre commune (CC-BY-NC-SA).
+%Nous présentons certains éléments pour souligner les possibles conflits d'intérêt dans le développement des bases de données d'ACV par des entités privées à but lucratif.
+%
+%L'activité de curation de données nécessite la reconnaissance d'une erreur antérieure.
+%Or, la vente de prestation à un tiers faisant l'emploi de données observées comme incorrectes \textit{a posteriori} réduit la confiance en la prestation et donc la capacité de vente du prestataire à but lucratif ou non.
+%De même il apparaît comme conflictuelle de produire une réflexion critique négative sur la méthodologie de l'ACV (i.e. souligner les défaillances méthodologiques) et vendre une prestation d'application de ladite méthodologie.
+%
+%Nous observons également que nombre de spécialistes issus du monde académique (voir toujours en activité dans celui-ci) ont une activité de prestation.
+%
+%Andreas > greendelta
+%Bo > ?
+%Frichkenect > ?
+%Lepochat >
+%
+%... (dès qu'il y a base de donnée)
+%Nom ; fonction privée ; fonction universitaire (? publique)
+%
+%Philippe Osset ; Laurent Grisel et la société Écobilan
+%
+%Au même titre que la presse et les services d'informations en générale, le relation à l’intérêt général et aux intérêts privés est à étudier.
+
+\paragraph{Structure et format de données} sont des éléments clefs dans la capacité d'usage.
+Données et formats ainsi que les relations entre cadre descriptif et descriptions possibles, sont étudiés depuis la formalisation de la discipline.
+Notons durant la décennie 90
+%Life cycle inventory data: Development of a common format~
+les travaux de \citeauthor{singhofen_life_1996}, \citetitle{singhofen_life_1996}~\cite{singhofen_life_1996},
+%An Assessment of the SPOLD format
+ainsi que ceux de  \citeauthor{erixon_assessment_1998}, \citetitle{erixon_assessment_1998}~\cite{erixon_assessment_1998}.
+
+La nécessité d'une base de communication commune sur de vastes ensembles disciplinaires, linguistiques, géographiques et temporels conduit à l'étude des fichiers et formats de données.
+Les \cite[2.1.4.2 File and Data Types]{sayan_contribution_2011} sont également étudiés (et plus récemment) par \citeauthor{sayan_contribution_2011}.
+Nous y constatons des ensembles d'outils propriétaire ou non, interrogeable informatiquement (requêtable) ou non.
+L'expérience de footprinted\footnote{
+Footprinted.org est une collaboration entre KTH (Suède), le MIT Media Lab (USA) et Sourcemap Inc.
+Il s'agit d'un recueil de données ouvert et gratuit, sous licence CC-BY-SA, sur les produits, matériaux, procédés industriels visant la production d'information sur les impacts environnementaux.
+} nous précède~\cite{pillmann_innovations_2011}
+%Innovations in sharing environmental observations and information: EnviroInfo Ispra 2011 ; proceedings of the 25th International Conference EnviroInfo, October 5-7, 2011, Joint Research Centre Ispra Institute for Environment and Sustainablilty
+.
+Mais celle-ci ne distingue pas observation et évaluation.
+\blockcquote{pillmann_innovations_2011}{
+Mettant toutes choses ensemble, une application à la recherche de [aluminium en japonais] pourrait obtenir son impact environnemental, \textbf{sans aucune intervention humaine.}
+%Putting all things together, a application looking for [aluminium en japonnais] could get its environmental impact, \textbf{without any human intervention.}
+}
+Ce qui est à la fois rédhibitoire pour nous, l'action humaine de la production du jugement moral étant clef, comme présenté dans ce mémoire lors du traitement de la multifonctionnalité~\ref{chap:Multifonctionnalité}.
+Mais c'est aussi \emph{l'exact objectif} (jugement excepté) de la \textbf{production d'ACV en modélisation par agents} (agent-based modelling).
+
+
+\subsubsection{Web sémantique}
+Nous avons rencontré la notion de web sémantique au travers des travaux de thèse de \citeauthor{davis_making_2012}. %, mentionné à l'occasion d'une discussion sur l'accessibilité des données lors d'une école d'été en ACV.
+
+Le Web sémantique, `internet des \textit{choses}' est en fait un accord linguistique.
+Pour rendre une structure d'information lisible massivement (à l'aide de scriptes informatiques), il faut non plus s'accorder sur un standard de représentation d'un document, mais du \emph{sens}, des concepts, \textbf{des choses}.
+Il en résulte l'élaboration des codes de standards pour \emph{décrire des choses} (ex~: \gls{RDF}).
+
+Une structure de connaissance organisée de la sorte peut être interrogée de façon plus étendue.
+Dans son cours sur les technologies du web sémantique, \citeauthor{sack_openhpi_2013} décrit les interrogations possibles.
+Il est possible d'obtenir d'une requête des données brutes en tables, des graphes \gls{RDF} construits ou extrais, des résultats de calculs sur les informations (booléenne, numérique ou littéral).
+``Le language pour la requête des \gls{RDF}, \gls{SPARQL} de façon plus détaillé permet~:
+%\blockcquote{sack_openhpi_2013}{
+\begin{itemize}
+	\item L'extraction des données telles que des~:
+		\begin{itemize}
+		\item \acrshortpl{URI}, nœuds vierges, littéraux typés et non typés.
+		\item sous-graphes \gls{RDF}
+		\end{itemize}
+	\item L'exploration des données via des requêtes pour les relations inconnues.
+	\item L'exécution d'opérations de jointures complexes sur des
+	bases de données hétérogènes en une seule requête.
+	\item La transformation de données \gls{RDF} d'un vocabulaire dans un autre.
+	\item La construction de nouveaux graphes \gls{RDF} basés sur des graphes de requêtes \gls{RDF}.
+\end{itemize}
+
+%Extraction of data as
+%\item URIs, Blank Nodes, typed and untyped Literals.
+%\item RDF Subgraphs
+%\item Exploration of Data via Query for unknown relations
+%\item Execution of complex Join Operations on heterogeneous
+%databases in a single query
+%\item Transformation of RDF Data from one vocabulary into another
+%\item Construction of new RDF Graphs based on RDF Query Graphs
+
+Dans son extension 1.1 \gls{SPARQL} permet~:
+\begin{itemize}
+	\item des fonctionnalités de requête supplémentaires,
+	\begin{itemize}
+		\item des agrégats de fonctions, les sous-requêtes, les négations,  l'expression de projets\footnote{
+		\href{https://www.w3.org/2009/sparql/wiki/Design:Project_Expression}{Design:Project Expression}}, les chemins de propriété
+	\end{itemize}
+	\item l'Implication logique pour~:
+		\begin{itemize}
+		\item RDF, RDFS, OWL Direct et liens sémantiques sur base RDF,
+		 les liens sur les Rule Interchange Format (RIF).
+		\end{itemize}
+	\item la mise à jour des graphes RDF comme langage complet de manipulation de données,
+	\item la \href{https://www.w3.org/TR/sparql11-service-description/}{découverte d'informations sur le service SPARQL}
+	\item des requêtes fédérées réparties sur différents SPARQL endpoints (points de requêtes)
+\end{itemize}''~\cite[traduction d'extraits du cours 3.1]{sack_openhpi_2013-1}\footnote{
+Lors de notre exploration de ce domaine avec Simona \textsc{Iacob} (en stage sur la question), différents tutoriels ont été testé.
+Le lecteur est invité à parcourir \href{http://enipedia.tudelft.nl/wiki/User:Simona}{cet apprentissage.}
+Ces notions sont également accessible pas les séquences associées du \textsc{mooc} de \citeauthor{sack_openhpi_2013}~\cite{sack_openhpi_2013-2,sack_openhpi_2013-3,sack_openhpi_2013-4,sack_openhpi_2013}
+}
+
+%SPARQL 1.1 (in progress) allows
+%\item additional query features
+%\item aggregate functions, subqueries, negations, project expressions,
+%property paths
+%\item enables logical Entailment for
+%\item RDF, RDFS, OWL Direct and RDF-Based Semantics entailment,
+%and RIF Core entailment.
+%\item enables Update of RDF Graphs as a full data manipulation
+%language
+%\item enables the Discovery of information about the SPARQL service
+%\item enables Federated Queries distributed over different SPARQL
+%endpoints
+%}
+
+
+De façon assez curieuse, alors que c'est son domaine d'étude et parlant des formats en support de l'information d'inventaire, \citeauthor{sayan_contribution_2011} écrit la chose suivante~:
+\blockcquote[traduction]{sayan_contribution_2011}{
+Cependant, il ne serait pas possible d'écrire un programme informatique qui pourrait ouvrir un fichier texte et détecter le sujet du fichier, les composants contenus, ou l'importance des données quantitatives s'y trouvant.
+%However, it would not be feasible to write a software program that could open a text file and detect the subject of the file, the components contained in it, or the significance of the quantitative figures inside.
+}
+C'est précisément l'activité des domaines d'études tels 'machine learning' / apprentissage machine, 'ontology learning' / apprentissage d'ontologie et 'natural language processing' / traitement du langage naturel~\footnote{Quelques travaux pour exemples~: \citetitle{abdi_representation_2014}~\cite{abdi_representation_2014},\citetitle{heinecke_generation_2006}~\cite{heinecke_generation_2006}}.
+Par ailleurs, concernant les données d'inventaires, sans que la structure soit nécessairement figée, il s'agit de contenu formaté où le `texte libre' n'a pas besoin d'être très développé.
+En somme, la majeure partie des données que nous exploitons est déjà un contenu formaté où la recherche et l'analyse plein texte ne sont donc pas ou peu systématiquement nécessaire.
+
+Nous avons observer un certains nombre de travaux convergeant (si nous les réunissons) pour couvrir les besoins en évaluation environnementale.
+La \citetitle{bertin_modelisation_2013} est étudiée par \citeauthor{bertin_modelisation_2013}~\cite{bertin_modelisation_2013}.
+Des applications sectorielles sont déjà en développement,
+\href{http://enipedia.tudelft.nl/wiki/Main_Page}{Enipedia} (dès 2010) dans le domaine de l'énergie par exemple.
+\citeauthor{vardeman_ontology_2015} développent une `ontologie minimale pour l'ACV' et de façon générale une ontologie pour la transformation de la matière ~\cite{vardeman_minimal_????,vardeman_ontology_2015}.
+\citeauthor{hu_geo-ontology_2013} développent une ontologie pour la localisation et les trajectoires (à employer potentiellement pour la spatialisation et les analyses de type \gls{MFA})~\cite{hu_geo-ontology_2013}.
+\citeauthor{yan_ontology_2015} développe une ontologie spécifique à la composante spation-temporel de l'\gls{ACV})~\cite{yan_ontology_2015}.
+\citeauthor{weidema_bonsai_2014} lançait en \citeyear{weidema_bonsai_2014} \citetitle{weidema_bonsai_2014}~\cite{weidema_bonsai_2014}.
+L'initiative vise l'emploi de formats et technologies ouvertes, ainsi que la fourniture de données libres pour l'usage et la réutilisation
+\footnote{
+\blockcquote[traduction]{weidema_bonsai_2014}{
+À l'heure actuelle, l'échange, l'utilisation et la réutilisation de l'information sur la soutenabilité sont entravés par des données propriétaires ou commerciales et des formats de données qui nécessitent des autorisations et des outils spéciaux.
+BONSAI utilise des formats et des technologies ouvertes, et fournir des données qui sont gratuits pour les autres à utiliser et réutiliser.
+%Currently, the exchange, use and reuse of the sustainability information are hampered by proprietary or commercial data and data formats, requiring special permissions and tools.
+%BONSAI uses open formats and technologies, and provide data that are free for others to use and reuse.
+}
+}
+
+Nous constatons donc un fort développement de ce domaine en relation à la discipline.
+Nous relatons à cette occasion un recueil de citation placé en annexe (\ref{sec:Plaidoyers du libre dans l'ACV}).
+
+Elles ne les ont pas encore franchi mais la modélisation et la caractérisation sont donc aux portes de la \emph{modélisation par agents} pour l'évaluation de la soutenabilité.
+\subsection{Du contenu~: Les méthodes d'impacts}
+\label{sec:LCIAM}
+Nous avons vu le contenant et nous nous penchons maintenant sur le contenu, du moins suffisamment pour saisir les éléments clefs.
+S'il aurait été intéressant de traiter des descriptions de procédés et de rapporter la critique de la distinction entre procédés unitaires et systèmes, les évolutions d'ecoinvent de V2 à V3 etc., nous jugeons plus opportun de prendre l'angle des méthodes d'impacts pour la cohérence aux chapitres suivants.
+Nous allons observer les différents types de méthodes avec leurs références d'origine.
+\subsubsection{Classification des méthodes}
+  Dès les débuts de 90, les courants principaux des Méthodes de l'Analyse des Impacts du Cycle de Vie (LCIAM) encore présents aujourd'hui étaient disponibles~\cite{margni_life_2012} avec~:
+  \begin{itemize}
+  \item l'EPS, "Environmental Priority Strategies"
+  \footnote{Ryding, S-O, Steen,B., Wenblad,A. and Karlsson,R., ‘The EPS system-A Life Cycle Assessment Concept for Cleaner Technology and Product Development Strategies, and Design for the Environment’. EPA workshop on Identifying a Framework for Human Health and Environmental Risk Ranking, Washington DC, June 30 - July 1, 1993\cite{steen_systematic_1999}.
+  \blockcquote{steen_systematic_1999}{
+  Le développement du système EPS a été lancé en 1989 à la demande de Volvo en coopération avec l'Institut Suédois de Recherche Environnementale (IVL) et la Fédération Suédoise des Industries.
+%  The development of the EPS system was started during 1989 on a request from Volvo and as a co-operation between Volvo, the Swedish Environmental Research Institute (IVL) and the Swedish Federation of Industries.
+  }
+  }
+  basée sur une modélisation orientée ``dommage", ou endpoint exprimée avec des clefs monétaires
+  \footnote{
+  \blockcquote[traduction, 3.5.1 Environmental philosophy]{steen_systematic_1999}{
+  Dans le système EPS une sorte de «volonté à payer» (‘willingness to pay’ WTP) pour restaurer les changements dans des aires à sauvegarder ont été choisis en tant que mesure monétaire.
+%  In the EPS system a kind of ‘willingness to pay’ (WTP) to restore changes in the safe guard subjects have been chosen as the monetary measure.
+  }
+  }~;
+  \item le modèle Swiss Ecoscarcity Ecopoints basé sur le principe de la distance à la cible~\cite{seppala_meaning_2001}\footnote{\citeauthor{seppala_meaning_2001} citant Ahbe S, Braunschweig A, Miiller-Wenk R (1990): Methodik für Oekobilanzen auf der Basis ökologischer Optimierung: ein Bericht der Arbeitsgruppe Oeko-Bilanz, "Méthode pour les éco-bilans, sur une base d'optimisation écologique~: un rapport du groupe de travail Éco-Bilan"}~;
+  \item la méthode de 92 du CML avec une orientation ``problème" (impact ou midpoint)\cite{heijungs_environmental_1992}.
+  \end{itemize}
+   
+  Les méthodes d'évaluation des impacts environnementaux, sont généralement divisées en deux catégories~: orientée dommage et orientée problème, tel qu'observable sur la figure~\ref{fig:ILCD_principe_3_niveaux_information.png}.
+  \begin{itemize}
+   \item   Les méthodes dénommées ``midpoint'', (intermédiaires, orientées problème) considèrent les premières relations à la biosphère, l'impact des flux élémentaires à leur sortie de l'environnement technique, la techno-sphère.
+  Le résultat de l'analyse comporte entre une dizaine et une quinzaine d'indicateurs.
+  La communauté scientifique de notre domaine apprécie (et recommande) ces méthodes, dans la mesure où se trouvant au début de la chaîne des processus environnementaux, l'incertitude y est inférieure à des résultats donnés plus tard dans les mécanismes environnementaux.
+  Il est cependant plus difficile de communiquer avec les parties prenantes  depuis le niveau "~midpoint~" d'une part à cause de la distance aux dommages finaux (en fin de course des processus environnementaux) d'autre part car même un spécialiste n'est pas en mesure d'assimiler vingt éléments d'information pour les comparer mentalement.
+
+  \item Les méthodes dénommées ``endpoint'', finales, orientées dommage visent à suivre les processus environnementaux pour attribuer les impacts à des aires de protection.
+  Les aires de protection reconnues sont la Santé Humaine, l'Écosystème, les Ressources Naturelles.
+  De façon opposée aux midpoints, ces méthodes sont appréciées car elles permettent d'observer l'évaluation des dommages finaux, mais les modèles des mécanismes environnementaux sont loin de faire consensus.
+  Il faut pour apprécier leurs applications saisir dans son contexte l'intérêt de la réduction du volume d'information pour le gain sémantique.
+  \end{itemize}
+%  \begin{figure}[h]
+% \begin{center}
+%  \includegraphics[width=15cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/ILCD-handbook_fig15_mid-end-point.pdf}
+% \end{center}
+% \caption{extrait de l'ILCD fig 15 du manuel.}
+% \label{fig:impact_method_schema}
+%  \end{figure}
+  Certaines méthodes proposent les deux niveaux d'information (ex~: ReCiPe\cite{goedkoop_recipe_2013} et IMPACT2002\cite{jolliet_impact_2003}).
+  Elles seront désignées comme mixtes.
+  Le développement des distances à la cible ne semble pas avoir été poursuivi même si l'agrégation complète en score unique reste disponible dans les `packages' de méthodes employées avec les logiciels.
+  
+  De nombreuses ``nouvelles'' méthodes ont vu le jour, mais il faut garder à l'esprit qu'il s'agit souvent de constructions stratifiées exploitant une fraction des méthodes antérieures.
+  Ainsi, la méthode de l'ILCD  est la composition de plusieurs autres sur la base de recommandations européennes (CF Table~\ref{tab:methode_ilcd2011_recommendation}).
+  Des travaux tels \citetitle{hauschild_identifying_2013}~\cite{hauschild_identifying_2013} semblent donc logiques dans une recherche du \emph{meilleur}, même si le sens et la valeur de ce mot devrait, après la lecture de la partie \ref{sec:ADMC}, être quelque peu émoussés.
+  %   hauschild_identifying_2013,
+%    Identifying best existing practice for characterization modeling in life cycle impact assessment
+  
+    
+  À titre d'exemple, la méthode IMPACT 2002+~\cite{jolliet_impact_2003} de \citeauthor{jolliet_impact_2003} reprend des caractérisations d'impacts issues des méthodes~:
+  \begin{itemize} 
+	\item IMPACT 2002 (Pennington et al. 2003a, 2003b) pour la toxicité humaine et l'écotoxicité,
+	\item Eco-indicator 99 (Goedkoop and Spriensma 2000) pour les problématiques respiratoires, les radiations ionisantes, la dégradation de la couche d'ozone, l'acidification/nutrification terrestre, le réchauffement global, l'occupation des sols et les extraction minérales,
+	\item CML 2002 (Guinée et al.2002) pour les problématiques d'eutrophisation et acidification aquatiques,
+	\item ecoinvent (Frischknecht et al. 2003) pour l'épuisement des ressources non-renouvelable.
+  \end{itemize}
+  
+    Parmi les méthodes d'impact disponibles, des méthodes mono-indicateur existent évidement.
+    Nous venons de discuter de certaines de leurs agrégations ou juxtapositions.
+    Citons à titre d'exemples des méthodes n'étant pas reprises  précédemment~:
+    \begin{itemize}
+     \item Cumulative Exergy Demand (Boesch et al. 2007)
+     \item Cumulative Energy Demand (Frischknecht, Jungbluth, et.al. 2003)\cite{frischknecht_implementation_2007}
+     \item Ecological Damage Potential (Köllner \& Scholz 2007)
+     \item Water Scarcity (Boulay et al 2011)
+    \end{itemize}
+  
+    
+    %Cette complexité sera évidement décroissante.
+    %Deux actions semblent dominante de mon point de vue de praticien~:
+    %\begin{itemize}
+    % \item Le développement de bases de données plus complètes facilitant le travail chronophage et coûteux de l'inventaire.
+    % \item L'amélioration des outils de traitement afin d'obtenir des allocations et interprétations conformes.
+    %\end{itemize}
+    %Cette complexité dans le champ des grandeurs objectives peut être combattue avec des bases de données encore plus étendues (couvrant plus de substances, avec les données d’émission et d’absorption locales et les mécanismes environnementaux correspondant).
+\subsubsection{ACV sociale}
+\label{sec:ACV social}
+L'émergence d'une évaluation structurée des impacts sociaux, avec une attention particulière à une évolution méthodologique rigoureuse~\cite{grubert_rigor_2016} doit également être mentionnée.
+Le guide de l'UNEP\cite{united_nations_environment_programme_guidelines_2009} et le travail de Catherine \textsc{Benoit-Norris}~\cite{benoit-norris_identifying_2012,benoit_norris_data_2014,benoit-norris_tutorial_2013} font ressortir la structure des méthodes d'impacts en ACV-sociale.
+Une représentation est visible sur leur \href{http://socialhotspot.org/user-portal-2/portal-info/}{site}~:
+"Droits de l'homme, la santé et la sécurité, droits du travail et le travail décent, la gouvernance et l'accès aux services communautaires (ou infrastructure)".
+%  Human Rights, Health and Safety,  Labor Rights and Decent Work, Governance and Access to Community Services (or infrastructure)
+%  suivante~:
+%  \begin{figure}[h]
+% \begin{center}
+%  \includegraphics[width=15cm]{/home/rudy/Documents/rudy/01_These/11_production/01_COMMUNICATION/figures_extraites/shdb_structure.pdf}
+% \end{center}
+% \caption{Thèmes et catégories des indicateurs d'impacts sociaux. Extrait de\cite{benoit-norris_tut} }
+% \label{fig:impact_method_schema_SHDB}
+%  \end{figure}
+  La base est construite sur une approche sectoriel faisant appel à la classification du (global trade analysis project) GTAP~\cite{_gtap_????}, permettant le rapprochement des analyses économiques, \gls{LCC} notamment lorsque les clefs heures-travaillées -- taux-horaires-salarial -- part-masse-salariale-coût sont employées.
+  Antérieurement à cette approche multicritère de la base \gls{SHDB}, le travail aurait consisté à collecter les données de l'ensemble des thèmes auprès des organismes spécialisés, tel que l'International Labor Organization pour les salaires, temps de travails\ldots
+  
+  Cette structuration de l'ACV social de la SHDB est proche de la revue réalisée plus tôt par \citeauthor{jorgensen_methodologies_2008}~\cite{jorgensen_methodologies_2008}.
+  Celle-ci est rappelée (dans sa version anglophone) en annexe~\ref{annexe_SLCA_method}.\label{annexe_SLCA_method_retour}
+  
+  Dans \citetitle{wu_social_2014}, \citeauthor{wu_social_2014} reprennent les approches, (i) dites de Type 1, sans voie de causalité (pathway) visant l'appréciation qualitative accumulée sans inter-relation (midpoint - endpoint), (ii)  qualifiées de Type 2, qui modélisent à l'image de l'ACV 'environnementale' des chemins causaux et enfin exposent, tels les travaux de \citeauthor{dreyer_characterisation_2010}~ \cite{dreyer_characterisation_2010} (iii) l'approche LCAA~: Life Cycle Attribute Assessment.
+  Cette dernière tente, sans peut-être le souligner suffisamment, disqualifier le terme 'Impact' pour ne pas préjuger de l'orientation des décideurs face à une caractéristique d'une situation (un attribut).
+%  
+% 
+%  La difficulté évoquer de conjuguer social et environnemental est que l'une porte sur l'environnement de l'entreprise et l'autre sur du matériel potentiellement indépendamment d'où les procédés sont réalisés.
+%  => retrouver l'article déclarant l'impossibilité de mêler les deux domaines ! rrrh, je ne remets pas la main dessus !
+%  
+%  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+%  
+%  Exploiter :
+%  \cite{dreyer_characterisation_2010}
+%   dreyer_characterisation_2010
+%      descritption du lien entre évaluation de l'organisme (OEF équivalent) et évaluation produit
+%    Product risk score (PRS)
+%    PRS=PRF*CR
+%    avec product relation factor PRF
+%    company risk CR
+%    CR = CFR*CAF (Company free rein ; Contextual adjustment factor)
+%
+%    Le "mou" dans le management de l'entreprise laisse place à plus d'écart entre une performance de référence et la performance relevé.
+%    Moins le management est serré, plus l'occurrence d'écart à un comportement soutenable est important.
+%    Cela est accentué par un facteur de contexte (que l'on peut appréhender comme un ``management extérieur'' à l'entreprise suivie).
+%    
+
+
+\subsection{Conclusion sur les outils spécifiques de l'ACV}
+Le fossé entre l’analyse objective des impacts environnementaux (observation des interactions et modification d'un milieu) et l’application de l’écoconception est important et non-réductible.
+
+En termes d’\emph{application}, les entreprises recherchent des outils simples et rapide.
+Or la complexité des mécanismes environnementaux, la multiplicité des substances et les spécificités locales rendent l’analyse complexe.
+Cette complexité, associée à un système d'information inadéquat et sans l'envergure nécessaire, repoussent les acteurs dans des démarches incomplètes, \textbf{avec des problèmes de contenu} (études mono-indicateur, résultats d’inventaire en indicateur à côté d’impact, cycle partiel `craddle to gate' en comparatif\ldots).
+Les conclusions en sont potentiellement trompeuses via le report d'impact ou des doubles comptages (comme discuté précédemment Fig.~\ref{fig:report_impacts} et vu ultérieurement au~\ref{sec:indépendance des indicateurs} sur l'indépendance des critères).
+    
+Cette \textit{complexité} est \textit{compliquée} en accès actuellement.
+Cela devrait l'être moins à l'avenir.
+Le développement de bases de données \emph{plus complètes}, pour peu qu'elles soient \emph{exploitables}, fonctionnellement comme juridiquement, facilitera le travail actuellement, vaste, chronophage et coûteux (compliqué) de l'inventaire.
+L'accès démultiplié aux divers domaines facilitera l'étude des inter-relations (complexité).
+
+Si de nombreux outils existent, leurs contenus et leurs formes les rendent impropres à un usage à l'échelle des problèmes à modéliser.
+Si la fraction réservée à l'inventaire des procédés industriels s'oriente vers un web sémantique prometteur, la communauté semble plus difficilement sauter le pas de la jonction aux sciences 'naturelles' et de la santé pour ce qui est des méthodes d'impacts.
+En santé pourtant, l'avance est grande avec des succès tel Bio2RDF~\cite{belleau_bio2rdf:_2008}.
+La modélisation sémantique \emph{globale} de l'ACV doit donc être étudiée.
+
+Puisque pour la technosphère comme l'éco-sphère il s'agit de documenter des `mécanismes', les parties prenantes libérées de cette `observation' par la suggestion précédente, pourront se concentrer sur leur réflexion axiologique, c'est à dire leurs valeurs\footnote{\href{http://www.cnrtl.fr/definition/axiologie}{Vers la définition d'axiologie.}}.
+Il n'y a pas d'outil spécifique à l'ACV, identifié en littérature, pour traiter ce point.
+Nous nous y attarderons donc à la section des \gls{ADMC}~\ref{sec:ADMC}.
+
