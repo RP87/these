@@ -1,0 +1,76 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'co-treatment.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{495.82856445bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53343638)%
+    \put(0,0){\includegraphics[width=\unitlength]{/media/rudy/DATA/01_These/11_production/01_COMMUNICATION/figures/co-treatment.pdf}}%
+    \put(0.21968378,0.3989429){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Co-functions}}}%
+    \put(0.49397211,0.11513156){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Co-functions}}}%
+    \put(0.46591774,0.21430958){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Treatment process}}}%
+    \put(0.18841982,0.48534334){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Production process}}}%
+    \put(0.39932107,0.3012045){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wa}}}%
+    \put(0.27146863,0.15086971){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wb}}}%
+    \put(0.27146863,0.11744806){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wc}}}%
+    \put(0.44439738,0.46290508){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F e}}}%
+    \put(0.44439738,0.3960617){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F f}}}%
+    \put(0.49741107,0.32057482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Co-system}}}%
+    \put(0.73603041,0.2286853){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F wa}}}%
+    \put(0.73603041,0.14899238){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F wc}}}%
+    \put(0.73603041,0.19163387){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F wb}}}%
+    \put(0.73603041,0.10727293){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F other valorisations}}}%
+    \put(0.40518079,0.28554542){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{waste : unvalued flow}}}%
+    \put(0.03013505,0.35277732){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Inventory}}}%
+    \put(0.0303714,0.32879524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(products and}}}%
+    \put(0.03096699,0.30481315){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{elementary flows)}}}%
+    \put(0.8206082,0.22169266){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Implicit functions}}}%
+    \put(0.82144014,0.19782641){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{delivered:}}}%
+    \put(0.82068383,0.17771329){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{limit impacts}}}%
+    \put(0.82144019,0.15483497){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{of Wa, Wb, Wc}}}%
+  \end{picture}%
+\endgroup%

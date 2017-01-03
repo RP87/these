@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="455.22192"
+   height="265.94568"
+   id="svg4625"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="EME.svg">
+  <defs
+     id="defs4627">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path5549"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4525"
+       style="overflow:visible">
+      <path
+         id="path4527"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4529"
+       style="overflow:visible">
+      <path
+         id="path4531"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <filter
+       inkscape:collect="always"
+       id="filter6553-9-7"
+       x="-0.095096685"
+       width="1.1901934"
+       y="-0.16737016"
+       height="1.3347403"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="9.9625101"
+         id="feGaussianBlur6555-2-4" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter6549-5-4"
+       x="-0.34686905"
+       width="1.6937381"
+       y="-0.61048955"
+       height="2.2209792"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="36.338664"
+         id="feGaussianBlur6551-9-6" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="257.43749"
+     inkscape:cy="114.96298"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1535"
+     inkscape:window-height="876"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4630">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-95.491852,-37.125117)">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:#b5b7ff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-3-4"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.36277272,0,0,0.35348,213.27166,-9.0871517)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3894-59-2"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(40.473104,-305.78436)"><flowRegion
+         id="flowRegion3896-9-4"><rect
+           id="rect3898-81-3"
+           width="86.428574"
+           height="38.57143"
+           x="282.14285"
+           y="451.64789" /></flowRegion><flowPara
+         id="flowPara3900-8-6">ACV</flowPara></flowRoot>    <flowRoot
+       transform="translate(-20.462933,-207.65082)"
+       xml:space="preserve"
+       id="flowRoot3894-93-6-8"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-19-4-7"><rect
+           id="rect3898-8-0-5"
+           width="110.98913"
+           height="41.846996"
+           x="282.14285"
+           y="451.64789"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara3900-65-6-4">Système d'information</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-4-8-4"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.45988761,0,0,0.42759342,227.93959,-131.22643)" />
+    <flowRoot
+       transform="translate(61.149293,-405.61598)"
+       xml:space="preserve"
+       id="flowRoot3894-3-0-3"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-1-6-5"><rect
+           id="rect3898-23-8-4"
+           width="87.142845"
+           height="40.714302"
+           x="282.14285"
+           y="451.64789"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara3900-3-1-2">Parties-prenantes</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-41-9-3"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.36277272,0,0,0.35348,349.21579,56.41322)" />
+    <flowRoot
+       transform="translate(151.7019,-239.93495)"
+       xml:space="preserve"
+       id="flowRoot3894-1-8-3"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-38-9-8"><rect
+           id="rect3898-74-7-8"
+           width="86.428574"
+           height="38.57143"
+           x="282.14285"
+           y="451.64789" /></flowRegion><flowPara
+         id="flowPara3900-27-2-8">Utilisateur</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-4-8-2-2"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.6237513,0,0,0.42607974,-40.797807,-4.3648807)" />
+    <flowRoot
+       transform="translate(-170.62401,-266.51814)"
+       xml:space="preserve"
+       id="flowRoot3894-3-0-7-17"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-1-6-2-9"><rect
+           id="rect3898-23-8-6-1"
+           width="135.71428"
+           height="29.285732"
+           x="282.14285"
+           y="451.64789" /></flowRegion><flowPara
+         id="flowPara3900-3-1-4-7">Réglementation</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-4-8-2-7-6"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.45988761,0,0,0.42759342,53.136577,-105.49168)" />
+    <flowRoot
+       transform="translate(-121.44011,-367.25108)"
+       xml:space="preserve"
+       id="flowRoot3894-3-0-7-1-3"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-1-6-2-3-5"><rect
+           id="rect3898-23-8-6-2-2"
+           width="104.28571"
+           height="36.428574"
+           x="282.14285"
+           y="451.64789" /></flowRegion><flowPara
+         id="flowPara3900-3-1-4-1-3">Observateur</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-4-8-0-4"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.45988761,0,0,0.42759342,333.21568,-54.233705)" />
+    <flowRoot
+       transform="translate(171.85392,-316.33754)"
+       xml:space="preserve"
+       id="flowRoot3894-3-0-0-8"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3896-1-6-9-3"><rect
+           id="rect3898-23-8-1-8"
+           width="104.28571"
+           height="36.428574"
+           x="282.14285"
+           y="451.64789" /></flowRegion><flowPara
+         id="flowPara3900-3-1-9-2">Décideur</flowPara></flowRoot>    <path
+       sodipodi:type="arc"
+       style="opacity:0.8;color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0.50157342;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3892-41-9-3-8"
+       sodipodi:cx="345.71429"
+       sodipodi:cy="466.64789"
+       sodipodi:rx="125.71429"
+       sodipodi:ry="71.428574"
+       d="m 471.42858,466.64789 c 0,39.44891 -56.2842,71.42857 -125.71429,71.42857 -69.43008,0 -125.71428,-31.97966 -125.71428,-71.42857 0,-39.44891 56.2842,-71.42858 125.71428,-71.42858 68.59268,0 124.52394,31.2407 125.69594,70.20812"
+       sodipodi:start="0"
+       sodipodi:end="6.2660981"
+       sodipodi:open="true"
+       transform="matrix(0.58791578,0,0,0.48973178,115.32055,38.829881)" />
+  </g>
+</svg>
